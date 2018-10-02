@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>    
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Happy Ocean</title>
+		<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+		<link href="css/print.css" media="print" rel="stylesheet" type="text/css">
+		<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css">
+	    <link rel="stylesheet" href="css/style.css">	
+	</head>
+
+	<body>
+		<main class="albatross">
+			<nav id="mapopen" class="nav" onclick="openNav()">
+				<figure id="open" class="map-icon">
+					<img src="img/map-icon.png" alt="map icon">
+				</figure>
+			</nav>		
+			<div id="mapNav" class="sidenav">
+				<a href="javascript:void(0)" id="closebtn" onclick="closeNav()">&times;</a>
+				<ul id="list" class="map-list">
+					<li><a href="index.html">HOME</a></li>
+					<li id="about"><a href="javascript:void(0)">ABOUT</a></li>
+					<li><a href="resources.html">INFO</a></li>
+					<li><a href="#">SHOP</a></li>
+					<li>STORY
+						<ul>
+							<li><a href="albatross.html">ALBATROSS</a></li>
+							<li><a href="#">SEA LION</a></li>
+							<li><a href="#">SEA TURTLE</a></li>
+							<li><a href="#">FISH</a></li>
+							<li><a href="#">WHALE</a></li>
+						</ul>
+					</li>
+				</ul>				
+			</div>
+			<div id="brochure" class="brochure">
+				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>		
+			</div>
+		</main>	
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>  
+	</body>
+
+</html>

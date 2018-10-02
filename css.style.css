@@ -1,0 +1,220 @@
+/* MEDIA QUERIES */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600|Source+Sans+Pro:400,700,900");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+.clearfix {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden; }
+
+.clearfix:after {
+  clear: both; }
+
+:focus {
+  outline: none; }
+
+html {
+  font-size: 16px; }
+
+body {
+  position: relative;
+  width: 100%;
+  font-size: 1em;
+  line-height: 1.4;
+  background-color: white;
+  font-family: "Open Sans", sans-serif; }
+
+h1 {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.25rem; }
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 1.75rem; } }
+@media screen and (min-width: 1680px) {
+  h1 {
+    font-size: 2.5rem; } }
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem; }
+
+@media screen and (min-width: 1366px) {
+  h2 {
+    font-size: 1.75rem; } }
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.06rem; }
+
+h4 {
+  font-size: 1.125rem;
+  letter-spacing: 0.03rem;
+  font-style: italic; }
+
+h5 {
+  font-size: 0.6125rem;
+  letter-spacing: 0.015rem; }
+
+h1, h2, h3, h4, h5 {
+  font-family: "Source Sans Pro", serif;
+  padding: 1rem 0; }
+
+h3, h5 {
+  font-weight: 700; }
+
+p {
+  font-size: 1rem;
+  padding: 1rem 0;
+  line-height: 1.6; }
+
+a:link {
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.125rem;
+  color: white;
+  /* color: $pink; */ }
+
+a:visited {
+  /*color: $green; */ }
+
+a:hover {
+  /*color: $blue; */ }
+
+.header {
+  position: relative;
+  width: 100%;
+  margin: 0 auto; }
+  @media screen and (min-width: 768px) {
+    .header {
+      height: 380px; } }
+
+.section {
+  position: relative;
+  width: 100%;
+  /* display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-auto-rows: minmax(100px, auto); */ }
+
+/* PAGE FADE IN EFFECT */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+.home, .resources, .albatross, .sealion, .seaturtle, .fish, .whale {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.home {
+  background-image: url(../img/home-bw.png); }
+
+.albatross {
+  background-image: url(../img/albatross.png); }
+
+.resources {
+  background-image: url(../img/resources.png); }
+
+.nav {
+  position: relative;
+  width: 100px;
+  cursor: pointer; }
+
+.map-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  height: auto;
+  z-index: 10; }
+
+.map-icon img {
+  max-width: 100%; }
+
+/* MAP NAV */
+.sidenav {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(32, 1fr);
+  grid-auto-rows: minmax(25px, 50px);
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-image: url(../img/map.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
+  transition: 0.5s; }
+
+.map-list {
+  grid-column: 28 / 31;
+  grid-row: 3;
+  display: none; }
+
+#aboutlist {
+  display: none; }
+
+.about-list {
+  position: absolute;
+  top: 120px;
+  right: 120px; }
+
+.map-list a, .about-list a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: silver;
+  display: block;
+  transition: 0.3s; }
+
+.map-list a:hover, .about-list a {
+  color: white; }
+
+#closebtn, #aboutclosebtn {
+  position: absolute;
+  top: 80px;
+  right: 120px;
+  font-size: 2rem; }
+
+.brochure {
+  display: none;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-image: url(../img/about-brochure.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; }
+
+/*# sourceMappingURL=css.style.css.map */
