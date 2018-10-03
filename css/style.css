@@ -98,21 +98,6 @@ a:visited {
 a:hover {
   /*color: $blue; */ }
 
-.header {
-  position: relative;
-  width: 100%;
-  margin: 0 auto; }
-  @media screen and (min-width: 768px) {
-    .header {
-      height: 380px; } }
-
-.section {
-  position: relative;
-  width: 100%;
-  /* display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-auto-rows: minmax(100px, auto); */ }
-
 /* PAGE FADE-IN EFFECT */
 @-webkit-keyframes fadeIn {
   from {
@@ -131,16 +116,14 @@ a:hover {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
-  @media screen and (min-width: 1366px) {
-    .home, .resources, .albatross, .sealion, .seaturtle, .fish, .whale {
-      background-attachment: fixed;
-      background-position: center; } }
 
 .home {
   background-image: url(../img/home-bw.png); }
@@ -223,7 +206,11 @@ a:hover {
   animation: skateboard 3s;
   animation-delay: 1s;
   animation-timing-function: ease;
-  animation-fill-mode: forwards; }
+  animation-fill-mode: forwards;
+  -webkit-animation: skateboard 3s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: forwards; }
 
 #fish img, .fish img {
   max-width: 100%; }
@@ -234,7 +221,7 @@ a:hover {
   to {
     left: 360px; } }
 /* MAP NAV */
-.sidenav {
+.sidenav, .brochure {
   position: relative;
   display: grid;
   grid-template-columns: repeat(32, 1fr);
@@ -283,14 +270,6 @@ a:hover {
   font-size: 2rem; }
 
 .brochure {
-  display: none;
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  background-image: url(../img/about-brochure.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center; }
+  background-image: url(../img/about-brochure.png); }
 
 /*# sourceMappingURL=style.css.map */

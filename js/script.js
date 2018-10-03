@@ -17,9 +17,11 @@ $( function() {
 		$("#mapNav").animate({
 			width: "0",
 		}, 100)
+		$("#brochure").animate({
+			width: "100%",
+		}, 100)
   		$("#list").fadeOut("fast");
-		$("#brochure").show("fast");
-  		$("#aboutlist").fadeIn(1200);
+  		$("#aboutlist").fadeIn(700);
 	});
 
 	$("#closebtn").click(function() {
@@ -30,13 +32,17 @@ $( function() {
 		$("#mapNav").animate({
 			width: "100%",
 		}, 200)
-		$("#brochure").hide("fast");
+		$("#brochure").animate({
+			width: "0",
+		}, 100)
   		$("#aboutlist").fadeOut("fast");		
   		$("#list").fadeIn(1200);		
 	});
 
 	$("#aboutclosebtn").click(function() {
-  		$("#brochure").hide("fast");
+		$("#brochure").animate({
+			width: "0",
+		}, 100)
   		$("#open").show("fast"); 	
 	});			
 });	
