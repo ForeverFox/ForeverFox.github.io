@@ -1,13 +1,16 @@
 /*MAP NAV*/
-function openNav() {
-    document.getElementById("mapNav").style.width = "100%";
-}
-
-function closeNav() {
-    document.getElementById("mapNav").style.width = "0";
-} 
-
 $( function() {
+	$("#mapopen").click(function() {	
+		$("#mapNav").animate({
+			width: "100%",
+		}, 100)
+	});
+
+	$("#closebtn").click(function() {	
+		$("#mapNav").animate({
+			width: "0",
+		}, 100)
+	});	
 
 	$("#open").click(function() {
   		$("#list").fadeIn(1200);
