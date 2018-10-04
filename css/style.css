@@ -296,6 +296,11 @@ a:hover {
   background-image: url(../img/about-brochure.png); }
 
 /* SCENES */
+.recycling-position {
+  grid-column: 1;
+  grid-row: 14;
+  margin-left: 2rem; }
+
 .albatross-position {
   grid-column: 15;
   grid-row: 14;
@@ -315,9 +320,20 @@ a:hover {
 
 .crab-position {
   grid-column: 11 / 13;
-  grid-row: 14; }
+  grid-row: 14;
+  width: 100px; }
+  @media screen and (min-width: 1680px) {
+    .crab-position {
+      width: 125px; } }
+  @media screen and (min-width: 1920px) {
+    .crab-position {
+      width: 163px; } }
 
 .crab-position img {
   max-width: 100%; }
+
+.trash-straws-position {
+  grid-column: 6;
+  grid-row: 14; }
 
 /*# sourceMappingURL=style.css.map */
