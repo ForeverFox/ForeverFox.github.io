@@ -296,8 +296,28 @@ a:hover {
   background-image: url(../img/about-brochure.png); }
 
 /* SCENES */
-.bird {
-  grid-column: 14;
+.albatross-position {
+  grid-column: 15;
+  grid-row: 14;
+  width: 360px; }
+  @media screen and (min-width: 1440px) {
+    .albatross-position {
+      width: 420px; } }
+  @media screen and (min-width: 1680px) {
+    .albatross-position {
+      width: 500px; } }
+  @media screen and (min-width: 1920px) {
+    .albatross-position {
+      width: 572px; } }
+
+.albatross-position img {
+  max-width: 100%; }
+
+.crab-position {
+  grid-column: 11 / 13;
   grid-row: 14; }
+
+.crab-position img {
+  max-width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
