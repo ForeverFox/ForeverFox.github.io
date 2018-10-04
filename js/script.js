@@ -1,4 +1,3 @@
-/*MAP NAV*/
 $( function() {
 	$("#mapopen").click(function() {	
 		$("#mapNav").animate({
@@ -47,5 +46,10 @@ $( function() {
 			width: "0",
 		}, 100)
   		$("#open").show("fast"); 	
-	});			
+	});	
+/* Preloader 
+	$(document).ready(function() {
+	   $(".preloader").fadeOut(2000);
+	});		*/	
 });	
+
