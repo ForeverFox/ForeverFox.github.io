@@ -109,7 +109,17 @@ a:hover {
     opacity: 0; }
   to {
     opacity: 1; } }
-.home, .resources, .albatross, .sealion, .seaturtle, .fish, .whale {
+.home {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; }
+
+.resources, .albatross, .sealion, .seaturtle, .fish, .whale {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -204,11 +214,11 @@ a:hover {
   top: 280px;
   left: -1200px;
   animation: skateboard 3s;
-  animation-delay: 6s;
+  animation-delay: 2s;
   animation-timing-function: ease;
   animation-fill-mode: forwards;
   -webkit-animation: skateboard 3s;
-  -webkit-animation-delay: 6s;
+  -webkit-animation-delay: 2s;
   -webkit-animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards; }
   @media screen and (min-width: 1440px) {
