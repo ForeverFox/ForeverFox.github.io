@@ -8,9 +8,24 @@ $( function() {
       }
     });
   });
-// Drag and drop
-  $("#trashStraws").draggable();
-  $("#recyclingBin").droppable({
+
+/* Optional Hide FadeOut Effect */
+  $("#popup").dialog({  
+    hide: {effect: "fadeOut", duration: 1000}
+  });
+  // Getter
+  var hide = $( "#popup" ).dialog( "option", "hide" );
+  // Setter
+  $( "#popup" ).dialog( "option", "hide", { effect: "fadeOut", duration: 1000 } );  
+
+
+// DRAG
+  $("#trashStraws").draggable( {
+    scroll: false
+  });
+
+//DROP
+  $("#recyclingBin").droppable( {
     drop: function(event, ui) {      
       $("#albatross").hide(); 
       $("#trashStraws").css("display", "none");

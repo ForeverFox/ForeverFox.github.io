@@ -283,9 +283,6 @@ a:hover {
   background-image: url(../img/about-brochure.png); }
 
 /* SCENES */
-.draggable, .droppable {
-  width: 100%; }
-
 .recycling-position {
   grid-column: 1;
   grid-row: 14;
@@ -324,6 +321,10 @@ a:hover {
 
 .trash-straws-position {
   grid-column: 6;
-  grid-row: 14; }
+  grid-row: 14;
+  cursor: grab; }
+
+.trash-straws-position:active {
+  cursor: grabbing; }
 
 /*# sourceMappingURL=style.css.map */
