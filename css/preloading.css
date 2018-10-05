@@ -1,0 +1,31 @@
+/* Image Preloading for Home Page */
+.preload-images {
+	background: url(../img/home-bw.png) no-repeat -9999px -9999px;
+	background: url(../img/home-bw.png) no-repeat -9999px -9999px,
+	    url(../img/happy_ocean_logo1.png) no-repeat -9999px -9999px,	
+	    url(../img/map.png) no-repeat -9999px -9999px,
+	    url(../img/map-icon.png) no-repeat -9999px -9999px,	
+	    url(../img/mascots.png) no-repeat -9999px -9999px,	 
+	    url(../img/fish.png) no-repeat -9999px -9999px,	        
+	    url(../img/recycling-bins.png) no-repeat -9999px -9999px,
+	    url(../img/resources.png) no-repeat -9999px -9999px,
+	    url(../img/trash-straws.png) no-repeat -9999px -9999px,	    	    	       	
+	    url(../img/about-brochure.png) no-repeat -9999px -9999px,	
+	    url(../img/albatross.png) no-repeat -9999px -9999px,
+	    url(../img/albatross-scene.png) no-repeat -9999px -9999px,
+	    url(../img/crab.png) no-repeat -9999px -9999px;
+}
+
+/* Preloader Page */
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #FFF;
+  background-image: url('../img/happy_ocean_logo1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
