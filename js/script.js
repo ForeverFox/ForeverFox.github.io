@@ -1,5 +1,5 @@
 $(function() {
-/* Preloading Screen */
+/* Preloading Screen 
 	$("#element").introLoader({
 	    animation: {
 	        name: 'preloader',
@@ -12,7 +12,7 @@ $(function() {
 	        }
 	    },    
 	    spinJs: {}   
-	});
+	});*/
 
 
 	$("#mapopen").click(function() {	
