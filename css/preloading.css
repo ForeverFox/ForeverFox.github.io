@@ -1,5 +1,5 @@
 /* Image Preloading for Home Page */
-.preload-images {
+#preload-images {
 	background: url(../img/home-bw.png) no-repeat -9999px -9999px;
 	background: url(../img/home-bw.png) no-repeat -9999px -9999px,
 	    url(../img/happy_ocean_logo1.png) no-repeat -9999px -9999px,	

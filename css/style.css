@@ -109,17 +109,7 @@ a:hover {
     opacity: 0; }
   to {
     opacity: 1; } }
-.home {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center; }
-
-.resources, .albatross, .sealion, .seaturtle, .fish, .whale {
+.home, .resources, .albatross, .sealion, .seaturtle, .fish, .whale {
   position: relative;
   width: 100%;
   margin: 0 auto;
