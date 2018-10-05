@@ -283,6 +283,9 @@ a:hover {
   background-image: url(../img/about-brochure.png); }
 
 /* SCENES */
+.draggable, .droppable {
+  width: 100%; }
+
 .recycling-position {
   grid-column: 1;
   grid-row: 14;
