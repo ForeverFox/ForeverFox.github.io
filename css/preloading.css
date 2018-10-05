@@ -1,5 +1,5 @@
 /* Image Preloading for Home Page */
-.preload-images {
+#preload-images {
 	background: url(../img/home-bw.png) no-repeat -9999px -9999px;
 	background: url(../img/home-bw.png) no-repeat -9999px -9999px,
 	    url(../img/happy_ocean_logo1.png) no-repeat -9999px -9999px,	
@@ -17,15 +17,27 @@
 }
 
 /* Preloader Page */
-.preloader {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: #FFF;
-  background-image: url('../img/happy_ocean_logo1.png');
-  background-repeat: no-repeat;
-  background-position: center;
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	min-height: 480px;
+	z-index: 9999;
+	background-color: #FFF;
+	background-image: url('../img/happy_ocean_logo1.png');
+	background-repeat: no-repeat;
+	background-position: center; /*
+	animation: loadingScreen 1s;
+	animation-delay: 6s;
+	animation-fill-mode: forwards;
+	-webkit-animation: loadingScreen 1s;
+	-webkit-animation-delay: 6s;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes loadingScreen {
+	0% {opacity: 1;}
+	100% {opacity: 0;} */
 }
