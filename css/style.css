@@ -123,7 +123,8 @@ a:hover {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
+  animation-fill-mode: both;
+  overflow: hidden; }
 
 .home {
   background-image: url(../img/home-bw.png); }
@@ -321,10 +322,12 @@ a:hover {
 
 .trash-straws-position {
   grid-column: 6;
-  grid-row: 14;
+  grid-row: 14; }
+
+#straws {
   cursor: grab; }
 
-.trash-straws-position:active {
+#straws:active {
   cursor: grabbing; }
 
 /*# sourceMappingURL=style.css.map */

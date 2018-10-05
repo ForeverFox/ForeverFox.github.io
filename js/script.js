@@ -1,20 +1,4 @@
-$(function() {
-/* Preloading Screen 
-	$("#element").introLoader({
-	    animation: {
-	        name: 'preloader',
-	        options: {
-	            exitFx:'fadeOut',
-	            ease: "linear",
-	            style: 'light',
-	            delayBefore: 4000, //delay time in milliseconds
-	            exitTime: 1000
-	        }
-	    },    
-	    spinJs: {}   
-	});*/
-
-
+$("document").ready(function() {
 	$("#mapopen").click(function() {	
 		$("#mapNav").animate({
 			width: "100%",
