@@ -11,8 +11,9 @@
 
 	<body>
 		<main class="albatross">
-			<div id="popup" title="Clean Ocean...Happy Ocean!">
-				<p>Help bring color back to Happy Ocean by cleaning up the beach! Click on pieces trash you find and drag them to the recycling bins.</p>
+			<div id="popup" title="Uh-oh!">
+				<p>Help bring color back to Happy Ocean by cleaning up the beach! Click on pieces trash you find and drag them to your Happy Ocean tote bag for recycling.</p>
+				<p><em>A happy ocean is a clean ocean!</em></p>
 			</div>			
 			<nav id="mapopen" class="nav" onclick="openNav()">
 				<figure id="open" class="map-icon">
@@ -43,18 +44,33 @@
 					<li><a href="javascript:void(0)" id="revealmap">BACK TO MAP</a></li>
 				</ul>	
 			</div>
-			<figure id="recyclingBin" class="recycling-position">
-				<img src="img/recycling-bins.png" alt="Recycling bins">
-			</figure>
-			<figure id="trashStraws" class="trash-straws-position">
+			<section class="scene">
+				<figure id="recyclingBin" class="tote-position">
+					<img src="img/tote.png" alt="Happy Ocean Tote Bag">
+				</figure>
+				<figure class="albatross-position">
+					<img id="albatross" src="img/albatross.png" alt="Laysan Albatross">
+				</figure>
+				<figure id="crab" class="crab-position">
+					<img src="img/crab.png" alt="Crab holding boombox">
+				</figure>			
+							
+				<figure id="trashStraws" class="trash-straws-position">
 				<img id="straws" src="img/trash-straws.png" alt="plastic straws">
-			</figure>
-			<figure class="albatross-position">
-				<img id="albatross" src="img/albatross.png" alt="Laysan Albatross">
-			</figure>
-			<figure id="crab" class="crab-position">
-				<img src="img/crab.png" alt="Crab holding boombox">
-			</figure>			
+				</figure>
+
+				<figure id="beachball" class="beachball-position">
+				<img src="img/beachball.png" alt="beach ball">
+				</figure>
+
+				<figure id="shell1" class="shell-1-position">
+				<img src="img/shells-1.png" alt="shells">
+				</figure>
+
+				<figure id="shell2" class="shell-2-position">
+				<img src="img/shells-2.png" alt="shell">
+				</figure>
+			</section>							
 		</main>	
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 	    
