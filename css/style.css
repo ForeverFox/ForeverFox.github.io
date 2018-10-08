@@ -305,7 +305,7 @@ main {
 
 .albatross-position {
   position: absolute;
-  bottom: 40px;
+  bottom: 80px;
   right: 40px;
   width: 360px; }
   @media screen and (min-width: 1440px) {
@@ -320,7 +320,7 @@ main {
 
 .crab-position {
   position: absolute;
-  bottom: 540px;
+  bottom: 580px;
   right: 120px;
   width: 100px; }
   @media screen and (min-width: 1680px) {
@@ -335,8 +335,8 @@ main {
 
 .beachball-position {
   position: absolute;
-  bottom: 120px;
-  right: 600px;
+  bottom: 200px;
+  right: 640px;
   width: 250px; }
   @media screen and (min-width: 1680px) {
     .beachball-position {
@@ -347,13 +347,13 @@ main {
 
 .shell-1-position {
   position: absolute;
-  bottom: 80px;
-  left: 580px;
+  bottom: 120px;
+  left: 500px;
   width: 220px; }
 
 .shell-2-position {
   position: absolute;
-  right: 40px;
+  right: 80px;
   bottom: 80px;
   width: 160px; }
 
