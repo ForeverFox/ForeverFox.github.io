@@ -139,7 +139,7 @@ function plastics() {
 function styrofoam() {
     $("#shell3").hide();     
     $("#trashStyrofoam").fadeOut(500);
-    $("#shell3").attr("src", "img/shells-3-colored.png");
+    $("#shell3").attr("src", "img/conch-colored.png");
     $("#shell3").fadeIn(1000);       
 }
 
