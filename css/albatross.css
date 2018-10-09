@@ -180,7 +180,7 @@
 }
 
 .albatross-bg-2 {
-  background-image: url(../img/albatross-bg-2.png);
+  background-image: url(../img/albatross-scene-colored.png);
   background-repeat: no-repeat;
   animation: background 5s;
   animation-fill-mode: forwards;    
