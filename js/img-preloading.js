@@ -1,12 +1,12 @@
 $(function() {
-  $("#preload-images").waitForImages(function() {
-      console.log("All images loaded.");
-      
-      $("#preloader").fadeOut("2000", function() {
-      $(this).remove();
-      }); 
-
-      $("#home").fadeIn("3000");
-      $("#preload-images").remove();
-    });
+	$("#preload-images").waitForImages({
+	    finished: function() {
+	        console.log("All images loaded.");
+			$("#preloader").delay(4000).fadeOut(500);
+		},
+	    each: function() {
+       		console.log("Image loaded.")
+	    },
+	    waitForAll: true
+	});
 });
