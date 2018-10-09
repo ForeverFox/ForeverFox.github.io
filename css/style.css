@@ -113,7 +113,7 @@ main {
   grid-template-rows: repeat(16, 1fr);
   overflow: hidden; }
 
-.home, .resources, .albatross, .sealion, .seaturtle, .fish, .whale {
+.home, .resources, .shop, .albatross, .sealion, .seaturtle, .fish, .whale {
   position: relative;
   width: 100%;
   margin: 0 auto;
@@ -295,81 +295,5 @@ main {
   margin: 0 auto;
   grid-column: 1 / -1;
   grid-row: 1; }
-
-.tote-position {
-  width: 263px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin: 0 0 3rem 3rem; }
-
-.albatross-position {
-  position: absolute;
-  bottom: 80px;
-  right: 40px;
-  width: 360px; }
-  @media screen and (min-width: 1440px) {
-    .albatross-position {
-      width: 420px; } }
-  @media screen and (min-width: 1680px) {
-    .albatross-position {
-      width: 500px; } }
-  @media screen and (min-width: 1920px) {
-    .albatross-position {
-      width: 572px; } }
-
-.crab-position {
-  position: absolute;
-  bottom: 580px;
-  right: 120px;
-  width: 100px; }
-  @media screen and (min-width: 1680px) {
-    .crab-position {
-      width: 125px; } }
-  @media screen and (min-width: 1920px) {
-    .crab-position {
-      width: 163px; } }
-
-.recycling-position img, .albatross-position img, .crab-position img, .beachball-position img {
-  max-width: 100%; }
-
-.beachball-position {
-  position: absolute;
-  bottom: 200px;
-  right: 640px;
-  width: 250px; }
-  @media screen and (min-width: 1680px) {
-    .beachball-position {
-      width: 320px; } }
-  @media screen and (min-width: 1920px) {
-    .beachball-position {
-      width: 374px; } }
-
-.shell-1-position {
-  position: absolute;
-  bottom: 120px;
-  left: 500px;
-  width: 220px; }
-
-.shell-2-position {
-  position: absolute;
-  right: 80px;
-  bottom: 80px;
-  width: 160px; }
-
-.trash-straws-position {
-  position: absolute;
-  top: 50%;
-  left: 50%; }
-
-#straws {
-  cursor: grab;
-  cursor: -moz-grab;
-  cursor: -webkit-grab; }
-
-#straws:active {
-  cursor: grabbing;
-  cursor: -moz-grabbing;
-  cursor: -webkit-grabbing; }
 
 /*# sourceMappingURL=style.css.map */
