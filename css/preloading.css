@@ -29,6 +29,8 @@
 	    url(../img/albatross-scene.png) no-repeat -9999px -9999px,
 	    url(../img/albatross-scene-colored.png) no-repeat -9999px -9999px,	    
 	    url(../img/crab.png) no-repeat -9999px -9999px,
+	    url(../img/conch.png) no-repeat -9999px -9999px,
+	    url(../img/conch-colored.png) no-repeat -9999px -9999px,	    	    
 	    url(../img/crab-colored.png) no-repeat -9999px -9999px;
 }
 
@@ -42,7 +44,8 @@
 	min-height: 480px;
 	z-index: 9999;
 	background-color: #FFF;
-	background-image: url('../img/preload-logo.png');
+	background-image: url('../img/preload-page.png');
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 }
