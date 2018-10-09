@@ -1,8 +1,9 @@
 /* Image Preloading for Home Page */
 #preload-images {
-	background: url(../img/home-bw.png) no-repeat -9999px -9999px;
-	background: url(../img/home-bw.png) no-repeat -9999px -9999px,
-	    url(../img/happy_ocean_logo1.png) no-repeat -9999px -9999px,	
+	background: url(../img/preload-page-no-logo.png) no-repeat -9999px -9999px;
+	background: url(../img/preload-page-no-logo.png) no-repeat -9999px -9999px,
+	    url(../img/home-bw.png) no-repeat -9999px -9999px,	
+	    url(../img/happy_ocean-loading.gif) no-repeat -9999px -9999px,	
 	    url(../img/map.png) no-repeat -9999px -9999px,
 	    url(../img/map-icon.png) no-repeat -9999px -9999px,	
 	    url(../img/mascots.png) no-repeat -9999px -9999px,	 
