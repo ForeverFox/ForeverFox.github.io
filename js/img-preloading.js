@@ -3,7 +3,7 @@ $(function() {
 	    finished: function() {
 	        console.log("All images loaded.");
 			$("#preloader").delay(4000).fadeOut(500);
-			$("#home").addClass("loaded");
+			$("#home").addClass("loaded");			
 		},
 	    each: function() {
        		console.log("Image loaded.")
@@ -11,9 +11,7 @@ $(function() {
 	    waitForAll: true
 	});
 
-	if ($("#home").hasClass("loaded")) {
-		$("#fish").show();
-	} else {
-		return false;
-	}
+	$("#fish").delay(4500).animate({
+		left: "300px"
+	}, 3000)	
 });

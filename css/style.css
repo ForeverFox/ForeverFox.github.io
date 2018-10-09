@@ -208,14 +208,14 @@ main {
   position: absolute;
   top: 280px;
   left: -1200px;
-  animation: skateboard 3s;
-  animation-delay: 2s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-  -webkit-animation: skateboard 3s;
-  -webkit-animation-delay: 2s;
-  -webkit-animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards; }
+  /*  animation: skateboard 3s;
+    animation-delay: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    -webkit-animation: skateboard 3s;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: forwards; */ }
   @media screen and (min-width: 1440px) {
     #fish {
       top: 360px; } }
@@ -230,11 +230,10 @@ main {
 #fish img, .fish img {
   max-width: 100%; }
 
-@keyframes skateboard {
-  from {
-    left: -1200px; }
-  to {
-    left: 300px; } }
+/* @keyframes skateboard {
+  from {left: -1200px;}
+  to {left: 300px;} 
+} */
 /* MAP NAV */
 .sidenav, .brochure {
   position: relative;
