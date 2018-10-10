@@ -179,6 +179,11 @@ main {
 .mascots img {
   max-width: 100%; }
 
+.rightplacement {
+  position: absolute;
+  right: 80px;
+  bottom: 40px; }
+
 .logo {
   position: absolute;
   width: 375px;
