@@ -16,7 +16,7 @@ $( function() {
   // Getter
   var hide = $( "#popup" ).dialog( "option", "hide" );
   // Setter
-  $( "#popup" ).dialog( "option", "hide", { effect: "fadeOut", duration: 1000 } );  
+  $( "#popup" ).dialog( "option", "hide", { effect: "fadeOut", duration: 1000} );  
 
   $("#popup").dialog({   
     width: 500

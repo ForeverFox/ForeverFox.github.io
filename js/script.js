@@ -47,5 +47,20 @@ $("document").ready(function() {
 		}, 100)
   		$("#open").show("fast"); 	
 	});	
-});	
+
+// Turtle Animation
+var turtleAnimation;
+
+function turtleChange() {
+	turtleAnimation = setTimeout(turtleGif, 4000);		
+}
+
+function turtleGif() {
+    $("#turtleAnimation").attr("src", "img/turtle.gif"); 
+}
+
+turtleChange();
+});
+
+
 

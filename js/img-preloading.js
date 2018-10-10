@@ -1,4 +1,5 @@
-$(function() {
+$(function() {	
+
 	$("#preload-images").waitForImages({
 	    finished: function() {
 	        console.log("All images loaded.");
@@ -15,3 +16,4 @@ $(function() {
 		left: "300px"
 	}, 3000)	
 });
+
