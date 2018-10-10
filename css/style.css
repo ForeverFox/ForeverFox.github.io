@@ -186,9 +186,9 @@ main {
 
 .turtle-animation {
   position: absolute;
-  top: 527px;
+  top: 520px;
   right: 720px;
-  width: 200px; }
+  width: 180px; }
 
 .turtle-animation img {
   max-width: 100%; }
