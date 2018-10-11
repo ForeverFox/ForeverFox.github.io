@@ -212,9 +212,11 @@ main {
       width: 120px;
       top: 355px;
       right: 600px; } }
+  @media screen and (min-width: 1025px) and (max-width: 1280px) {
+    .turtle-animation {
+      right: 700px; } }
   @media screen and (min-width: 1366px) {
     .turtle-animation {
-      width: 120px;
       right: 720px; } }
   @media screen and (min-width: 1440px) {
     .turtle-animation {
