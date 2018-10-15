@@ -60,6 +60,25 @@ function turtleGif() {
 }
 
 turtleChange();
+
+
+//Map areas
+	$("#albatrossMapNav").hover(function() {
+		$("#albatrossOnMap").toggleClass("map-lit");
+	});
+
+	$("#albatrossOnMap").hover(function() {
+		$("#albatrossOnMap").toggleClass("map-lit");
+	});
+
+	$("#sealionMapNav").hover(function() {
+		$("#sealionOnMap").toggleClass("map-lit");
+	});		
+
+	$("#sealionOnMap").hover(function() {
+		$("#sealionOnMap").toggleClass("map-lit");
+	});		
+
 });
 
 
