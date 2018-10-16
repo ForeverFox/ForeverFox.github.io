@@ -107,9 +107,6 @@ main {
   height: 100%;
   margin: 0 auto; }
 
-.home {
-  overflow: hidden; }
-
 .home, .resources, .shop, .albatross, .sealion, .seaturtle, .fish, .whale {
   position: relative;
   width: 100%;
@@ -353,7 +350,7 @@ main {
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-position: center;
   overflow-x: hidden;
   transition: 0.5s; }
@@ -456,7 +453,7 @@ main {
       right: 140px; } }
   @media screen and (min-width: 1920px) {
     .map-list {
-      top: 180px;
+      top: 120px;
       right: 170px; } }
 
 #aboutlist {
@@ -523,7 +520,7 @@ main {
       right: 105px; } }
   @media screen and (min-width: 1920px) {
     #closebtn, #aboutclosebtn {
-      top: 135px;
+      top: 75px;
       right: 115px; } }
 
 .brochure {
