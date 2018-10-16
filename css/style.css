@@ -308,22 +308,30 @@ main {
   @media screen and (min-width: 1024px) {
     #fish {
       width: 107px;
-      bottom: 50%;
-      transform: translateY(-50%); } }
+      top: 42%;
+      transform: translateY(-42%); } }
   @media screen and (min-width: 1366px) {
     #fish {
-      width: 142px; } }
+      width: 142px;
+      top: 58%;
+      transform: translateY(-58%); } }
   @media screen and (min-width: 1440px) {
     #fish {
       top: 360px;
-      width: 150px; } }
+      width: 150px;
+      top: 53%;
+      transform: translateY(-53%); } }
   @media screen and (min-width: 1680px) {
     #fish {
-      width: 175px; } }
+      width: 175px;
+      top: 50%;
+      transform: translateY(-50%); } }
   @media screen and (min-width: 1920px) {
     #fish {
       width: 200px;
-      top: 450px; } }
+      height: 245px;
+      top: 58%;
+      transform: translateY(-58%); } }
 
 #fish img, .fish img {
   max-width: 100%; }
