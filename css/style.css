@@ -297,7 +297,6 @@ main {
 #fish {
   position: absolute;
   left: -1200px;
-  border: 1px solid red;
   /*  animation: skateboard 3s;
     animation-delay: 2s;
     animation-timing-function: ease;
