@@ -108,9 +108,6 @@ main {
   margin: 0 auto; }
 
 .home {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
   overflow: hidden; }
 
 .home, .resources, .shop, .albatross, .sealion, .seaturtle, .fish, .whale {
@@ -150,6 +147,21 @@ main {
   right: 15%;
   bottom: 0;
   margin-bottom: 50px; }
+  @media screen and (min-width: 1024px) {
+    .infoboard {
+      width: 280px; } }
+  @media screen and (min-width: 1366px) {
+    .infoboard {
+      width: 374px; } }
+  @media screen and (min-width: 1440px) {
+    .infoboard {
+      width: 394px; } }
+  @media screen and (min-width: 1680px) {
+    .infoboard {
+      width: 459px; } }
+  @media screen and (min-width: 1920px) {
+    .infoboard {
+      width: 525px; } }
 
 .infoboard img {
   max-width: 100%; }
@@ -173,20 +185,27 @@ main {
 .centered {
   position: relative;
   width: 100%;
-  margin: 0 auto;
-  grid-column: 9;
-  grid-row: 4; }
+  height: 100%;
+  margin: 0 auto; }
 
 .mascots {
-  position: relative;
-  width: 768px;
-  margin: 0 auto; }
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -10%); }
+  @media screen and (min-width: 1024px) {
+    .mascots {
+      width: 640px;
+      height: auto; } }
+  @media screen and (min-width: 1366px) {
+    .mascots {
+      width: 854px; } }
   @media screen and (min-width: 1440px) {
     .mascots {
-      width: 960px; } }
+      width: 900px; } }
   @media screen and (min-width: 1680px) {
     .mascots {
-      width: 1024px; } }
+      width: 1050px; } }
   @media screen and (min-width: 1920px) {
     .mascots {
       width: 1200px; } }
@@ -216,39 +235,34 @@ main {
   max-width: 100%; }
 
 .turtle-animation {
-  position: absolute;
-  top: 520px;
-  right: 720px;
-  width: 180px; }
+  position: absolute; }
   @media screen and (min-width: 1024px) {
     .turtle-animation {
-      width: 120px;
-      top: 355px;
-      right: 600px; } }
-  @media screen and (min-width: 1025px) and (max-width: 1365px) {
-    .turtle-animation {
-      right: 700px; } }
+      width: 96px;
+      bottom: 55%;
+      right: 35%;
+      transform: translate(-35%, 55%); } }
   @media screen and (min-width: 1366px) {
     .turtle-animation {
-      right: 720px; } }
+      right: 128px;
+      bottom: 40%;
+      right: 65%;
+      transform: translate(-65%, 40%); } }
   @media screen and (min-width: 1440px) {
     .turtle-animation {
-      width: 130px;
+      width: 135px;
       top: 425px;
       right: 530px; } }
   @media screen and (min-width: 1680px) {
     .turtle-animation {
-      width: 180px;
       top: 470px;
-      right: 625px; } }
+      right: 625px;
+      width: 158px; } }
   @media screen and (min-width: 1920px) {
     .turtle-animation {
+      width: 180px;
       top: 530px;
       right: 720px; } }
-  @media screen and (min-width: 2800px) {
-    .turtle-animation {
-      top: 670px;
-      right: 1200px; } }
 
 .turtle-animation img {
   max-width: 100%; }
@@ -278,10 +292,9 @@ main {
   max-width: 100%; }
 
 #fish {
-  width: 150px;
   position: absolute;
-  top: 280px;
   left: -1200px;
+  border: 1px solid red;
   /*  animation: skateboard 3s;
     animation-delay: 2s;
     animation-timing-function: ease;
@@ -292,14 +305,19 @@ main {
     -webkit-animation-fill-mode: forwards; */ }
   @media screen and (min-width: 1024px) {
     #fish {
-      width: 120px; } }
+      width: 107px;
+      bottom: 50%;
+      transform: translateY(-50%); } }
+  @media screen and (min-width: 1366px) {
+    #fish {
+      width: 142px; } }
   @media screen and (min-width: 1440px) {
     #fish {
       top: 360px;
       width: 150px; } }
   @media screen and (min-width: 1680px) {
     #fish {
-      width: 180px; } }
+      width: 175px; } }
   @media screen and (min-width: 1920px) {
     #fish {
       width: 200px;
