@@ -244,25 +244,28 @@ main {
       transform: translate(-35%, 55%); } }
   @media screen and (min-width: 1366px) {
     .turtle-animation {
-      right: 128px;
-      bottom: 40%;
-      right: 65%;
-      transform: translate(-65%, 40%); } }
+      width: 128px;
+      bottom: 38%;
+      right: 35%;
+      transform: translate(-35%, 38%); } }
   @media screen and (min-width: 1440px) {
     .turtle-animation {
       width: 135px;
-      top: 425px;
-      right: 530px; } }
+      bottom: 45%;
+      right: 35%;
+      transform: translate(-35%, 45%); } }
   @media screen and (min-width: 1680px) {
     .turtle-animation {
-      top: 470px;
-      right: 625px;
-      width: 158px; } }
+      width: 158px;
+      bottom: 47%;
+      right: 35%;
+      transform: translate(-35%, 47%); } }
   @media screen and (min-width: 1920px) {
     .turtle-animation {
       width: 180px;
-      top: 530px;
-      right: 720px; } }
+      bottom: 39%;
+      right: 35%;
+      transform: translate(-35%, 39%); } }
 
 .turtle-animation img {
   max-width: 100%; }
