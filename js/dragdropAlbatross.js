@@ -55,7 +55,6 @@ function net() {
     $("#shell1").fadeIn(1000);       
 }
 
-
 function sixPack() {     
     $("#shell2").hide(); 
     $("#trashSixPack").fadeOut(500);

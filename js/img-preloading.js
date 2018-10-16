@@ -13,7 +13,7 @@ $(function() {
 	});
 
 	$("#fish").delay(4500).animate({
-		left: "300px"
+		left: "40%"
 	}, 3000)	
 });
 
