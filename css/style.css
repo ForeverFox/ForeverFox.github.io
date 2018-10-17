@@ -363,259 +363,309 @@ main {
     .sidenav, .brochure {
       background-size: cover; } }
 
-.albatross-map, .sealion-map, .seaturtle-map, .fish-map, .whale-map, .home-map, .info-map, .shop-map, .secret-map {
+/*.albatross-map, .sealion-map, .seaturtle-map, .fish-map, .whale-map, .home-map, .info-map, .shop-map, .secret-map {
   width: 100px;
   height: 100px;
-  position: absolute; }
+  position: absolute;  
+}
 
 .albatross-map {
-  /*  border: 1px solid red; */ }
-  @media screen and (min-width: 1024px) {
-    .albatross-map {
+  border: 1px solid red; 
+
+    @include laptop {
       top: 325px;
       left: 510px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .albatross-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 320px;
-      left: 680px; } }
-  @media screen and (min-width: 1440px) {
-    .albatross-map {
+      left: 680px;
+    }
+
+    @include macbook {
       top: 380px;
       left: 720px;
       height: 60px;
-      width: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .albatross-map {
+      width: 60px;
+    }
+
+    @include fullscreen {
       top: 445px;
       left: 840px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .albatross-map {
+      height: 75px;
+    }
+
+    @include large-display {
       top: 435px;
-      left: 950px;
+      left: 950px; 
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+    }
+}
 
 .sealion-map {
-  /*  border: 1px solid blue; */ }
-  @media screen and (min-width: 1024px) {
-    .sealion-map {
+  border: 1px solid blue; 
+
+    @include laptop {
       top: 250px;
       left: 625px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .sealion-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 225px;
-      left: 830px; } }
-  @media screen and (min-width: 1440px) {
-    .sealion-map {
+      left: 830px;
+
+    }
+
+    @include macbook {
       top: 265px;
       left: 870px;
       width: 60px;
-      height: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .sealion-map {
+      height: 60px;
+    }
+
+    @include fullscreen {
       top: 320px;
       left: 1020px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .sealion-map {
+      height: 75px;
+    }
+
+    @include large-display {
       top: 290px;
       left: 1160px;
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+    }
+}
 
 .seaturtle-map {
-  /*  border: 1px solid green; */ }
-  @media screen and (min-width: 1024px) {
-    .seaturtle-map {
+border: 1px solid green; 
+
+    @include laptop {
       top: 250px;
       left: 140px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .seaturtle-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 225px;
-      left: 195px; } }
-  @media screen and (min-width: 1440px) {
-    .seaturtle-map {
+      left: 195px;
+    }
+
+    @include macbook {
       top: 265px;
       left: 200px;
       width: 60px;
-      height: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .seaturtle-map {
+      height: 60px;
+    }
+
+    @include fullscreen {
       top: 310px;
       left: 230px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .seaturtle-map {
+      height: 75px;
+    }
+
+    @include large-display {
       top: 290px;
       left: 255px;
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+    }
+}
 
 .fish-map {
-  /*  border: 1px solid black; */ }
-  @media screen and (min-width: 1024px) {
-    .fish-map {
+border: 1px solid black; 
+
+    @include laptop {
       top: 335px;
       left: 270px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .fish-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 330px;
-      left: 370px; } }
-  @media screen and (min-width: 1440px) {
-    .fish-map {
+      left: 370px;
+    }
+
+    @include macbook {
       top: 390px;
       left: 390px;
       height: 60px;
-      width: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .fish-map {
+      width: 60px;
+    }
+
+    @include fullscreen {
       top: 450px;
       left: 450px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .fish-map {
+      height: 75px;
+    }
+
+    @include large-display {
       top: 450px;
-      left: 500px;
+      left: 500px; 
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+    }
+}
+
 
 .whale-map {
-  /*  border: 1px solid purple; */ }
-  @media screen and (min-width: 1024px) {
-    .whale-map {
+border: 1px solid purple; 
+
+    @include laptop {
       top: 140px;
       left: 420px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .whale-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 70px;
-      left: 575px; } }
-  @media screen and (min-width: 1440px) {
-    .whale-map {
+      left: 575px;
+    }
+
+    @include macbook {
       top: 115px;
       left: 600px;
       height: 60px;
-      width: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .whale-map {
+      width: 60px;
+    }
+
+    @include fullscreen {
       top: 120px;
       left: 700px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .whale-map {
+      height: 75px;
+    }
+
+    @include large-display {
       top: 80px;
-      left: 800px;
+      left: 800px; 
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+    }
+}
 
 .home-map {
-  /*  border: 1px solid orange; */ }
-  @media screen and (min-width: 1024px) {
-    .home-map {
+border: 1px solid orange; 
+
+    @include laptop {
       top: 420px;
       left: 380px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .home-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 440px;
-      left: 510px; } }
-  @media screen and (min-width: 1440px) {
-    .home-map {
+      left: 510px;
+    }
+
+    @include macbook {
       top: 500px;
       left: 535px;
       height: 60px;
-      width: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .home-map {
+      width: 60px;
+    }
+
+    @include fullscreen {
       top: 590px;
       left: 625px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .home-map {
+      height: 75px;
+    }
+
+    @include large-display {
       top: 600px;
-      left: 705px;
+      left: 705px; 
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+    }
+}
 
 .info-map {
-  /*  border: 1px solid gray; */ }
-  @media screen and (min-width: 1024px) {
-    .info-map {
+border: 1px solid gray; 
+
+    @include laptop {
       top: 430px;
       left: 293px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .info-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 452px;
-      left: 397px; } }
-  @media screen and (min-width: 1440px) {
-    .info-map {
+      left: 397px;
+    }
+
+    @include macbook {
       top: 520px;
       left: 415px;
       height: 60px;
-      width: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .info-map {
+      width: 60px;
+    }
+
+    @include fullscreen {
       top: 600px;
       left: 482px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .info-map {
+      height: 75px;
+    }
+
+    @include large-display {
       top: 625px;
-      left: 545px;
+      left: 545px; 
       width: 100px;
-      height: 100px; } }
+      height: 100px;
+    }
+}
 
 .shop-map {
-  /*  border: 1px solid aqua; */ }
-  @media screen and (min-width: 1024px) {
-    .shop-map {
+ border: 1px solid aqua; 
+
+    @include laptop {
       top: 400px;
       left: 470px;
       width: 50px;
-      height: 50px; } }
-  @media screen and (min-width: 1366px) {
-    .shop-map {
+      height: 50px;
+    }
+
+    @include desktop {
       top: 415px;
-      left: 635px; } }
-  @media screen and (min-width: 1440px) {
-    .shop-map {
+      left: 635px;
+    }
+
+    @include macbook {
       top: 480px;
       left: 670px;
       height: 60px;
-      width: 60px; } }
-  @media screen and (min-width: 1680px) {
-    .shop-map {
+      width: 60px;
+    }
+
+    @include fullscreen {
       top: 555px;
       left: 775px;
       width: 75px;
-      height: 75px; } }
-  @media screen and (min-width: 1920px) {
-    .shop-map {
-      top: 570px;
-      left: 880px;
-      width: 100px;
-      height: 100px; } }
+      height: 75px;
+    }
 
+    @include large-display {
+      top: 570px;
+      left: 880px; 
+      width: 100px;
+      height: 100px;
+    }
+} */
 .map-lit {
   background-color: yellow;
   opacity: 0.3;
