@@ -181,13 +181,13 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
 
 .mascots {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -10%); }
+  margin-top: 30px; }
   @media screen and (min-width: 1024px) {
     .mascots {
       width: 640px;
@@ -197,10 +197,12 @@ main {
       width: 854px; } }
   @media screen and (min-width: 1440px) {
     .mascots {
-      width: 900px; } }
+      width: 900px;
+      margin-top: 35px; } }
   @media screen and (min-width: 1680px) {
     .mascots {
-      width: 1050px; } }
+      width: 1050px;
+      margin-top: 30px; } }
   @media screen and (min-width: 1920px) {
     .mascots {
       width: 1200px; } }
