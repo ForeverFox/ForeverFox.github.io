@@ -1096,7 +1096,8 @@ main {
   bottom: 20px;
   right: 25px;
   color: darkgreen;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 1.5rem; }
 
 .albatross-bg-2 {
   background-image: url(../img/albatross-scene-colored.png);
