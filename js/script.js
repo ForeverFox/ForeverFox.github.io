@@ -62,6 +62,19 @@ function turtleGif() {
 turtleChange();
 
 
+// Otter Welcome PopUp
+var popUpOtter1;
+
+function popUp1() {
+	popUpOtter1 = setTimeout(popUpOtter1Pop, 12000);
+}
+
+function popUpOtter1Pop() {
+	$("#otterPopup").fadeIn("slow");
+}
+
+popUp1();
+
 //Map areas
 	$("#albatrossMapNav").hover(function() {
 		$("#albatrossOnMap").toggleClass("map-lit");
@@ -127,6 +140,10 @@ turtleChange();
 	$("#shopOnMap").hover(function() {
 		$("#shopOnMap").toggleClass("map-lit");
 	});	
+
+	$("#popupOtter1-closebtn").click(function() {
+  		$("#otterPopup").fadeOut("fast");
+	});		
 
 	$("#popupAlbatross-closebtn").click(function() {
   		$("#popupAlbatross").fadeOut("fast");
