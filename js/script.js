@@ -77,7 +77,56 @@ turtleChange();
 
 	$("#sealionOnMap").hover(function() {
 		$("#sealionOnMap").toggleClass("map-lit");
+	});	
+
+	$("#seaturtleMapNav").hover(function() {
+		$("#seaturtleOnMap").toggleClass("map-lit");
+	});
+
+	$("#seaturtleOnMap").hover(function() {
+		$("#seaturtleOnMap").toggleClass("map-lit");
+	});	
+
+
+	$("#fishMapNav").hover(function() {
+		$("#fishOnMap").toggleClass("map-lit");
+	});
+
+	$("#fishOnMap").hover(function() {
+		$("#fishOnMap").toggleClass("map-lit");
+	});	
+
+	$("#whaleMapNav").hover(function() {
+		$("#whaleOnMap").toggleClass("map-lit");
+	});
+
+	$("#whaleOnMap").hover(function() {
+		$("#whaleOnMap").toggleClass("map-lit");
+	});	
+
+	$("#homeMapNav").hover(function() {
+		$("#homeOnMap").toggleClass("map-lit");
+	});
+
+	$("#homeOnMap").hover(function() {
+		$("#homeOnMap").toggleClass("map-lit");
 	});		
+
+	$("#infoMapNav").hover(function() {
+		$("#infoOnMap").toggleClass("map-lit");
+	});
+
+	$("#infoOnMap").hover(function() {
+		$("#infoOnMap").toggleClass("map-lit");
+	});			
+
+	$("#shopMapNav").hover(function() {
+		$("#shopOnMap").toggleClass("map-lit");
+	});
+
+	$("#shopOnMap").hover(function() {
+		$("#shopOnMap").toggleClass("map-lit");
+	});									
 
 });
 
