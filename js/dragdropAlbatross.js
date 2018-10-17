@@ -19,7 +19,7 @@ $( function() {
   $( "#popup" ).dialog( "option", "hide", { effect: "fadeOut", duration: 1000} );  
 
   $("#popup").dialog({   
-    width: 500
+    width: 400
   });
   // Getter
   var width = $( ".selector" ).dialog( "option", "width" );
@@ -155,6 +155,7 @@ function background() {
       if ($("#styrofoam").hasClass("trashDropped") && $("#plastics").hasClass("trashDropped") && $("#sixPack").hasClass("trashDropped") && $("#net").hasClass("trashDropped") && $("#wrappers").hasClass("trashDropped") && $("#straws").hasClass("trashDropped")) {
         console.log("All dropped!");
         background();
+        $("#allDoneAlbatross").fadeIn();
       }       
     }
   });

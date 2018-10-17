@@ -10,6 +10,7 @@
 	</head>
 	<body>		
 		<main id="home" class="home">
+<!-- NAVIGATION -->				
 			<nav id="mapopen" class="nav">
 				<figure id="open" class="map-icon">
 					<img src="img/map-icon.png" alt="map icon">
@@ -18,16 +19,16 @@
 			<div id="mapNav" class="sidenav">
 				<a href="javascript:void(0)" id="closebtn">&times;</a>
 				<ul id="list" class="map-list">
-					<li><a href="home.html">HOME</a></li>
+					<li id="homeMapNav"><a href="home.html">HOME</a></li>
 					<li id="about"><a href="javascript:void(0)">ABOUT</a></li>
-					<li><a href="info.html">INFO</a></li>
-					<li><a href="shop.html">SHOP</a></li>
+					<li id="infoMapNav"><a href="info.html">INFO</a></li>
+					<li id="shopMapNav"><a href="shop.html">SHOP</a></li>
 					<p>BEACH CLEANUP</p>
 					<li id="albatrossMapNav"><a href="albatross.html">ALBATROSS</a></li>
 					<li id="sealionMapNav"><a href="#">SEA LION</a></li>
-					<li><a href="#">SEA TURTLE</a></li>
-					<li><a href="#">FISH</a></li>
-					<li><a href="#">WHALE</a></li>
+					<li id="seaturtleMapNav"><a href="#">SEA TURTLE</a></li>
+					<li id="fishMapNav"><a href="#">FISH</a></li>
+					<li id="whaleMapNav"><a href="#">WHALE</a></li>
 					<br>
 					<p>(You can also click or tap the icons on the map to navigate.)</p>
 				</ul>	
@@ -40,33 +41,27 @@
 				<div id="sealionOnMap" class="sealion-map">
 				</div>
 			</a>						
-			</div>
 			<a href="#">
 				<div id="seaturtleOnMap" class="seaturtle-map">
 				</div>
 			</a>						
-			</div>
 			<a href="#">
 				<div id="fishOnMap" class="fish-map">
 				</div>
 			</a>						
-			</div>	
 			<a href="#">
 				<div id="whaleOnMap" class="whale-map">
 				</div>
 			</a>						
-			</div>
 			<a href="shop.html">
 				<div id="shopOnMap" class="shop-map">
 				</div>
 			</a>						
-			</div>
 			<a href="info.html">
 				<div id="infoOnMap" class="info-map">
 				</div>
 			</a>						
-			</div>
-			<a href="index.html">
+			<a href="home.html">
 				<div id="homeOnMap" class="home-map">
 				</div>
 			</a>						
@@ -80,14 +75,15 @@
 				</ul>	
 			</div>				
 			<section class="centered">
-				<figure>
-					<img class="mascots" src="img/mascots.png" alt="mascots">
+				<figure class="mascots">
+					<img src="img/mascots.png" alt="mascots">
 					<!-- <img class="logo" src="img/happy_ocean_logo1.png" alt="Happy Ocean logo"> -->
 				</figure>
 				<figure id="fish">
 					<img src="img/fish.png" alt="Sergeant Major Fish on a Skateboard">
 				</figure>				
 			</section>
+
 			<figure class="turtle-animation">
 					<img id="turtleAnimation" src="img/turtle-still.png" alt="animated turtle">
 			</figure>				

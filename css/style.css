@@ -751,6 +751,36 @@ main {
 .scene img {
   max-width: 100%; }
 
+.allDone, .popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: auto;
+  background-color: white;
+  z-index: 9999;
+  border: 1px solid black;
+  padding: 2rem; }
+
+.allDone {
+  display: none; }
+
+.allDone a, .popup a {
+  color: black;
+  font-size: 1.5rem; }
+
+#allDoneAlbatross-closebtn, #popupAlbatross-closebtn {
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  color: black; }
+
+.right-side {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem; }
+
 .albatross-position {
   position: absolute;
   bottom: 7%;

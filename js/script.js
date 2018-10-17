@@ -126,7 +126,15 @@ turtleChange();
 
 	$("#shopOnMap").hover(function() {
 		$("#shopOnMap").toggleClass("map-lit");
-	});									
+	});	
+
+	$("#popupAlbatross-closebtn").click(function() {
+  		$("#popupAlbatross").fadeOut("fast");
+	});		
+
+	$("#allDoneAlbatross-closebtn").click(function() {
+  		$("#allDoneAlbatross").fadeOut("fast");
+	});								
 
 });
 
