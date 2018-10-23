@@ -127,14 +127,27 @@ main {
 .home {
   background-image: url(../img/home-page.png); }
 
-.albatross {
-  background-image: url(../img/albatross-scene.png); }
-
 .resources {
   background-image: url(../img/resources.png); }
 
 .shop {
   background-image: url(../img/boardwalk.png); }
+
+.albatross {
+  background-image: url(../img/albatross-scene.png); }
+
+.fish {
+  background-image: url(../img/fish-scene.png); }
+
+.whale {
+  background-image: url(../img/whale-scene.png);
+  background-position: top center; }
+
+.sealion {
+  background-image: url(../img/sealion-scene.png); }
+
+.seaturtle {
+  background-image: url(../img/seaturtle-scene.png); }
 
 .infoboard {
   width: 565px;
@@ -801,6 +814,16 @@ border: 1px solid gray;
 .scene img {
   max-width: 100%; }
 
+.icon {
+  height: 2rem;
+  width: auto; }
+
+.signature {
+  float: right; }
+
+.signature:after {
+  clear: right; }
+
 .allDone, .popup {
   position: absolute;
   top: 50%;
@@ -825,14 +848,24 @@ border: 1px solid gray;
 
 .popup-mascot {
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 45%;
+  top: -50px;
+  left: -175px;
+  width: 400px;
   height: auto; }
 
 .popup-content {
-  width: 50%;
-  float: right; }
+  width: 80%;
+  float: right;
+  padding: 2rem 4rem 4rem 2rem; }
+
+.popup-content-list {
+  list-style-type: none; }
+
+.popup-content-list li a {
+  font-size: 0.95rem; }
+
+.popup-content-list li a:hover {
+  color: #00ced1; }
 
 .popup-content h3 {
   padding-bottom: 0.5rem; }
@@ -844,8 +877,7 @@ border: 1px solid gray;
   padding: 0; }
 
 #otterPopup1 {
-  width: 800px;
-  height: auto; }
+  width: 50%; }
 
 #popupAlbatross, #allDoneAlbatross {
   border: 1px solid black; }

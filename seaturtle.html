@@ -5,11 +5,18 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Happy Ocean</title>
-	    <link rel="stylesheet" href="css/style.css">  
-	    <link rel="stylesheet" href="css/preloading.css">        		       	
+	    <link rel="stylesheet" href="css/style.css">  	    
+  		<link rel="stylesheet" href="css/jquery-ui.css">  
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	</head>
-	<body>		
-		<main id="home" class="home">
+
+	<body>
+		<main class="seaturtle">
+			<div id="popup" title="Uh-oh!">
+				<p>What happened? Help bring color back to Happy Ocean by cleaning up the beach! Click on pieces of trash you find and drag them to your Happy Ocean tote bag.</p> 
+				<p>To play again, click on the <i class="fas fa-recycle"></i> logo!</p>
+				<p><em>A happy ocean is a clean ocean!</em></p>
+			</div>			
 <!-- NAVIGATION -->				
 			<nav id="mapopen" class="nav">
 				<figure id="open" class="map-icon">
@@ -71,31 +78,15 @@
 				<ul id="aboutlist" class="about-list">
 					<li><a href="javascript:void(0)" id="revealmap">BACK TO MAP</a></li>
 				</ul>	
-			</div>				
-			<section class="centered">
-				<figure class="mascots">
-					<img src="img/mascots.png" alt="mascots">
-					<!-- <img class="logo" src="img/happy_ocean_logo1.png" alt="Happy Ocean logo"> -->
-				</figure>
-				<figure id="fish">
-					<img src="img/fish.png" alt="Sergeant Major Fish on a Skateboard">
-				</figure>				
-			</section>
-
-			<figure class="turtle-animation">
-					<img id="turtleAnimation" src="img/turtle-still.png" alt="animated turtle">
-			</figure>				
-			<figure class="rightplacement">
-				<a href="albatross.html">
-					<img src="img/tothebeach.png" alt="To the Beach sign">
-				</a>	
-			</figure>					
+			</div>
+<!-- SCENE -->	
+			<section class="scene">
+			</section>							
 		</main>	
-	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 	
-	    <script src="js/jquery.waitforimages.js"></script>
-		<script src="js/img-preloading.js"></script>
-	  	<script src="js/jquery.ui.touch-punch.min.js"></script>
-	    <script src="js/script.js"></script>		
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/dragdropAlbatross.js"></script>  
 	</body>
 </html>
