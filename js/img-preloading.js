@@ -10,10 +10,6 @@ $(function() {
        		console.log("Image loaded.")
 	    },
 	    waitForAll: true
-	});
-
-	$("#fish").delay(4500).animate({
-		left: "40%"
-	}, 3000)	
+	});	
 });
 

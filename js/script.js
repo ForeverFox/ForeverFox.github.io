@@ -48,34 +48,16 @@ $("document").ready(function() {
   		$("#open").show("fast"); 	
 	});	
 
-// Turtle Animation
-var turtleAnimation;
 
-function turtleChange() {
-	turtleAnimation = setTimeout(turtleGif, 4000);		
-}
-
-function turtleGif() {
-    $("#turtleAnimation").attr("src", "img/turtle.gif"); 
-}
-
-turtleChange();
+	$("#popupOtter1-closebtn").click(function() {
+  		$("#otterPopup").fadeOut("fast");
+  		fishAnimation();
+  		turtleChange();
+	});	
+});
 
 
-// Otter Welcome PopUp
-var popUpOtter1;
-
-function popUp1() {
-	popUpOtter1 = setTimeout(popUpOtter1Pop, 12000);
-}
-
-function popUpOtter1Pop() {
-	$("#otterPopup").fadeIn("slow");
-}
-
-popUp1();
-
-//Map areas
+/* Map areas
 	$("#albatrossMapNav").hover(function() {
 		$("#albatrossOnMap").toggleClass("map-lit");
 	});
@@ -139,10 +121,6 @@ popUp1();
 
 	$("#shopOnMap").hover(function() {
 		$("#shopOnMap").toggleClass("map-lit");
-	});	
-
-	$("#popupOtter1-closebtn").click(function() {
-  		$("#otterPopup").fadeOut("fast");
 	});		
 
 	$("#popupAlbatross-closebtn").click(function() {
@@ -153,7 +131,7 @@ popUp1();
   		$("#allDoneAlbatross").fadeOut("fast");
 	});								
 
-});
+});*/
 
 
 
