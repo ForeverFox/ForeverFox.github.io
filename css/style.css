@@ -350,6 +350,33 @@ main {
   from {left: -1200px;}
   to {left: 300px;} 
 } */
+.pinwheel-animation {
+  position: absolute; }
+  @media screen and (min-width: 1024px) {
+    .pinwheel-animation {
+      width: 101px;
+      top: 55px;
+      right: 30%;
+      transform: translateX(-30%); } }
+  @media screen and (min-width: 1366px) {
+    .pinwheel-animation {
+      width: 135px;
+      top: 62px; } }
+  @media screen and (min-width: 1440px) {
+    .pinwheel-animation {
+      width: 142px;
+      top: 69px; } }
+  @media screen and (min-width: 1680px) {
+    .pinwheel-animation {
+      width: 166px; } }
+  @media screen and (min-width: 1920px) {
+    .pinwheel-animation {
+      top: 75px;
+      width: 190px; } }
+
+.pinwheel-animation img {
+  max-width: 100%; }
+
 /* MAP NAV */
 .sidenav, .brochure {
   position: relative;

@@ -16,6 +16,16 @@ function turtleGif() {
     $("#turtleAnimation").attr("src", "img/turtle.gif"); 
 }
 
+// Whale and Sea Lion Animation
+var mascotsAnimation;
+
+function mascotsChange() {
+	mascotsAnimation = setTimeout(mascotsGif, 3000);		
+}
+
+function mascotsGif() {
+    $("#mascotsAnimation").attr("src", "img/mascots.gif"); 
+}
 
 // Otter Welcome PopUp
 var popUpOtter1;
@@ -35,5 +45,6 @@ $("document").ready(function() {
   		$("#otterPopup").fadeOut("slow");
   		turtleChange();  		
   		fishAnimation();
+  		mascotsChange();
 	});	
 });
