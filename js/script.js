@@ -47,13 +47,6 @@ $("document").ready(function() {
 		}, 100)
   		$("#open").show("fast"); 	
 	});	
-
-
-	$("#popupOtter1-closebtn").click(function() {
-  		$("#otterPopup").fadeOut("fast");
-  		fishAnimation();
-  		turtleChange();
-	});	
 });
 
 

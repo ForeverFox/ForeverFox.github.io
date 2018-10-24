@@ -19,5 +19,4 @@ function turtleGif() {
 $("document").ready(function() {
 	fishAnimation();
 	turtleChange();
-
 });

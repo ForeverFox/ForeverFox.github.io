@@ -30,3 +30,10 @@ function popUpOtter1Pop() {
 
 popUp1();
 
+$("document").ready(function() {
+	$("#popupOtter1-closebtn").click(function() {
+  		$("#otterPopup").fadeOut("slow");
+  		turtleChange();  		
+  		fishAnimation();
+	});	
+});
