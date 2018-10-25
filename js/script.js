@@ -47,6 +47,15 @@ $("document").ready(function() {
 		}, 100)
   		$("#open").show("fast"); 	
 	});	
+
+	$("#popupAlbatross-closebtn").click(function() {
+  		$("#popupAlbatross").fadeOut("fast");
+	});		
+
+	$("#allDoneAlbatross-closebtn").click(function() {
+  		$("#allDoneAlbatross").fadeOut("fast");
+	});	
+	
 });
 
 
@@ -114,14 +123,6 @@ $("document").ready(function() {
 
 	$("#shopOnMap").hover(function() {
 		$("#shopOnMap").toggleClass("map-lit");
-	});		
-
-	$("#popupAlbatross-closebtn").click(function() {
-  		$("#popupAlbatross").fadeOut("fast");
-	});		
-
-	$("#allDoneAlbatross-closebtn").click(function() {
-  		$("#allDoneAlbatross").fadeOut("fast");
 	});								
 
 });*/
