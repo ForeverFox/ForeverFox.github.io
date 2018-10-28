@@ -404,11 +404,25 @@ main {
   max-width: 100%; }
 
 .shark {
-  width: 550px;
   position: absolute;
   top: 40%;
   left: 40%;
   transform: translate(-40%, -40%); }
+  @media screen and (min-width: 1024px) {
+    .shark {
+      width: 293px; } }
+  @media screen and (min-width: 1366px) {
+    .shark {
+      width: 391px; } }
+  @media screen and (min-width: 1440px) {
+    .shark {
+      width: 413px; } }
+  @media screen and (min-width: 1680px) {
+    .shark {
+      width: 481px; } }
+  @media screen and (min-width: 1920px) {
+    .shark {
+      width: 550px; } }
 
 .shark img {
   max-width: 100%; }
