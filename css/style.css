@@ -304,17 +304,47 @@ main {
 .logo img {
   max-width: 100%; }
 
-#fish {
+#seahorse {
   position: absolute;
   left: -1200px;
-  /*  animation: skateboard 3s;
-    animation-delay: 2s;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    -webkit-animation: skateboard 3s;
-    -webkit-animation-delay: 2s;
-    -webkit-animation-timing-function: ease;
-    -webkit-animation-fill-mode: forwards; */ }
+  bottom: 50px;
+  animation: seahorseSkating 12s;
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  -webkit-animation: seahorseSkating 12s;
+  -webkit-animation-delay: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards; }
+
+.seahorse img {
+  max-width: 100%; }
+
+@keyframes seahorseSkating {
+  0% {
+    left: -200px;
+    bottom: 50px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  50% {
+    left: 110%;
+    bottom: 25px;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  54% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+  55% {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); }
+  100% {
+    left: 80%;
+    bottom: 100px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1); } }
+#fish {
+  position: absolute;
+  left: -1200px; }
   @media screen and (min-width: 1024px) {
     #fish {
       width: 107px;
@@ -346,10 +376,6 @@ main {
 #fish img, .fish img {
   max-width: 100%; }
 
-/* @keyframes skateboard {
-  from {left: -1200px;}
-  to {left: 300px;} 
-} */
 .pinwheel-animation {
   position: absolute; }
   @media screen and (min-width: 1024px) {
