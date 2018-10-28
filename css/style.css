@@ -316,9 +316,21 @@ main {
   -webkit-animation-delay: 1s;
   -webkit-animation-timing-function: ease-in-out;
   -webkit-animation-fill-mode: forwards; }
-
-.seahorse img {
-  max-width: 100%; }
+  @media screen and (min-width: 1024px) {
+    #seahorse {
+      width: 68px; } }
+  @media screen and (min-width: 1366px) {
+    #seahorse {
+      width: 91px; } }
+  @media screen and (min-width: 1440px) {
+    #seahorse {
+      width: 96px; } }
+  @media screen and (min-width: 1680px) {
+    #seahorse {
+      width: 112px; } }
+  @media screen and (min-width: 1920px) {
+    #seahorse {
+      width: 128px; } }
 
 @keyframes seahorseSkating {
   0% {
