@@ -377,6 +377,16 @@ main {
 .pinwheel-animation img {
   max-width: 100%; }
 
+.shark {
+  width: 550px;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%, -40%); }
+
+.shark img {
+  max-width: 100%; }
+
 /* MAP NAV */
 .sidenav, .brochure {
   position: relative;
