@@ -31,10 +31,6 @@ function mascotsGif() {
 var popUpOtter1;
 
 function popUp1() {
-	popUpOtter1 = setTimeout(popUpOtter1Pop, 1000);
-}
-
-function popUpOtter1Pop() {
 	$("#otterPopup").fadeIn("slow");
 }
 

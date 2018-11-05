@@ -110,11 +110,9 @@ main {
 .home, .resources, .shop, .albatross, .sealion, .seaturtle, .fish, .whale {
   position: relative;
   width: 100%;
-  margin: 0 auto;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   background-position: center center;
   overflow: hidden;
   -webkit-animation-name: fadeIn;
@@ -137,11 +135,11 @@ main {
   background-image: url(../img/albatross-scene.png); }
 
 .fish {
-  background-image: url(../img/fish-scene.png); }
+  background-image: url(../img/fish-scene.png);
+  background-color: #358b9c; }
 
 .whale {
-  background-image: url(../img/whale-scene.png);
-  background-position: top center; }
+  background-image: url(../img/whale-scene.png); }
 
 .sealion {
   background-image: url(../img/sealion-scene.png); }
@@ -441,13 +439,9 @@ main {
 
 /* MAP NAV */
 .sidenav, .brochure {
-  position: relative;
-  /*display: grid;
-  grid-template-columns: repeat(32, 1fr);
-  grid-auto-rows: minmax(25px, 50px); */
+  position: fixed;
   height: 100%;
   width: 0;
-  position: fixed;
   z-index: 9999;
   top: 0;
   left: 0;
@@ -457,13 +451,8 @@ main {
   background-attachment: fixed;
   background-position: center center;
   overflow-x: hidden;
-  transition: 0.5s; }
-  @media screen and (min-width: 1024px) {
-    .sidenav, .brochure {
-      background-size: contain; } }
-  @media screen and (min-width: 1366px) {
-    .sidenav, .brochure {
-      background-size: cover; } }
+  transition: 0.5s;
+  padding: 1rem 0; }
 
 /*.albatross-map, .sealion-map, .seaturtle-map, .fish-map, .whale-map, .home-map, .info-map, .shop-map, .secret-map {
   width: 100px;
@@ -1318,5 +1307,456 @@ border: 1px solid gray;
     opacity: 0; }
   100% {
     opacity: 1; } }
+.whale-position {
+  width: 574px;
+  position: absolute;
+  top: 7%;
+  left: 80%;
+  transform: translate(-80%, -10%);
+  z-index: 1; }
+
+.whale-position img {
+  max-width: 100%; }
+
+#whaleTrash1 {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  transform: translate(-10%, -70%);
+  z-index: 10; }
+
+#whaleTrash2 {
+  position: absolute;
+  top: 80%;
+  left: 60%;
+  transform: translate(-60%, -80%);
+  z-index: 10; }
+
+#whaleTrash3 {
+  position: absolute;
+  top: 60%;
+  left: 25%;
+  transform: translate(-25%, -60%);
+  z-index: 10; }
+
+#whaleTrash4 {
+  position: absolute;
+  top: 95%;
+  left: 70%;
+  transform: translate(-70%, -95%);
+  z-index: 10; }
+
+#whaleTrash5 {
+  position: absolute;
+  top: 90%;
+  left: 90%;
+  transform: translate(-90%, -90%);
+  z-index: 10; }
+
+#whaleTrash6 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 10; }
+
+#whaleTrash7 {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(-40%, -70%);
+  z-index: 10; }
+
+#whaleTrash8 {
+  position: absolute;
+  top: 75%;
+  left: 85%;
+  transform: translate(-85%, -75%);
+  z-index: 10; }
+
+#whaleTrash9 {
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  transform: translate(-35%, -45%);
+  z-index: 10; }
+
+#whaleTrash10 {
+  position: absolute;
+  top: 90%;
+  left: 15%;
+  transform: translate(-15%, -90%);
+  z-index: 10; }
+
+#whaleTrash11 {
+  position: absolute;
+  top: 85%;
+  left: 30%;
+  transform: translate(-30%, -85%);
+  z-index: 10; }
+
+#whaleTrash12 {
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  transform: translate(-15%, -35%);
+  z-index: 10; }
+
+#whaleTrash13 {
+  position: absolute;
+  top: 70%;
+  left: 72%;
+  transform: translate(-72%, -70%);
+  z-index: 10; }
+
+#whaleTrash14 {
+  position: absolute;
+  top: 65%;
+  left: 95%;
+  transform: translate(-95%, -65%);
+  z-index: 10; }
+
+#whaleTrash15 {
+  position: absolute;
+  top: 95%;
+  left: 5%;
+  transform: translate(-5%, -95%);
+  z-index: 10; }
+
+#whaleTrash16 {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  transform: translate(-2%, -55%);
+  z-index: 10; }
+
+#whaleTrash17 {
+  position: absolute;
+  top: 70%;
+  left: 55%;
+  transform: translate(-55%, -70%);
+  z-index: 10; }
+
+#whaleTrash18 {
+  position: absolute;
+  top: 90%;
+  left: 57%;
+  transform: translate(-57%, -90%);
+  z-index: 10; }
+
+#whaleTrash19 {
+  position: absolute;
+  top: 98%;
+  left: 40%;
+  transform: translate(-40%, -98%);
+  z-index: 10; }
+
+#whaleTrash20 {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -45%);
+  z-index: 10; }
+
+/* Trash Items */
+.seaturtle-trash {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; }
+
+.seaturtle-trash img {
+  max-width: 100%; }
+
+#cans-1 {
+  z-index: 1; }
+
+#glass-1 {
+  z-index: 2; }
+
+#paper-1 {
+  z-index: 3; }
+
+#waste-1 {
+  z-index: 4; }
+
+#forTote {
+  z-index: 5; }
+
+.recycling-placement {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 750px;
+  height: auto;
+  align-items: baseline; }
+
+.recyclingBins {
+  width: 150px;
+  margin: 0.25rem; }
+
+.recyclingBins img {
+  max-width: 100%; }
+
+/* Hover effect: highlight trash items based on their category */
+.trash-hover-plastic {
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s; }
+  .trash-hover-plastic:hover {
+    border: 1px solid yellow;
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s; }
+
+.trash-hover-cans {
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s; }
+  .trash-hover-cans:hover {
+    border: 1px solid orange;
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s; }
+
+.trash-hover-glass {
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s; }
+  .trash-hover-glass:hover {
+    border: 1px solid blue;
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s; }
+
+.trash-hover-paper {
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s; }
+  .trash-hover-paper:hover {
+    border: 1px solid green;
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s; }
+
+.trash-hover-waste {
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s; }
+  .trash-hover-waste:hover {
+    border: 1px solid gray;
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s; }
+
+.trash-hover-tote {
+  -webkit-transition: all 0.50s;
+  transition: all 0.50s; }
+  .trash-hover-tote:hover {
+    border: 1px solid white;
+    filter: brightness(130%);
+    -webkit-filter: brightness(130%);
+    -moz-filter: brightness(130%);
+    -o-filter: brightness(130%);
+    -ms-filter: brightness(130%);
+    -webkit-transition: all 0.50s;
+    transition: all 0.50s; }
+
+.micro {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  cursor: url(../img/net-cursor.png), auto; }
+
+#micro-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-image: url(../img/fish-micro-haze.png);
+  animation-name: microplastics-1;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+#micro-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-image: url(../img/fish-micro-beads.png);
+  animation-name: microplastics-2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+#micro-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-image: url(../img/fish-micro-fibers.png);
+  animation-name: microplastics-3;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+#micro-4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+  background-image: url(../img/fish-micro-nurdles.png);
+  animation-name: microplastics-4;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out; }
+
+#micro-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background-image: url(../img/fish-micro-fragments.png);
+  animation-name: microplastics-5;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+#micro-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 6;
+  background-image: url(../img/fish-micro-foam.png);
+  animation-name: microplastics-6;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+#micro-7 {
+  width: 620px;
+  position: absolute;
+  bottom: 10%;
+  left: 3%;
+  z-index: 7; }
+
+.seaweed-placement {
+  width: 550px;
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 8; }
+
+.fish-background-change {
+  background-image: url(../img/fish-scene-with-reef.png);
+  animation: background 2s;
+  animation-fill-mode: forwards; }
+
+/* Microplastic Animation */
+@keyframes microplastics-1 {
+  0% {
+    width: 100%;
+    opacity: 1; }
+  50% {
+    width: 110%;
+    opacity: 0.5; }
+  100% {
+    width: 100%;
+    opacity: 1; } }
+@keyframes microplastics-2 {
+  0% {
+    left: 0;
+    bottom: 0;
+    opacity: 1; }
+  50% {
+    left: 5px;
+    bottom: 20px;
+    opacity: 0.5; }
+  75% {
+    left: -5px;
+    bottom: -20px;
+    opacity: 0.75; }
+  100% {
+    left: 0;
+    bottom: 0;
+    opacity: 1; } }
+@keyframes microplastics-3 {
+  0% {
+    right: 0;
+    top: 0;
+    opacity: 1; }
+  50% {
+    right: 5px;
+    top: 5px;
+    opacity: 0.5; }
+  75% {
+    right: -5px;
+    top: -5px;
+    opacity: 0.75; }
+  100% {
+    right: 0;
+    top: 0;
+    opacity: 1; } }
+@keyframes microplastics-4 {
+  0% {
+    top: 0;
+    left: 0; }
+  50% {
+    left: 10px;
+    top: 5px; }
+  75% {
+    left: -10px;
+    top: -5px; }
+  100% {
+    top: 0;
+    left: 0; } }
+@keyframes microplastics-5 {
+  0% {
+    top: 0;
+    left: 0; }
+  50% {
+    left: 5px;
+    top: 25px; }
+  75% {
+    left: -5px;
+    top: -25px; }
+  100% {
+    top: 0;
+    left: 0; } }
+@keyframes microplastics-6 {
+  0% {
+    top: 0;
+    left: 0; }
+  50% {
+    left: -15px;
+    top: -25px; }
+  75% {
+    left: 15px;
+    top: 25px; }
+  100% {
+    top: 0;
+    left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

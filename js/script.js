@@ -55,7 +55,48 @@ $("document").ready(function() {
 	$("#allDoneAlbatross-closebtn").click(function() {
   		$("#allDoneAlbatross").fadeOut("fast");
 	});	
+
+/* 	function seahorseAnimation() {
+		$("#seahorse").animate({
+			left: "110%"
+		}, 12000)
+	}	
+
+	seahorseAnimation();
+	*/
 	
+/* Fish Scene */
+	$("#micro-1").click(function() {
+		$("#micro-1").fadeOut("fast");
+		$("#micro-7").animate( {
+			top: "15%",
+			left: "40%",
+			width: "450px",
+		}, 1500);
+	    $("#fish-scene").hide(); 
+	    $("#fish-scene").addClass("fish-background-change");   
+	    $("#fish-scene").delay(3000).show();
+	});
+
+	$("#micro-2").click(function() {
+		$("#micro-2").fadeOut("fast");
+	});
+
+	$("#micro-3").click(function() {
+		$("#micro-3").fadeOut("fast");
+	});
+
+	$("#micro-4").click(function() {
+		$("#micro-4").fadeOut("fast");
+	});
+
+	$("#micro-5").click(function() {
+		$("#micro-5").fadeOut("fast");
+	});
+
+	$("#micro-6").click(function() {
+		$("#micro-6").fadeOut("fast");
+	});
 });
 
 
