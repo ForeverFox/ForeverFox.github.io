@@ -69,9 +69,9 @@ $("document").ready(function() {
 	$("#micro-1").click(function() {
 		$("#micro-1").fadeOut("fast");
 		$("#micro-7").animate( {
-			top: "15%",
-			left: "40%",
-			width: "450px",
+			top: "20%",
+			left: "50%",
+			width: "300px",
 		}, 1500);
 	    $("#fish-scene").hide(); 
 	    $("#fish-scene").addClass("fish-background-change");   
