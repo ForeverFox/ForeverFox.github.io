@@ -12,7 +12,7 @@ window.onclick = function(event) {
 }
 
 $("document").ready(function() {
-	$("#mapopen").click(function() {	
+	$("#open").click(function() {	
 		$("#mapNav").animate({
 			width: "100%",
 		}, 100);
@@ -48,7 +48,6 @@ $("document").ready(function() {
 		$("#brochure").animate({
 			width: "0",
 		}, 100)
-  		$("#open").show("fast");
   		$(".modal").fadeOut("slow");	 	
 	});	
 
