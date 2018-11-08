@@ -11,59 +11,37 @@
 	<body>		
 		<main id="fish-scene" class="fish">
 <!-- NAVIGATION -->				
-			<nav id="mapopen" class="nav">
+			<div id="mapopen" class="nav">
 				<figure id="open" class="map-icon">
 					<img src="img/map-icon.png" alt="map icon">
 				</figure>
-			</nav>		
-			<div id="mapNav" class="sidenav">
-				<a href="javascript:void(0)" id="closebtn">&times;</a>
-				<ul id="list" class="map-list">
-					<li id="homeMapNav"><a href="home.html">HOME</a></li>
-					<li id="about"><a href="javascript:void(0)">ABOUT</a></li>
-					<li id="infoMapNav"><a href="info.html">INFO</a></li>
-					<li id="shopMapNav"><a href="shop.html">SHOP</a></li>
-					<p>BEACH CLEANUP</p>
-					<li id="albatrossMapNav"><a href="albatross.html">ALBATROSS</a></li>
-					<li id="sealionMapNav"><a href="sealion.html">SEA LION</a></li>
-					<li id="seaturtleMapNav"><a href="seaturtle.html">SEA TURTLE</a></li>
-					<li id="fishMapNav"><a href="fish.html">FISH</a></li>
-					<li id="whaleMapNav"><a href="whale.html">WHALE</a></li>
-				</ul>	
+			</div>	
+			<div id="modal" class="modal">	
+				<nav id="mapNav" class="sidenav">
+					<a href="javascript:void(0)" id="closebtn">&times;</a>
+					<ul id="list" class="map-list">
+						<li id="homeMapNav"><a href="home.html">HOME</a></li>
+						<li id="about"><a href="javascript:void(0)">ABOUT</a></li>
+						<li id="infoMapNav"><a href="info.html">INFO</a></li>
+						<li id="shopMapNav"><a href="shop.html">SHOP</a></li>
+						<p>BEACH CLEANUP</p>
+						<li id="albatrossMapNav"><a href="albatross.html">ALBATROSS</a></li>
+						<li id="sealionMapNav"><a href="sealion.html">SEA LION</a></li>
+						<li id="seaturtleMapNav"><a href="seaturtle.html">SEA TURTLE</a></li>
+						<li id="fishMapNav"><a href="fish.html">FISH</a></li>
+						<li id="whaleMapNav"><a href="whale.html">WHALE</a></li>
+					</ul>	
 <!-- MAP AREAS -->
-			<a href="albatross.html">
-				<div id="albatrossOnMap" class="albatross-map">
-				</div>
-			</a>
-			<a href="#">
-				<div id="sealionOnMap" class="sealion-map">
-				</div>
-			</a>						
-			<a href="#">
-				<div id="seaturtleOnMap" class="seaturtle-map">
-				</div>
-			</a>						
-			<a href="#">
-				<div id="fishOnMap" class="fish-map">
-				</div>
-			</a>						
-			<a href="#">
-				<div id="whaleOnMap" class="whale-map">
-				</div>
-			</a>						
-			<a href="shop.html">
-				<div id="shopOnMap" class="shop-map">
-				</div>
-			</a>						
-			<a href="info.html">
-				<div id="infoOnMap" class="info-map">
-				</div>
-			</a>						
-			<a href="home.html">
-				<div id="homeOnMap" class="home-map">
-				</div>
-			</a>						
-			</div>
+					<a href="home.html" title="Home" style="position: absolute; left: 36.3%; top: 55.67%; width: 5.89%; height: 8.08%; z-index: 2;"></a>
+					<a href="info.html" title="Info" style="position: absolute; left: 28.85%; top: 57.42%; width: 4.22%; height: 7.08%; z-index: 2;"></a>
+					<a href="shop.html" title="Shop" style="position: absolute; left: 45.89%; top: 52.42%; width: 5.26%; height: 8%; z-index: 2;"></a>
+					<a href="albatross.html" title="Albatross" style="position: absolute; left: 49.74%; top: 42.33%; width: 4.9%; height: 7.58%; z-index: 2;"></a>
+					<a href="sealion.html" title="Sea Lion" style="position: absolute; left: 59.95%; top: 29.33%; width: 6.25%; height: 8.67%; z-index: 2;"></a>
+					<a href="seaturtle.html" title="Sea Turtle" style="position: absolute; left: 13.75%; top: 29.17%; width: 4.38%; height: 9.92%; z-index: 2;"></a>
+					<a href="whale.html" title="Whale" style="position: absolute; left: 39.43%; top: 12%; width: 7.5%; height: 8.75%; z-index: 2;"></a>
+					<a href="fish.html" title="Fish" style="position: absolute; left: 25.63%; top: 43.92%; width: 5.94%; height: 6.67%; z-index: 2;"></a>			
+				</nav>
+			</div> <!-- modal -->
 <!-- ABOUT BROCHURE -->
 			<div id="brochure" class="brochure">
 				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	

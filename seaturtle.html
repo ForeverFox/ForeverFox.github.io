@@ -13,60 +13,61 @@
 	<body>
 		<main class="seaturtle">			
 <!-- NAVIGATION -->				
-			<nav id="mapopen" class="nav">
+			<div id="mapopen" class="nav">
 				<figure id="open" class="map-icon">
 					<img src="img/map-icon.png" alt="map icon">
 				</figure>
-			</nav>		
-			<div id="mapNav" class="sidenav">
-				<a href="javascript:void(0)" id="closebtn">&times;</a>
-				<ul id="list" class="map-list">
-					<li id="homeMapNav"><a href="home.html">HOME</a></li>
-					<li id="about"><a href="javascript:void(0)">ABOUT</a></li>
-					<li id="infoMapNav"><a href="info.html">INFO</a></li>
-					<li id="shopMapNav"><a href="shop.html">SHOP</a></li>
-					<p>BEACH CLEANUP</p>
-					<li id="albatrossMapNav"><a href="albatross.html">ALBATROSS</a></li>
-					<li id="sealionMapNav"><a href="sealion.html">SEA LION</a></li>
-					<li id="seaturtleMapNav"><a href="seaturtle.html">SEA TURTLE</a></li>
-					<li id="fishMapNav"><a href="fish.html">FISH</a></li>
-					<li id="whaleMapNav"><a href="whale.html">WHALE</a></li>
-				</ul>	
+			</div>	
+			<div id="modal" class="modal">	
+				<nav id="mapNav" class="sidenav">
+					<a href="javascript:void(0)" id="closebtn">&times;</a>
+					<ul id="list" class="map-list">
+						<li id="homeMapNav"><a href="home.html">HOME</a></li>
+						<li id="about"><a href="javascript:void(0)">ABOUT</a></li>
+						<li id="infoMapNav"><a href="info.html">INFO</a></li>
+						<li id="shopMapNav"><a href="shop.html">SHOP</a></li>
+						<p>BEACH CLEANUP</p>
+						<li id="albatrossMapNav"><a href="albatross.html">ALBATROSS</a></li>
+						<li id="sealionMapNav"><a href="sealion.html">SEA LION</a></li>
+						<li id="seaturtleMapNav"><a href="seaturtle.html">SEA TURTLE</a></li>
+						<li id="fishMapNav"><a href="fish.html">FISH</a></li>
+						<li id="whaleMapNav"><a href="whale.html">WHALE</a></li>
+					</ul>	
 <!-- MAP AREAS -->
-			<a href="albatross.html">
-				<div id="albatrossOnMap" class="albatross-map">
-				</div>
-			</a>
-			<a href="#">
-				<div id="sealionOnMap" class="sealion-map">
-				</div>
-			</a>						
-			<a href="#">
-				<div id="seaturtleOnMap" class="seaturtle-map">
-				</div>
-			</a>						
-			<a href="#">
-				<div id="fishOnMap" class="fish-map">
-				</div>
-			</a>						
-			<a href="#">
-				<div id="whaleOnMap" class="whale-map">
-				</div>
-			</a>						
-			<a href="shop.html">
-				<div id="shopOnMap" class="shop-map">
-				</div>
-			</a>						
-			<a href="info.html">
-				<div id="infoOnMap" class="info-map">
-				</div>
-			</a>						
-			<a href="home.html">
-				<div id="homeOnMap" class="home-map">
-				</div>
-			</a>						
-			</div>
-			
+					<a href="albatross.html">
+						<div id="albatrossOnMap" class="albatross-map">
+						</div>
+					</a>
+					<a href="#">
+						<div id="sealionOnMap" class="sealion-map">
+						</div>
+					</a>						
+					<a href="#">
+						<div id="seaturtleOnMap" class="seaturtle-map">
+						</div>
+					</a>						
+					<a href="#">
+						<div id="fishOnMap" class="fish-map">
+						</div>
+					</a>						
+					<a href="#">
+						<div id="whaleOnMap" class="whale-map">
+						</div>
+					</a>						
+					<a href="shop.html">
+						<div id="shopOnMap" class="shop-map">
+						</div>
+					</a>						
+					<a href="info.html">
+						<div id="infoOnMap" class="info-map">
+						</div>
+					</a>						
+					<a href="home.html">
+						<div id="homeOnMap" class="home-map">
+						</div>
+					</a>						
+				</nav>
+			</div> <!-- modal -->
 <!-- ABOUT BROCHURE -->
 			<div id="brochure" class="brochure">
 				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
@@ -76,24 +77,7 @@
 			</div>
 <!-- SCENE -->	
 			<section class="scene">
-				<figure class="seaturtle-trash">
-					<img class="trash-hover-tote" src="img/seaturtle-scene-canberecycled.png" alt="trash items that can potentially be recycled">
-				</figure>
-				<figure class="seaturtle-trash">
-					<img class="trash-hover-plastic" src="img/seaturtle-scene-plastics.png" alt="various recyclable plastic products">
-				</figure>					
-				<figure class="seaturtle-trash">
-					<img class="trash-hover-cans" src="img/seaturtle-scene-cans.png" alt="recyclable cans">
-				</figure>
-				<figure class="seaturtle-trash">
-					<img class="trash-hover-glass" src="img/seaturtle-scene-glass.png" alt="recyclable glass">
-				</figure>
-				<figure class="seaturtle-trash">
-					<img class="trash-hover-paper" src="img/seaturtle-scene-paper.png" alt="various recyclable paper products">
-				</figure>							
-				<figure class="seaturtle-trash">
-					<img class="trash-hover-waste" src="img/seaturtle-scene-waste.png" alt="trash items that cannot be recycled">
-				</figure>	
+
 				<div class="recycling-placement">
 					<figure class="recyclingBins">
 						<img id="recyclingBinTote" src="img/tote.png" alt="Happy Ocean Tote Bag">

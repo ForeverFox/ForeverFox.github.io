@@ -447,316 +447,21 @@ main {
   left: 0;
   background-image: url(../img/map.png);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
   background-position: center center;
   overflow-x: hidden;
   transition: 0.5s;
   padding: 1rem 0; }
 
-/*.albatross-map, .sealion-map, .seaturtle-map, .fish-map, .whale-map, .home-map, .info-map, .shop-map, .secret-map {
-  width: 100px;
-  height: 100px;
-  position: absolute;  
-}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9998;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3); }
 
-.albatross-map {
-  border: 1px solid red; 
-
-    @include laptop {
-      top: 325px;
-      left: 510px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 320px;
-      left: 680px;
-    }
-
-    @include macbook {
-      top: 380px;
-      left: 720px;
-      height: 60px;
-      width: 60px;
-    }
-
-    @include fullscreen {
-      top: 445px;
-      left: 840px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 435px;
-      left: 950px; 
-      width: 100px;
-      height: 100px;
-    }
-}
-
-.sealion-map {
-  border: 1px solid blue; 
-
-    @include laptop {
-      top: 250px;
-      left: 625px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 225px;
-      left: 830px;
-
-    }
-
-    @include macbook {
-      top: 265px;
-      left: 870px;
-      width: 60px;
-      height: 60px;
-    }
-
-    @include fullscreen {
-      top: 320px;
-      left: 1020px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 290px;
-      left: 1160px;
-      width: 100px;
-      height: 100px;
-    }
-}
-
-.seaturtle-map {
-border: 1px solid green; 
-
-    @include laptop {
-      top: 250px;
-      left: 140px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 225px;
-      left: 195px;
-    }
-
-    @include macbook {
-      top: 265px;
-      left: 200px;
-      width: 60px;
-      height: 60px;
-    }
-
-    @include fullscreen {
-      top: 310px;
-      left: 230px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 290px;
-      left: 255px;
-      width: 100px;
-      height: 100px;
-    }
-}
-
-.fish-map {
-border: 1px solid black; 
-
-    @include laptop {
-      top: 335px;
-      left: 270px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 330px;
-      left: 370px;
-    }
-
-    @include macbook {
-      top: 390px;
-      left: 390px;
-      height: 60px;
-      width: 60px;
-    }
-
-    @include fullscreen {
-      top: 450px;
-      left: 450px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 450px;
-      left: 500px; 
-      width: 100px;
-      height: 100px;
-    }
-}
-
-
-.whale-map {
-border: 1px solid purple; 
-
-    @include laptop {
-      top: 140px;
-      left: 420px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 70px;
-      left: 575px;
-    }
-
-    @include macbook {
-      top: 115px;
-      left: 600px;
-      height: 60px;
-      width: 60px;
-    }
-
-    @include fullscreen {
-      top: 120px;
-      left: 700px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 80px;
-      left: 800px; 
-      width: 100px;
-      height: 100px;
-    }
-}
-
-.home-map {
-border: 1px solid orange; 
-
-    @include laptop {
-      top: 420px;
-      left: 380px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 440px;
-      left: 510px;
-    }
-
-    @include macbook {
-      top: 500px;
-      left: 535px;
-      height: 60px;
-      width: 60px;
-    }
-
-    @include fullscreen {
-      top: 590px;
-      left: 625px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 600px;
-      left: 705px; 
-      width: 100px;
-      height: 100px;
-    }
-}
-
-.info-map {
-border: 1px solid gray; 
-
-    @include laptop {
-      top: 430px;
-      left: 293px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 452px;
-      left: 397px;
-    }
-
-    @include macbook {
-      top: 520px;
-      left: 415px;
-      height: 60px;
-      width: 60px;
-    }
-
-    @include fullscreen {
-      top: 600px;
-      left: 482px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 625px;
-      left: 545px; 
-      width: 100px;
-      height: 100px;
-    }
-}
-
-.shop-map {
- border: 1px solid aqua; 
-
-    @include laptop {
-      top: 400px;
-      left: 470px;
-      width: 50px;
-      height: 50px;
-    }
-
-    @include desktop {
-      top: 415px;
-      left: 635px;
-    }
-
-    @include macbook {
-      top: 480px;
-      left: 670px;
-      height: 60px;
-      width: 60px;
-    }
-
-    @include fullscreen {
-      top: 555px;
-      left: 775px;
-      width: 75px;
-      height: 75px;
-    }
-
-    @include large-display {
-      top: 570px;
-      left: 880px; 
-      width: 100px;
-      height: 100px;
-    }
-} */
 .map-lit {
   background-color: yellow;
   opacity: 0.3;
@@ -1308,12 +1013,26 @@ border: 1px solid gray;
   100% {
     opacity: 1; } }
 .whale-position {
-  width: 574px;
   position: absolute;
   top: 7%;
   left: 80%;
-  transform: translate(-80%, -10%);
+  transform: translate(-80%, -7%);
   z-index: 1; }
+  @media screen and (min-width: 1024px) {
+    .whale-position {
+      width: 306px; } }
+  @media screen and (min-width: 1366px) {
+    .whale-position {
+      width: 408px; } }
+  @media screen and (min-width: 1440px) {
+    .whale-position {
+      width: 430px; } }
+  @media screen and (min-width: 1680px) {
+    .whale-position {
+      width: 502px; } }
+  @media screen and (min-width: 1920px) {
+    .whale-position {
+      width: 574px; } }
 
 .whale-position img {
   max-width: 100%; }
@@ -1324,6 +1043,21 @@ border: 1px solid gray;
   left: 10%;
   transform: translate(-10%, -70%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash1 {
+      width: calc(157px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash1 {
+      width: calc(157px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash1 {
+      width: calc(157px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash1 {
+      width: calc(157px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash1 {
+      width: 157px; } }
 
 #whaleTrash2 {
   position: absolute;
@@ -1331,6 +1065,21 @@ border: 1px solid gray;
   left: 60%;
   transform: translate(-60%, -80%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash2 {
+      width: calc(176px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash2 {
+      width: calc(176px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash2 {
+      width: calc(176px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash2 {
+      width: calc(176px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash2 {
+      width: 176px; } }
 
 #whaleTrash3 {
   position: absolute;
@@ -1338,6 +1087,21 @@ border: 1px solid gray;
   left: 25%;
   transform: translate(-25%, -60%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash3 {
+      width: calc(188px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash3 {
+      width: calc(188px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash3 {
+      width: calc(188px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash3 {
+      width: calc(188px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash3 {
+      width: 188px; } }
 
 #whaleTrash4 {
   position: absolute;
@@ -1345,6 +1109,21 @@ border: 1px solid gray;
   left: 70%;
   transform: translate(-70%, -95%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash4 {
+      width: calc(146px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash4 {
+      width: calc(146px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash4 {
+      width: calc(146px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash4 {
+      width: calc(146px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash4 {
+      width: 146px; } }
 
 #whaleTrash5 {
   position: absolute;
@@ -1352,6 +1131,21 @@ border: 1px solid gray;
   left: 90%;
   transform: translate(-90%, -90%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash5 {
+      width: calc(111px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash5 {
+      width: calc(111px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash5 {
+      width: calc(111px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash5 {
+      width: calc(111px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash5 {
+      width: 111px; } }
 
 #whaleTrash6 {
   position: absolute;
@@ -1359,6 +1153,21 @@ border: 1px solid gray;
   left: 50%;
   transform: translate(-50%, -60%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash6 {
+      width: calc(71px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash6 {
+      width: calc(71px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash6 {
+      width: calc(71px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash6 {
+      width: calc(71px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash6 {
+      width: 71px; } }
 
 #whaleTrash7 {
   position: absolute;
@@ -1366,6 +1175,21 @@ border: 1px solid gray;
   left: 40%;
   transform: translate(-40%, -70%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash7 {
+      width: calc(99px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash7 {
+      width: calc(99px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash7 {
+      width: calc(99px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash7 {
+      width: calc(99px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash7 {
+      width: 99px; } }
 
 #whaleTrash8 {
   position: absolute;
@@ -1373,6 +1197,21 @@ border: 1px solid gray;
   left: 85%;
   transform: translate(-85%, -75%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash8 {
+      width: calc(182px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash8 {
+      width: calc(182px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash8 {
+      width: calc(182px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash8 {
+      width: calc(182px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash8 {
+      width: 182px; } }
 
 #whaleTrash9 {
   position: absolute;
@@ -1380,6 +1219,21 @@ border: 1px solid gray;
   left: 35%;
   transform: translate(-35%, -45%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash9 {
+      width: calc(133px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash9 {
+      width: calc(133px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash9 {
+      width: calc(133px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash9 {
+      width: calc(133px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash9 {
+      width: 133px; } }
 
 #whaleTrash10 {
   position: absolute;
@@ -1387,6 +1241,21 @@ border: 1px solid gray;
   left: 15%;
   transform: translate(-15%, -90%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash10 {
+      width: calc(114px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash10 {
+      width: calc(114px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash10 {
+      width: calc(114px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash10 {
+      width: calc(114px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash10 {
+      width: 114px; } }
 
 #whaleTrash11 {
   position: absolute;
@@ -1394,6 +1263,21 @@ border: 1px solid gray;
   left: 30%;
   transform: translate(-30%, -85%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash11 {
+      width: calc(262px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash11 {
+      width: calc(262px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash11 {
+      width: calc(262px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash11 {
+      width: calc(262px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash11 {
+      width: 262px; } }
 
 #whaleTrash12 {
   position: absolute;
@@ -1401,6 +1285,21 @@ border: 1px solid gray;
   left: 15%;
   transform: translate(-15%, -35%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash12 {
+      width: calc(67px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash12 {
+      width: calc(67px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash12 {
+      width: calc(67px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash12 {
+      width: calc(67px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash12 {
+      width: 67px; } }
 
 #whaleTrash13 {
   position: absolute;
@@ -1408,6 +1307,21 @@ border: 1px solid gray;
   left: 72%;
   transform: translate(-72%, -70%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash13 {
+      width: calc(238px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash13 {
+      width: calc(238px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash13 {
+      width: calc(238px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash13 {
+      width: calc(238px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash13 {
+      width: 238px; } }
 
 #whaleTrash14 {
   position: absolute;
@@ -1415,6 +1329,21 @@ border: 1px solid gray;
   left: 95%;
   transform: translate(-95%, -65%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash14 {
+      width: calc(88px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash14 {
+      width: calc(88px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash14 {
+      width: calc(88px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash14 {
+      width: calc(88px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash14 {
+      width: 88px; } }
 
 #whaleTrash15 {
   position: absolute;
@@ -1422,6 +1351,21 @@ border: 1px solid gray;
   left: 5%;
   transform: translate(-5%, -95%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash15 {
+      width: calc(60px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash15 {
+      width: calc(60px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash15 {
+      width: calc(60px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash15 {
+      width: calc(60px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash15 {
+      width: 60px; } }
 
 #whaleTrash16 {
   position: absolute;
@@ -1429,6 +1373,21 @@ border: 1px solid gray;
   left: 2%;
   transform: translate(-2%, -55%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash16 {
+      width: calc(96px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash16 {
+      width: calc(96px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash16 {
+      width: calc(96px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash16 {
+      width: calc(96px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash16 {
+      width: 96px; } }
 
 #whaleTrash17 {
   position: absolute;
@@ -1436,6 +1395,21 @@ border: 1px solid gray;
   left: 55%;
   transform: translate(-55%, -70%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash17 {
+      width: calc(119px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash17 {
+      width: calc(119px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash17 {
+      width: calc(119px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash17 {
+      width: calc(119px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash17 {
+      width: 119px; } }
 
 #whaleTrash18 {
   position: absolute;
@@ -1443,6 +1417,21 @@ border: 1px solid gray;
   left: 57%;
   transform: translate(-57%, -90%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash18 {
+      width: calc(116px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash18 {
+      width: calc(116px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash18 {
+      width: calc(116px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash18 {
+      width: calc(116px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash18 {
+      width: 116px; } }
 
 #whaleTrash19 {
   position: absolute;
@@ -1450,6 +1439,21 @@ border: 1px solid gray;
   left: 40%;
   transform: translate(-40%, -98%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash19 {
+      width: calc(346px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash19 {
+      width: calc(346px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash19 {
+      width: calc(346px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash19 {
+      width: calc(346px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash19 {
+      width: 346px; } }
 
 #whaleTrash20 {
   position: absolute;
@@ -1457,33 +1461,23 @@ border: 1px solid gray;
   left: 50%;
   transform: translate(-50%, -45%);
   z-index: 10; }
+  @media screen and (min-width: 1024px) {
+    #whaleTrash20 {
+      width: calc(81px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    #whaleTrash20 {
+      width: calc(181px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    #whaleTrash20 {
+      width: calc(81px * .75); } }
+  @media screen and (min-width: 1680px) {
+    #whaleTrash20 {
+      width: calc(81px * .875); } }
+  @media screen and (min-width: 1920px) {
+    #whaleTrash20 {
+      width: 81px; } }
 
 /* Trash Items */
-.seaturtle-trash {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh; }
-
-.seaturtle-trash img {
-  max-width: 100%; }
-
-#cans-1 {
-  z-index: 1; }
-
-#glass-1 {
-  z-index: 2; }
-
-#paper-1 {
-  z-index: 3; }
-
-#waste-1 {
-  z-index: 4; }
-
-#forTote {
-  z-index: 5; }
-
 .recycling-placement {
   display: flex;
   position: absolute;
@@ -1491,7 +1485,8 @@ border: 1px solid gray;
   right: 0;
   width: 750px;
   height: auto;
-  align-items: baseline; }
+  align-items: baseline;
+  z-index: 100; }
 
 .recyclingBins {
   width: 150px;
@@ -1656,18 +1651,46 @@ border: 1px solid gray;
   animation-timing-function: linear; }
 
 #micro-7 {
-  width: 620px;
   position: absolute;
   bottom: 10%;
   left: 3%;
   z-index: 7; }
+  @media screen and (min-width: 1024px) {
+    #micro-7 {
+      width: 331px; } }
+  @media screen and (min-width: 1366px) {
+    #micro-7 {
+      width: 441px; } }
+  @media screen and (min-width: 1440px) {
+    #micro-7 {
+      width: 465px; } }
+  @media screen and (min-width: 1680px) {
+    #micro-7 {
+      width: 543px; } }
+  @media screen and (min-width: 1920px) {
+    #micro-7 {
+      width: 620px; } }
 
 .seaweed-placement {
-  width: 550px;
   position: absolute;
   bottom: 5%;
   left: 5%;
   z-index: 8; }
+  @media screen and (min-width: 1024px) {
+    .seaweed-placement {
+      width: 293px; } }
+  @media screen and (min-width: 1366px) {
+    .seaweed-placement {
+      width: 391px; } }
+  @media screen and (min-width: 1440px) {
+    .seaweed-placement {
+      width: 413px; } }
+  @media screen and (min-width: 1680px) {
+    .seaweed-placement {
+      width: 481px; } }
+  @media screen and (min-width: 1920px) {
+    .seaweed-placement {
+      width: 550px; } }
 
 .fish-background-change {
   background-image: url(../img/fish-scene-with-reef.png);
