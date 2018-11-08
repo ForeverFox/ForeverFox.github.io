@@ -5,9 +5,7 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Happy Ocean</title>
-	    <link rel="stylesheet" href="css/style.css">  	    
-  		<link rel="stylesheet" href="css/jquery-ui.css">  
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
 	</head>
 
 	<body>
@@ -21,37 +19,32 @@
 			<div id="modal" class="modal">	
 				<nav id="mapNav" class="sidenav">
 					<a href="javascript:void(0)" id="closebtn">&times;</a>
-					<ul id="list" class="map-list">
-						<li id="homeMapNav"><a href="home.html">HOME</a></li>
-						<li id="about"><a href="javascript:void(0)">ABOUT</a></li>
-						<li id="infoMapNav"><a href="info.html">INFO</a></li>
-						<li id="shopMapNav"><a href="shop.html">SHOP</a></li>
-						<p>BEACH CLEANUP</p>
-						<li id="albatrossMapNav"><a href="albatross.html">ALBATROSS</a></li>
-						<li id="sealionMapNav"><a href="sealion.html">SEA LION</a></li>
-						<li id="seaturtleMapNav"><a href="seaturtle.html">SEA TURTLE</a></li>
-						<li id="fishMapNav"><a href="fish.html">FISH</a></li>
-						<li id="whaleMapNav"><a href="whale.html">WHALE</a></li>
-					</ul>	
+					<div id="list" class="map-list">
+						<h3>Getting Around</h3>
+						<p>Click or tap the images on the map to navigate!</p>
+						<a href="javascript:void(0)" id="about">MORE ABOUT HAPPY OCEAN</a>
+					</div>	
 <!-- MAP AREAS -->
-					<a href="home.html" title="Home" style="position: absolute; left: 36.3%; top: 55.67%; width: 5.89%; height: 8.08%; z-index: 2;"></a>
-					<a href="info.html" title="Info" style="position: absolute; left: 28.85%; top: 57.42%; width: 4.22%; height: 7.08%; z-index: 2;"></a>
-					<a href="shop.html" title="Shop" style="position: absolute; left: 45.89%; top: 52.42%; width: 5.26%; height: 8%; z-index: 2;"></a>
-					<a href="albatross.html" title="Albatross" style="position: absolute; left: 49.74%; top: 42.33%; width: 4.9%; height: 7.58%; z-index: 2;"></a>
-					<a href="sealion.html" title="Sea Lion" style="position: absolute; left: 59.95%; top: 29.33%; width: 6.25%; height: 8.67%; z-index: 2;"></a>
-					<a href="seaturtle.html" title="Sea Turtle" style="position: absolute; left: 13.75%; top: 29.17%; width: 4.38%; height: 9.92%; z-index: 2;"></a>
-					<a href="whale.html" title="Whale" style="position: absolute; left: 39.43%; top: 12%; width: 7.5%; height: 8.75%; z-index: 2;"></a>
-					<a href="fish.html" title="Fish" style="position: absolute; left: 25.63%; top: 43.92%; width: 5.94%; height: 6.67%; z-index: 2;"></a>			
+					<div class="map-areas">
+						<a href="home.html" title="Home" style="position: absolute; left: 36.3%; top: 55.67%; width: 5.89%; height: 8.08%; z-index: 2;"></a>
+						<a href="info.html" title="Resources and Information" style="position: absolute; left: 28.85%; top: 57.42%; width: 4.22%; height: 7.08%; z-index: 2;"></a>
+						<a href="shop.html" title="Shop" style="position: absolute; left: 45.89%; top: 52.42%; width: 5.26%; height: 8%; z-index: 2;"></a>
+						<a href="albatross.html" title="Laysan Albatross" style="position: absolute; left: 49.74%; top: 42.33%; width: 4.9%; height: 7.58%; z-index: 2;"></a>
+						<a href="sealion.html" title="California Sea Lion" style="position: absolute; left: 59.95%; top: 29.33%; width: 6.25%; height: 8.67%; z-index: 2;"></a>
+						<a href="seaturtle.html" title="Green Sea Turtle" style="position: absolute; left: 13.75%; top: 29.17%; width: 4.38%; height: 9.92%; z-index: 2;"></a>
+						<a href="whale.html" title="Humpback Whale" style="position: absolute; left: 39.43%; top: 12%; width: 7.5%; height: 8.75%; z-index: 2;"></a>
+						<a href="fish.html" title="Sergeant Major Fish" style="position: absolute; left: 25.63%; top: 43.92%; width: 5.94%; height: 6.67%; z-index: 2;"></a>
+					</div> <!-- map-areas -->	
 				</nav>
 			</div> <!-- modal -->
 <!-- ABOUT BROCHURE -->
-			<div id="brochure" class="brochure">
-				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
-				<ul id="aboutlist" class="about-list">
-					<li><a href="javascript:void(0)" id="revealmap">BACK TO MAP</a></li>
-				</ul>	
-			</div>
-<!-- SCENE -->	
+				<div id="brochure" class="brochure">
+					<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
+					<div id="aboutlist" class="map-list">
+						<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
+					</div>	
+				</div>		
+<!-- SCENE -->
 			<section class="scene">
 			</section>							
 		</main>	
