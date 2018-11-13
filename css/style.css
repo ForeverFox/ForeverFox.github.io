@@ -80,15 +80,7 @@ a:link {
   text-decoration: none;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.125rem;
-  color: white;
-  /* color: $pink; */ }
-
-a:visited {
-  /*color: $green; */ }
-
-a:hover {
-  /*color: $blue; */ }
+  letter-spacing: 0.125rem; }
 
 /* PAGE FADE-IN EFFECT */
 @-webkit-keyframes fadeIn {
@@ -457,6 +449,9 @@ main {
     .sidenav, .brochure {
       background-size: cover; } }
 
+#list, #aboutlist {
+  display: none; }
+
 .modal {
   display: none;
   position: fixed;
@@ -531,21 +526,77 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
-  margin: 0 auto;
-  grid-column: 1 / -1;
-  grid-row: 1; }
+  margin: 0 auto; }
 
 .scene {
   position: relative;
   width: 100%;
   height: 100%;
   margin: 0 auto;
-  grid-column: 1 / -1;
-  grid-row: 1;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none; }
+
+.tooltip {
+  position: relative; }
+
+.tooltiptext {
+  display: none;
+  background-color: white;
+  color: black;
+  border: 3px solid #00ced1;
+  font-family: "Open Sans", sans-serif;
+  text-align: left;
+  border-radius: 6px;
+  padding: 2rem;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 9999; }
+  @media screen and (min-width: 1024px) {
+    .tooltiptext {
+      width: calc(500px * .53333); } }
+  @media screen and (min-width: 1366px) {
+    .tooltiptext {
+      width: calc(500px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    .tooltiptext {
+      width: calc(500px * .75); } }
+  @media screen and (min-width: 1680px) {
+    .tooltiptext {
+      width: calc(500px * .875); } }
+  @media screen and (min-width: 1920px) {
+    .tooltiptext {
+      width: 500px; } }
+
+.tooltiptext a {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.015rem; }
+
+.tooltiptext a:link {
+  color: #00ced1; }
+
+.tooltiptext a:visited {
+  color: black; }
+
+.tooltiptext a:hover {
+  color: #f08080; }
+
+.tooltiptext a:active {
+  color: black; }
+
+#tooltipStraws, #tooltipWrappers, #tooltipNet, #tooltip6Pack, #tooltipSmallPlastics, #tooltipFoam {
+  z-index: 9999; }
+
+.tooltip-close-position {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem; }
 
 .scene img {
   max-width: 100%; }
@@ -567,30 +618,43 @@ main {
   transform: translate(-50%, -50%);
   background-color: white;
   z-index: 9997;
-  padding: 2rem; }
+  padding: 2rem;
+  border: 3px solid #00ced1;
+  border-radius: 6px; }
 
-#otterPopup1 {
-  width: 1000px;
+@media screen and (min-width: 1024px) {
+  .allDone {
+    width: calc(600px * .53333); } }
+@media screen and (min-width: 1366px) {
+  .allDone {
+    width: calc(600px * .71145); } }
+@media screen and (min-width: 1440px) {
+  .allDone {
+    width: calc(600px * .75); } }
+@media screen and (min-width: 1680px) {
+  .allDone {
+    width: calc(600px * .875); } }
+@media screen and (min-width: 1920px) {
+  .allDone {
+    width: 600px; } }
+
+.popup {
   height: auto; }
   @media screen and (min-width: 1024px) {
-    #otterPopup1 {
-      width: calc(1000px * .53333); } }
+    .popup {
+      width: calc(800px * .53333); } }
   @media screen and (min-width: 1366px) {
-    #otterPopup1 {
-      width: calc(1000px * .71145); } }
+    .popup {
+      width: calc(800px * .71145); } }
   @media screen and (min-width: 1440px) {
-    #otterPopup1 {
-      width: calc(1000px * .75); } }
+    .popup {
+      width: calc(800px * .75); } }
   @media screen and (min-width: 1680px) {
-    #otterPopup1 {
-      width: calc(1000px * .875); } }
+    .popup {
+      width: calc(800px * .875); } }
   @media screen and (min-width: 1920px) {
-    #otterPopup1 {
-      width: 1000px; } }
-
-.allDone, .popup {
-  width: 400px;
-  height: auto; }
+    .popup {
+      width: 800px; } }
 
 .popup-wrap {
   width: 100%;
@@ -605,8 +669,8 @@ main {
 
 .popup-mascot {
   position: absolute;
-  top: -50px;
-  left: -175px;
+  top: -75px;
+  left: -225px;
   height: auto; }
   @media screen and (min-width: 1024px) {
     .popup-mascot {
@@ -624,7 +688,7 @@ main {
 .popup-content {
   width: 80%;
   float: right;
-  padding: 2rem 4rem 4rem 2rem; }
+  padding: 2rem 4rem; }
 
 .popup-content-list {
   list-style-type: none; }
@@ -644,11 +708,9 @@ main {
   text-transform: uppercase;
   padding: 0; }
 
-#popupAlbatross, #allDoneAlbatross {
-  border: 1px solid black; }
-
 .allDone {
-  display: none; }
+  display: none;
+  padding: 2rem 4rem; }
 
 .allDone a, .popup a {
   color: black;
@@ -692,9 +754,9 @@ main {
 .crab-position {
   width: 163px;
   position: absolute;
-  top: 45%;
-  left: 45%;
-  transform: translate(-45%, -45%); }
+  top: 85%;
+  left: 60%;
+  transform: translate(-60%, -85%); }
   @media screen and (min-width: 1024px) {
     .crab-position {
       width: 87px; } }
@@ -1461,7 +1523,7 @@ main {
 
 /* Trash Items */
 .recycling-placement {
-  display: flex;
+  display: none;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -1555,6 +1617,9 @@ main {
     -ms-filter: brightness(130%);
     -webkit-transition: all 0.50s;
     transition: all 0.50s; }
+
+#fishModalWrap {
+  z-index: 9; }
 
 .micro {
   position: relative;
@@ -1673,6 +1738,9 @@ main {
   @media screen and (min-width: 1920px) {
     .seaweed-placement {
       width: 550px; } }
+
+.micro-popups {
+  display: none; }
 
 .fish-background-change {
   background-image: url(../img/fish-scene-with-reef.png);

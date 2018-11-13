@@ -1,33 +1,4 @@
-/* Albatross Trash Scene */ 
-$( function() {
-// Popup Instructions
-  $(document).ready(function(){
-    $("#popup").dialog({
-      classes: {
-        "ui-dialog": "popup-dialog"
-      }
-    });
-  });
-
-/* Optional Hide FadeOut Effect */
-  $("#popup").dialog({  
-    hide: {effect: "fadeOut", duration: 1000}
-  });
-  // Getter
-  var hide = $( "#popup" ).dialog( "option", "hide" );
-  // Setter
-  $( "#popup" ).dialog( "option", "hide", { effect: "fadeOut", duration: 1000} );  
-
-  $("#popup").dialog({   
-    width: 400
-  });
-  // Getter
-  var width = $( ".selector" ).dialog( "option", "width" );
-  // Setter
-  $( ".selector" ).dialog( "option", "width", 500 );  
-
-// Drag and Drop
-
+$("document").ready(function() {
 //Functions
 
 function albatrossColoring() {
@@ -44,8 +15,8 @@ function straws() {
 function wrappers() {     
     $("#crab").hide(); 
     $("#trashWrappers").fadeOut(500);
-    $("#crab").attr("src", "img/crab-colored.png");            
-    $("#crab").fadeIn(1000);         
+    $("#crab").attr("src", "img/crab-colored.png");
+    $("#crab").fadeIn(1000);      
 }
 
 function net() {     
@@ -66,14 +37,14 @@ function plastics() {
     $("#beachball").hide(); 
     $("#trashPlastics").fadeOut(500);
     $("#beachball").attr("src", "img/beachball-colored.png");            
-    $("#beachball").fadeIn(1000);       
+    $("#beachball").fadeIn(1000);         
 }
 
 function styrofoam() {
     $("#shell3").hide();     
     $("#trashStyrofoam").fadeOut(500);
     $("#shell3").attr("src", "img/conch-colored.png");
-    $("#shell3").fadeIn(1000);       
+    $("#shell3").fadeIn(1000);      
 }
 
 function background() {    
@@ -81,7 +52,38 @@ function background() {
     $("#albatross").attr("src", "img/albatross-colored.png");            
     $("#albatrossBackground").addClass("albatross-bg-2");   
     $("#albatrossBackground").show();
+    $("#tooltipStraws").fadeOut("fast");   
+    $("#tooltipWrappers").fadeOut("fast");
+    $("#tooltipNet").fadeOut("fast");
+    $("#tooltipSixPack").fadeOut("fast");
+    $("#tooltipPlastics").fadeOut("fast");
+    $("#tooltipStyrofoam").fadeOut("fast");
 }
+
+// TOOLTIPS
+  $("#trashStrawsClose").click(function() {
+    $("#tooltipStraws").fadeOut("fast");
+  });  
+
+  $("#trashWrappersClose").click(function() {
+    $("#tooltipWrappers").fadeOut("fast");
+  });
+
+  $("#trashNetClose").click(function() {
+    $("#tooltipNet").fadeOut("fast");
+  });  
+
+  $("#trashSixPackClose").click(function() {
+    $("#tooltipSixPack").fadeOut("fast");
+  });  
+
+  $("#trashPlasticsClose").click(function() {
+    $("#tooltipPlastics").fadeOut("fast");
+  });
+
+  $("#trashStyrofoamClose").click(function() {
+    $("#tooltipStyrofoam").fadeOut("fast");
+  });
 
 //RECYCLE 
   $("#albatrossRecycle").click(function() {
@@ -97,26 +99,62 @@ function background() {
 
   $("#trashStraws").on("drag", function(event, ui) {
       $("#straws").addClass("trashDropped");
+      $("#tooltipStraws").fadeIn("fast");   
+      $("#tooltipWrappers").fadeOut("fast");
+      $("#tooltipNet").fadeOut("fast");
+      $("#tooltipSixPack").fadeOut("fast");
+      $("#tooltipPlastics").fadeOut("fast");
+      $("#tooltipStyrofoam").fadeOut("fast");
     });   
 
   $("#trashWrappers").on("drag", function(event, ui) {
-      $("#wrappers").addClass("trashDropped");   
+      $("#wrappers").addClass("trashDropped");
+      $("#tooltipWrappers").fadeIn("fast");
+      $("#tooltipStraws").fadeOut("fast");
+      $("#tooltipNet").fadeOut("fast");
+      $("#tooltipSixPack").fadeOut("fast");
+      $("#tooltipPlastics").fadeOut("fast");
+      $("#tooltipStyrofoam").fadeOut("fast");    
     });   
 
   $("#trashNet").on("drag", function(event, ui) {
-      $("#net").addClass("trashDropped");   
+      $("#net").addClass("trashDropped"); 
+      $("#tooltipNet").fadeIn("fast");
+      $("#tooltipStraws").fadeOut("fast");
+      $("#tooltipWrappers").fadeOut("fast");
+      $("#tooltipSixPack").fadeOut("fast");
+      $("#tooltipPlastics").fadeOut("fast");
+      $("#tooltipStyrofoam").fadeOut("fast");      
     }); 
 
   $("#trashSixPack").on("drag", function(event, ui) {
-      $("#sixPack").addClass("trashDropped");   
+      $("#sixPack").addClass("trashDropped");    
+      $("#tooltipSixPack").fadeIn("fast");
+      $("#tooltipStraws").fadeOut("fast");
+      $("#tooltipWrappers").fadeOut("fast");
+      $("#tooltipNet").fadeOut("fast");
+      $("#tooltipPlastics").fadeOut("fast");
+      $("#tooltipStyrofoam").fadeOut("fast"); 
     });
 
   $("#trashPlastics").on("drag", function(event, ui) {
-      $("#plastics").addClass("trashDropped");   
+      $("#plastics").addClass("trashDropped"); 
+      $("#tooltipPlastics").fadeIn("fast");
+      $("#tooltipStraws").fadeOut("fast");
+      $("#tooltipWrappers").fadeOut("fast");
+      $("#tooltipNet").fadeOut("fast");
+      $("#tooltipSixPack").fadeOut("fast");
+      $("#tooltipStyrofoam").fadeOut("fast");
     });   
 
   $("#trashStyrofoam").on("drag", function(event, ui) {
-      $("#styrofoam").addClass("trashDropped");   
+      $("#styrofoam").addClass("trashDropped");
+      $("#tooltipStyrofoam").fadeIn("fast");
+      $("#tooltipStraws").fadeOut("fast");
+      $("#tooltipWrappers").fadeOut("fast");
+      $("#tooltipNet").fadeOut("fast");
+      $("#tooltipSixPack").fadeOut("fast");
+      $("#tooltipPlastics").fadeOut("fast");  
     });     
 
 //DROP
@@ -155,18 +193,13 @@ function background() {
       if ($("#styrofoam").hasClass("trashDropped") && $("#plastics").hasClass("trashDropped") && $("#sixPack").hasClass("trashDropped") && $("#net").hasClass("trashDropped") && $("#wrappers").hasClass("trashDropped") && $("#straws").hasClass("trashDropped")) {
         console.log("All dropped!");
         background();
-        $("#allDoneAlbatross").fadeIn();
+        $("#allDoneAlbatross").delay(4000).fadeIn("slow");
       }       
     }
   });
-/* Keep trash confined to bag 
-   $(".trash").draggable( {
-    containment: ".tote"
-  });
+});
 
-// Getter
-var containment = $( ".trash" ).draggable( "option", "containment" );  */
-}); 
+
 
 
 
