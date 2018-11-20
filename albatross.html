@@ -5,21 +5,33 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Happy Ocean</title>
-	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/animate.css">  
 	</head>
 
 	<body>
 		<main id="albatrossBackground" class="albatross">
-			<div id="popupAlbatross" class="popup">				
-				<a href="javascript:void(0)" id="popupAlbatross-closebtn" class="popupclosebutton">&times;</a>
-				<p>What happened? Help bring color back to Happy Ocean by cleaning up the beach! Click or tap on pieces of trash you find and drag them to your Happy Ocean tote bag.</p> 
-				<p>To play again, click or tap on the <i class="fas fa-recycle"></i> logo!</p>
-				<p><em>A happy ocean is a clean ocean!</em></p>
-			</div>
+			<div id="albatrossModalWrap" class="popup-wrap">
+					<div id="popupAlbatross" class="popup">
+						<a href="javascript:void(0)" id="popupAlbatross-closebtn" class="popupclosebutton">&times;</a>
+						<img class="popup-mascot" src="img/otter-1.png" alt="Otter Lifeguard Mascot">
+						
+						<div class="popup-content">
+						
+							<a href="javascript:void(0)" id="albatrossClose" class="popupclosebutton">&times;</a>
+							<h3>Uh-oh!</h3>
+							<p>What happened? Help bring color back to Happy Ocean by cleaning up the beach! Click or tap on pieces of trash you find to learn more about how plastic pollution impacts marine animals, then drag the items to your Happy Ocean tote bag.</p> 
+							<p>To play again, click or tap on the <i class="fas fa-recycle"></i> logo!</p>
+							<p><em>A happy ocean is a clean ocean!</em></p>
+						</div><!--popup-content-->
+					</div><!--popup-wrap--> 
+				</div><!--otterpopup-->
+<!-- All Done Popup-->
 			<div id="allDoneAlbatross" class="allDone">
 				<a href="javascript:void(0)" id="allDoneAlbatross-closebtn" class="popupclosebutton">&times;</a>
 				<h3>Nice work!</h3>
-				<p>You cleaned up the beach! Well done! Click or tap on the arrow to continue to the next scene, or use the map to choose a new location!</p>
+				<p>You cleaned up the beach! Well done!</p>
+				<p>Click or tap on the arrow to continue to the next scene, or use the map to choose a new location!</p>
 				<a href="fish.html">
 					<i class="fas fa-arrow-right right-side"></i>
 				</a>
@@ -29,7 +41,8 @@
 				<figure id="open" class="map-icon">
 					<img src="img/map-icon.png" alt="map icon">
 				</figure>
-			</div>	
+			</div>
+
 			<div id="modal" class="modal">	
 				<nav id="mapNav" class="sidenav">
 					<a href="javascript:void(0)" id="closebtn">&times;</a>
@@ -51,26 +64,30 @@
 					</div> <!-- map-areas -->	
 				</nav>
 			</div> <!-- modal -->
+
 <!-- ABOUT BROCHURE -->
-				<div id="brochure" class="brochure">
-					<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
-					<div id="aboutlist" class="map-list">
-						<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
-					</div>	
-				</div>		
+			<div id="brochure" class="brochure">
+				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
+				<div id="aboutlist" class="map-list">
+					<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
+				</div>	
+			</div>					
 <!-- SCENE -->
 			<section class="scene">
+				<div class="recycle-icon">
+						<i id="albatrossRecycle" class="fas fa-recycle fa"></i>
+				</div>
+				
 				<div class="tote">
 					<figure class="totebag">
 						<img src="img/tote.png" alt="Happy Ocean Tote Bag">
 					</figure>
-					<div class="recycle-icon">
-						<i id="albatrossRecycle" class="fas fa-recycle fa"></i>
-					</div>
-				</div>							
+				</div>	
+
 				<figure class="albatross-position">
 					<img id="albatross" src="img/albatross.png" alt="Laysan Albatross">
 				</figure>
+
 				<figure class="crab-position">
 					<img id="crab" src="img/crab.png" alt="Crab holding boombox">
 				</figure>			
@@ -89,37 +106,84 @@
 
 				<figure class="shell-3-position">
 				<img id="shell3" src="img/conch.png" alt="shell">
-				</figure>				
-<!-- TRASH -->
-				<figure id="trashStraws" class="trash-straws-position">
-				<img id="straws" class="trash" src="img/trash-straws.png" alt="plastic straws">
+				</figure>	
+
+<!-- TOOLTIPS -->
+	<!-- Straws -->				
+				<div id="tooltipStraws" class="tooltiptext">
+					<a href="javascript:void(0)" id="trashStrawsClose" class="popupclosebutton">&times;</a>	
+					<img style="width: 100px; float: right" src="img/trash-straws.png" alt="plastic straws">
+					<h4>Plastic Straws</h4>
+					<p>Americans use <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">500 million straws daily</a>, making this the <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">11th most common type of ocean trash</a>. Straws are easily picked up and mistaken for food by seabirds such as the <a href="https://ocean.si.edu/ocean-life/seabirds/laysan-albatrosses-plastic-problem" target="_blank">Laysan Albatross</a>. The plastic damages their digestive system, causing death. To learn more about how straws impact marine animals and how you can help, visit our <a href="#">Plastic Straws </a> resource section.</p>
+				</div>
+
+	<!-- Wrappers -->	
+				<div id="tooltipWrappers"class="tooltiptext">
+					<a href="javascript:void(0)" id="trashWrappersClose" class="popupclosebutton">&times;</a>	
+					<img style="width: 100px; float: right" src="img/wrappers.png" alt="plastic food wrappers">
+					<h4>Food Wrappers</h4>
+					<p>Americans use <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">500 million straws daily</a>, making this the <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">11th most common type of ocean trash</a>. Straws are easily picked up and mistaken for food by seabirds such as the <a href="https://ocean.si.edu/ocean-life/seabirds/laysan-albatrosses-plastic-problem" target="_blank">Laysan Albatross</a>. The plastic damages their digestive system, causing death. To learn more about how straws impact marine animals and how you can help, visit our <a href="#">Plastic Straws </a> resource section.</p>
+				</div>	
+	<!-- Net -->
+				<div id="tooltipNet"class="tooltiptext">
+					<a href="javascript:void(0)" id="trashNetClose" class="popupclosebutton">&times;</a>	
+					<img style="width: 100px; float: right" src="img/net.png" alt="fishing net">
+					<h4>Fishing Net</h4>
+					<p>Americans use <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">500 million straws daily</a>, making this the <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">11th most common type of ocean trash</a>. Straws are easily picked up and mistaken for food by seabirds such as the <a href="https://ocean.si.edu/ocean-life/seabirds/laysan-albatrosses-plastic-problem" target="_blank">Laysan Albatross</a>. The plastic damages their digestive system, causing death. To learn more about how straws impact marine animals and how you can help, visit our <a href="#">Plastic Straws </a> resource section.</p>
+				</div>	
+	<!-- Six Pack -->
+				<div id="tooltipSixPack"class="tooltiptext">
+					<a href="javascript:void(0)" id="trashSixPackClose" class="popupclosebutton">&times;</a>	
+					<img style="width: 100px; float: right" src="img/6-pack.png" alt="plastic packaging for 6-pack">
+					<h4>Six-Pack Holder</h4>
+					<p>Americans use <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">500 million straws daily</a>, making this the <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">11th most common type of ocean trash</a>. Straws are easily picked up and mistaken for food by seabirds such as the <a href="https://ocean.si.edu/ocean-life/seabirds/laysan-albatrosses-plastic-problem" target="_blank">Laysan Albatross</a>. The plastic damages their digestive system, causing death. To learn more about how straws impact marine animals and how you can help, visit our <a href="#">Plastic Straws </a> resource section.</p>
+				</div>	
+	<!-- Plastics -->	
+				<div id="tooltipPlastics"class="tooltiptext">
+					<a href="javascript:void(0)" id="trashPlasticsClose" class="popupclosebutton">&times;</a>	
+					<img style="width: 100px; float: right" src="img/small-plastics.png" alt="Small plastic fragments">
+					<h4>Plastic Fragments</h4>
+					<p>Americans use <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">500 million straws daily</a>, making this the <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">11th most common type of ocean trash</a>. Straws are easily picked up and mistaken for food by seabirds such as the <a href="https://ocean.si.edu/ocean-life/seabirds/laysan-albatrosses-plastic-problem" target="_blank">Laysan Albatross</a>. The plastic damages their digestive system, causing death. To learn more about how straws impact marine animals and how you can help, visit our <a href="#">Plastic Straws </a> resource section.</p>	
+				</div>
+	<!-- Styrofoam -->	
+				<div id="tooltipStyrofoam" class="tooltiptext">
+					<a href="javascript:void(0)" id="trashStyrofoamClose" class="popupclosebutton">&times;</a>	
+					<img style="width: 100px; float: right" src="img/styrofoam.png" alt="Styrofoam and foam">
+					<h4>Foam and Styrofoam</h4>
+					<p>Americans use <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">500 million straws daily</a>, making this the <a href="https://get-green-now.com/environmental-impact-plastic-straws/" target="_blank">11th most common type of ocean trash</a>. Straws are easily picked up and mistaken for food by seabirds such as the <a href="https://ocean.si.edu/ocean-life/seabirds/laysan-albatrosses-plastic-problem" target="_blank">Laysan Albatross</a>. The plastic damages their digestive system, causing death. To learn more about how straws impact marine animals and how you can help, visit our <a href="#">Plastic Straws </a> resource section.</p>	
+				</div>
+
+<!-- TRASH -->							
+				<figure id="trashStraws" class="trash-straws-position tooltip">
+					<img id="straws" class="trash" src="img/trash-straws.png" alt="plastic straws">
 				</figure>
 
-				<figure id="trashWrappers" class="trash-wrappers-position">
-				<img id="wrappers" class="trash" src="img/wrappers.png" alt="plastic wrappers">
+				<figure id="trashWrappers" class="trash-wrappers-position tooltip">
+					<img id="wrappers" class="trash" src="img/wrappers.png" alt="plastic wrappers">
+				</figure>
+						
+				<figure id="trashNet" class="trash-net-position tooltip">
+					<img id="net" class="trash" src="img/net.png" alt="fishing net">
 				</figure>
 
-				<figure id="trashNet" class="trash-net-position">
-				<img id="net" class="trash" src="img/net.png" alt="fishing net">
+				<figure id="trashSixPack" class="trash-sixpack-position tooltip">
+					<img id="sixPack" class="trash" src="img/6-pack.png" alt="plastic packaging for 6-pack">
+				</figure>		
+
+				<figure id="trashPlastics" class="trash-plastics-position tooltip">
+					<img id="plastics" class="trash" src="img/small-plastics.png" alt="Small plastic fragments">
 				</figure>
 
-				<figure id="trashSixPack" class="trash-sixpack-position">
-				<img id="sixPack" class="trash" src="img/6-pack.png" alt="plastic packaging for 6-pack">
-				</figure>						
-
-				<figure id="trashPlastics" class="trash-plastics-position">
-				<img id="plastics" class="trash" src="img/small-plastics.png" alt="Small plastics">
+				<figure id="trashStyrofoam" class="trash-styrofoam-position tooltip">
+					<img id="styrofoam" class="trash" src="img/styrofoam.png" alt="Styrofoam">
 				</figure>
-
-				<figure id="trashStyrofoam" class="trash-styrofoam-position">
-				<img id="styrofoam" class="trash" src="img/styrofoam.png" alt="Styrofoam">
-				</figure>
+				
 			</section>							
 		</main>	
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  	<script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/dragdropAlbatross.js"></script>  
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	    <script src="js/script.js"></script>
+	    <script src="js/dragdropAlbatross.js"></script>  
 	</body>
 </html>

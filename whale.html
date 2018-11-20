@@ -5,8 +5,9 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Happy Ocean</title>
-	    <link rel="stylesheet" href="css/style.css">  
-	    <link rel="stylesheet" href="css/preloading.css">        		       	
+	    <link rel="stylesheet" href="css/style.css">
+	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/animate.css">   		       	
 	</head>
 	<body>		
 		<main class="whale">
@@ -38,53 +39,107 @@
 				</nav>
 			</div> <!-- modal -->
 <!-- ABOUT BROCHURE -->
-				<div id="brochure" class="brochure">
-					<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
-					<div id="aboutlist" class="map-list">
-						<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
-					</div>	
-				</div>		
+			<div id="brochure" class="brochure">
+				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
+				<div id="aboutlist" class="map-list">
+					<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
+				</div>	
+			</div>	
+<!-- MODAL -->
+			<div id="whaleModalWrap" class="popup-wrap">
+				<div id="popupWhale" class="popup">
+					<a href="javascript:void(0)" id="popupWhale-closebtn" class="popupclosebutton">&times;</a>
+					<img class="popup-mascot" src="img/otter-1.png" alt="Otter Lifeguard Mascot">
+					
+					<div class="popup-content">
+						<a href="javascript:void(0)" id="whaleClose" class="popupclosebutton">&times;</a>
+						<h3>Diving Deep</h3>
+						<p>Many everyday items that we use for just a few moments or even seconds can wind up in the ocean, where they can last a really long time. Dive into the ocean and discover just how long some of the things we use stay in the ocean by clicking or tapping on each of the pieces of floating garbage.</p>
+						
+						<p>To play again, click or tap on the <i class="fas fa-recycle"></i> logo!</p>
+						<p><em>A happy ocean is a clean ocean!</em></p>
+					</div><!--popup-content-->
+				</div><!--popup-wrap--> 
+			</div><!--otterpopup-->
+
+<!-- All Done Popup-->
+			<div id="allDoneWhale" class="allDone">
+				<a href="javascript:void(0)" id="allDoneWhale-closebtn" class="popupclosebutton">&times;</a>
+				<h3>Hooray!</h3>
+				<p>Now that you know how long some of these objects take to decompose, you can help keep our ocean clean by reducing the amount of disposable items you use. To find out more about how to reduce your reliance on single-use products, please visit our <a href="info.html#reuse">resources</a> page!</p>
+
+				<p> Click or tap on the arrow to continue to the next scene, or use the map to choose a new location!</p>
+				<a href="sealion.html">
+					<i class="fas fa-arrow-right right-side"></i>
+				</a>
+			</div>				
 <!-- SCENE -->					
-			<section class="scene">
+			<section id="whaletop" class="scene">
+				<div class="recycle-icon">
+					<i id="whaleRecycle" class="fas fa-recycle fa"></i>
+				</div>
 				<figure class="whale-position">
 					<img src="img/whale.png" alt="Whale on Surfboard">
 				</figure>
 
+				<figure id="whaleTrash21">
+					<img src="img/whale-papertowels.png" alt="paper towels">
+				</figure>
+			</section>
+
+			<section class="whale-scene">
 				<figure id="whaleTrash1">
 					<img src="img/whale-plasticbag.png" alt="plastic bag">
 				</figure>
+			</section>
 
+			<section class="whale-scene">
 				<figure id="whaleTrash2">
 					<img src="img/whale-plasticbottle.png" alt="plastic bottle">
 				</figure>
+			</section>
 
+			<section class="whale-scene">
 				<figure id="whaleTrash3">
 					<img src="img/whale-box.png" alt="cardboard box">
 				</figure>
+			</section>
 
+			<section class="whale-scene">
 				<figure id="whaleTrash4">
 					<img src="img/whale-bottle.png" alt="glass bottle">
 				</figure>
+			</section>
 
+			<section class="whale-scene">
 				<figure id="whaleTrash5">
 					<img src="img/whale-aluminum.png" alt="aluminum cans">
 				</figure>
+			</section>
 
+			<section class="whale-scene">
 				<figure id="whaleTrash6">
 					<img src="img/whale-cigarettes.png" alt="cigarette butts">
 				</figure>
+			</section>	
 
+			<section class="whale-scene">
 				<figure id="whaleTrash7">
 					<img src="img/whale-6pack.png" alt="plastic six pack holder">
 				</figure>
+			</section>
 
+			<section class="whale-scene">
 				<figure id="whaleTrash8">
 					<img src="img/whale-carton.png" alt="waxed carton">
 				</figure>
+			</section>
 
+			<section class="whale-scene">
 				<figure id="whaleTrash9">
 					<img src="img/whale-newspaper.png" alt="newspaper">
 				</figure>
+			</section>
 
 				<figure id="whaleTrash10">
 					<img src="img/whale-diaper.png" alt="diaper">
@@ -133,9 +188,10 @@
 			</section>				
 		</main>	
 	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 	
+	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+	  	<script src="js/jquery.ui.touch-punch.min.js"></script>  	
 	    <script src="js/jquery.waitforimages.js"></script>
 		<script src="js/img-preloading.js"></script>
-	    <script src="js/script.js"></script>		
+	    <script src="js/script.js"></script>  		
 	</body>
 </html>

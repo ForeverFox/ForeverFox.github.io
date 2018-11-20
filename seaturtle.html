@@ -5,9 +5,9 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Happy Ocean</title>
-	    <link rel="stylesheet" href="css/style.css">  	    
-  		<link rel="stylesheet" href="css/jquery-ui.css">  
+	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/jquery-ui.css">  
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/animate.css"> 
 	</head>
 
 	<body>
@@ -40,16 +40,53 @@
 				</nav>
 			</div> <!-- modal -->
 <!-- ABOUT BROCHURE -->
-				<div id="brochure" class="brochure">
-					<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
-					<div id="aboutlist" class="map-list">
-						<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
-					</div>	
-				</div>		
+			<div id="brochure" class="brochure">
+				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
+				<div id="aboutlist" class="map-list">
+					<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
+				</div>	
+			</div>
+<!-- MODAL -->
+			<div id="turtleModalWrap" class="popup-wrap">
+				<div id="popupTurtle" class="popup">
+					<a href="javascript:void(0)" id="popupTurtle-closebtn" class="popupclosebutton">&times;</a>
+					<img class="popup-mascot" src="img/otter-1.png" alt="Otter Lifeguard Mascot">
+					
+					<div class="popup-content">
+						<a href="javascript:void(0)" id="turtleClose" class="popupclosebutton">&times;</a>
+						<h3>Let's Recycle!</h3>
+						<p>Green Sea Turtle is excited to fly her kite but there's too much garbage in the way. This is a massive beach cleanup job, so we're bringing out the big bins. Help sort the trash and recyclables into the appropriate bins. You might be surprised: it's possible to recycle more than you think!</p> 
+						<p>To play again, click or tap on the <i class="fas fa-recycle"></i> logo!</p>
+						<p><em>A happy ocean is a clean ocean!</em></p>
+					</div><!--popup-content-->
+				</div><!--popup-wrap--> 
+			</div><!--otterpopup-->
+
+<!-- All Done Popup-->
+			<div id="allDoneTurtle" class="allDone">
+				<a href="javascript:void(0)" id="allDoneTurtle-closebtn" class="popupclosebutton">&times;</a>
+				<h3>Amazing!</h3>
+				<p>That was a big job! You cleaned up all the trash from the beach and helped Green Sea Turtle fly her kite!</p>
+				<p>Click or tap on the arrow to continue to the next scene, or use the map to choose a new location!</p>
+				<a href="whale.html">
+					<i class="fas fa-arrow-right right-side"></i>
+				</a>
+			</div>
+					
+			<div id="seaturtleKite" class="seaturtle-kite">
+					<img src="img/seaturtle-kite.png">
+			</div>
 <!-- SCENE -->
 			<section class="scene">
+				<div class="recycle-icon">
+					<i id="seaturtleRecycle" class="fas fa-recycle fa" style="color: darkgreen"></i>
+				</div>
 
-				<div class="recycling-placement">
+				<figure id="seaturtleFigure" class="seaturtle-placement">
+					<img src="img/seaturtle-sad.png">
+				</figure>
+
+				<div id="bigBins" class="recycling-placement">
 					<figure class="recyclingBins">
 						<img id="recyclingBinTote" src="img/tote.png" alt="Happy Ocean Tote Bag">
 					</figure>
@@ -68,13 +105,353 @@
 					<figure class="recyclingBins">
 						<img id="recyclingBinWaste" src="img/recycle-waste.png" alt="Waste Bin">
 					</figure>	
-				</div>													
+				</div>
+
+<!-- TRASH -->
+	<!-- Popups -->
+				<div id="seaturtle-trash-tote-pop" class="popup">
+					<a href="javascript:void(0)" id="popupTurtle-closebtn1" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/seaturtle-popup-tote.png" alt="Plastic debris">
+					<h3>Special Items</h3>
+					<p>Items like batteries, plastic bags, plastic cups, food wrappers, plastic silverware, fishing line, bottle caps, and straws can all be recycled with a little extra effort!</p>
+
+					<p>Place these items in the Happy Ocean tote bag so we can bring them to special recycling services!</p>
+
+					<p>Check out the <a style="font-size: 1rem; letter-spacing: 0.1rem" href="info.html#specialrecycling">resources</a> page for more information!</p>
+				</div>
+
+				<div id="seaturtle-trash-plastic-pop" class="popup">
+					<a href="javascript:void(0)" id="popupTurtle-closebtn2" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/seaturtle-popup-plastic.png" alt="Plastic debris">
+					<h3>Plastic</h3>
+					<p>Most plastic bottles and containers can be recycled. Check with your local recycling center to see which plastics are able to be recycled in your area. You can check the number on the bottom of the plastic item. Plastics labled 1 or 2 are generally recycled everywhere. Other plastics may require special attention.</p> 
+
+					<p>Place these in the yellow bin for plastics!</p>
+
+					<p>Check out the <a style="font-size: 1rem; letter-spacing: 0.1rem" href="info.html#plasticrecycling">resources</a> page for more information!</p>
+				</div>
+
+				<div id="seaturtle-trash-cans-pop" class="popup">
+					<a href="javascript:void(0)" id="popupTurtle-closebtn3" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/seaturtle-popup-cans.png" alt="Can debris">
+					<h3>Cans</h3>
+					<p>Aluminum and steel cans, as well as other types of metal items can be recycled.</p> 
+
+					<p>Place these in the orange bin for cans!</p>
+
+					<p>Check out the <a style="font-size: 1rem; letter-spacing: 0.1rem" href="info.html#metalrecycling">resources</a> page for more information!</p>
+				</div>
+
+				<div id="seaturtle-trash-glass-pop" class="popup">
+					<a href="javascript:void(0)" id="popupTurtle-closebtn4" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/seaturtle-popup-glass.png" alt="Glass debris">
+					<h3>Glass</h3>
+					<p>Glass bottles can be recycled. Be careful: some of the bottles are broken. Always be sure to wear thick gloves when performing a beach cleanup!</p> 
+
+					<p>Place these in the blue bin for bottles!</p>
+
+					<p>Check out the <a style="font-size: 1rem; letter-spacing: 0.1rem" href="info.html#glassrecycling">resources</a> page for more information!</p>
+				</div>
+
+				<div id="seaturtle-trash-paper-pop" class="popup">
+					<a href="javascript:void(0)" id="popupTurtle-closebtn5" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/seaturtle-popup-paper.png" alt="Paper debris">
+					<h3>Paper and Cardboard</h3>
+					<p>Items like paper, magazines, corrugated cardboard, cardboard boxes, and cardboard food packages can be recycled.</p> 
+
+					<p>Place these in the green bin for paper!</p>
+
+					<p>Check out the <a style="font-size: 1rem; letter-spacing: 0.1rem" href="info.html#paperrecycling">resources</a> page for more information!</p>
+				</div>
+
+				<div id="seaturtle-trash-waste-pop" class="popup">
+					<a href="javascript:void(0)" id="popupTurtle-closebtn6" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/seaturtle-popup-waste.png" alt="Trash">
+					<h3>Waste</h3>
+					<p>Unfortunately, most items like CDs, balloons, cigarette butts, disposable lighters, styrofoam containers, and other types of foam cannot be recycled and must be placed in the waste bin.</p>
+
+					<p>Check out the <a style="font-size: 1rem; letter-spacing: 0.1rem" href="info.html#wasterecycling">resources</a> page for more information!</p>
+				</div>
+	<!-- Tote -->
+				<figure id="tote2" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-02.png" alt="food wrapper">							
+				</figure>
+
+				<figure id="tote3" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-03.png" alt="food wrapper">							
+				</figure>
+
+				<figure id="tote4" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-04.png" alt="food wrapper">							
+				</figure>
+
+				<figure id="tote5" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-05.png" alt="single-use wrappers">							
+				</figure>
+
+				<figure id="tote6" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-06.png" alt="food wrapper">							
+				</figure>
+
+				<figure id="tote7" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-07.png" alt="food wrapper">							
+				</figure>
+
+				<figure id="tote8" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-08.png" alt="food wrapper">							
+				</figure>
+
+				<figure id="tote9" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-09.png" alt="plastic drink cup">							
+				</figure>
+
+				<figure id="tote10" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-10.png" alt="plastic bag">							
+				</figure>
+
+				<figure id="tote11" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-11.png" alt="plastic cup">							
+				</figure>
+
+				<figure id="tote12" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-12.png" alt="plastic fork">							
+				</figure>
+
+				<figure id="tote13" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-13.png" alt="plastic knife">							
+				</figure>
+
+				<figure id="tote14" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-14.png" alt="fishing net">							
+				</figure>
+
+				<figure id="tote15" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-15.png" alt="batteries">							
+				</figure>
+
+				<figure id="tote16" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-16.png" alt="six pack holder">							
+				</figure>
+
+				<figure id="tote17" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-17.png" alt="bottlecaps">							
+				</figure>
+
+				<figure id="tote18" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-18.png" alt="straws">							
+				</figure>
+
+				<figure id="tote19" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-19.png" alt="straws">							
+				</figure>
+
+				<figure id="tote20" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-20.png" alt="straws">							
+				</figure>
+
+				<figure id="tote21" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-21.png" alt="straws">							
+				</figure>
+
+				<figure id="tote22" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-22.png" alt="straws">							
+				</figure>
+
+				<figure id="tote23" class="seaturtle-trash-tote trash">		
+					<img src="img/seaturtle-trash/tote-23.png" alt="straws">							
+				</figure>
+
+	<!-- Plastic -->
+				<figure id="plastic1" class="seaturtle-trash-plastic trash">		
+					<img src="img/seaturtle-trash/plastic-01.png" alt="plastic bottle">							
+				</figure>
+
+				<figure id="plastic2" class="seaturtle-trash-plastic trash">		
+					<img src="img/seaturtle-trash/plastic-02.png" alt="plastic containers">							
+				</figure>
+
+				<figure id="plastic3" class="seaturtle-trash-plastic trash">		
+					<img src="img/seaturtle-trash/plastic-03.png" alt="plastic jug">							
+				</figure>
+
+				<figure id="plastic4" class="seaturtle-trash-plastic trash">		
+					<img src="img/seaturtle-trash/plastic-04.png" alt="plastic bottle">							
+				</figure>
+
+				<figure id="plastic5" class="seaturtle-trash-plastic trash">		
+					<img src="img/seaturtle-trash/plastic-05.png" alt="plastic bottle">							
+				</figure>
+
+				<figure id="plastic6" class="seaturtle-trash-plastic trash">		
+					<img src="img/seaturtle-trash/plastic-06.png" alt="plastic bottle">							
+				</figure>
+
+	<!-- Cans -->
+				<figure id="can1" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-01.png" alt="aluminum can">							
+				</figure>
+
+				<figure id="can2" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-02.png" alt="steel can">							
+				</figure>
+
+				<figure id="can3" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-03.png" alt="steel can">							
+				</figure>
+
+				<figure id="can4" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-04.png" alt="aluminum can">							
+				</figure>
+
+				<figure id="can5" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-05.png" alt="aluminum can">							
+				</figure>
+
+				<figure id="can6" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-06.png" alt="aluminum can">							
+				</figure>
+
+				<figure id="can7" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-07.png" alt="aluminum can">							
+				</figure>
+
+				<figure id="can8" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-08.png" alt="aluminum cans">							
+				</figure>
+
+				<figure id="can9" class="seaturtle-trash-cans trash">		
+					<img src="img/seaturtle-trash/can-09.png" alt="aluminum can">							
+				</figure>
+
+	<!-- Glass -->
+				<figure id="glass1" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-01.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass2" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-02.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass3" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-03.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass4" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-04.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass5" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-05.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass6" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-06.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass7" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-07.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass8" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-08.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass9" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-09.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass10" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-10.png" alt="glass bottle">							
+				</figure>
+
+				<figure id="glass11" class="seaturtle-trash-glass trash">		
+					<img src="img/seaturtle-trash/glass-11.png" alt="glass bottle">							
+				</figure>
+
+	<!-- Paper -->
+				<figure id="paper1" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-01.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper2" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-02.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper3" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-03.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper4" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-04.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper5" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-05.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper6" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-06.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper7" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-07.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper8" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-08.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper9" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-09.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper10" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-10.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper11" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-11.png" alt="paper waste">							
+				</figure>
+
+				<figure id="paper12" class="seaturtle-trash-paper trash">		
+					<img src="img/seaturtle-trash/paper-12.png" alt="paper waste">							
+				</figure>
+					
+	<!-- Waste -->
+				<figure id="waste1" class="seaturtle-trash-waste trash">		
+					<img src="img/seaturtle-trash/waste-01.png" alt="CDs">							
+				</figure>
+
+				<figure id="waste2" class="seaturtle-trash-waste trash">		
+					<img src="img/seaturtle-trash/waste-02.png" alt="balloons">							
+				</figure>
+
+				<figure id="waste3" class="seaturtle-trash-waste trash">		
+					<img src="img/seaturtle-trash/waste-03.png" alt="cigarette butts">							
+				</figure>
+
+				<figure id="waste4" class="seaturtle-trash-waste trash">		
+					<img src="img/seaturtle-trash/waste-04.png" alt="styrofoam takeout tray">							
+				</figure>
+
+				<figure id="waste5" class="seaturtle-trash-waste trash">		
+					<img src="img/seaturtle-trash/waste-05.png" alt="lighter">							
+				</figure>
+
+				<figure id="waste6" class="seaturtle-trash-waste trash">		
+					<img src="img/seaturtle-trash/waste-06.png" alt="juice box">							
+				</figure>
+
+				<figure id="waste7" class="seaturtle-trash-waste trash">		
+					<img src="img/seaturtle-trash/waste-07.png" alt="foam">							
+				</figure>	
+						
 			</section>							
 		</main>	
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  	<script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/dragdropAlbatross.js"></script>  
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	    <script src="js/script.js"></script>
+	    <script src="js/dragdropTurtle.js"></script>
 	</body>
 </html>

@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Happy Ocean</title>
-	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/animate.css">  
 	</head>
 	
 	<body>		
@@ -38,14 +39,46 @@
 				</nav>
 			</div> <!-- modal -->
 <!-- ABOUT BROCHURE -->
-				<div id="brochure" class="brochure">
-					<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
-					<div id="aboutlist" class="map-list">
-						<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
-					</div>	
-				</div>		
+			<div id="brochure" class="brochure">
+				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
+				<div id="aboutlist" class="map-list">
+					<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
+				</div>	
+			</div>		
+
+<!-- MODAL -->
+			<div id="fishModalWrap" class="popup-wrap">
+				<div id="popupFish" class="popup">
+					<a href="javascript:void(0)" id="popupFish-closebtn" class="popupclosebutton">&times;</a>
+					<img class="popup-mascot" src="img/otter-1.png" alt="Otter Lifeguard Mascot">
+					
+					<div class="popup-content">
+						<a href="javascript:void(0)" id="fishClose" class="popupclosebutton">&times;</a>
+						<h3>Sergeant Major Needs Your Help!</h3>
+						<p>Sergeant Major wants to swim home to his reef, but he can't find his way with all this plastic pollution in the water. He's wearing goggles, fins and a snorkel to help him get through this muck, but he needs your help. Click or tap on the screen to use the net to scoop up the gunk in the water and learn more about microplastics.</p> 
+						
+						<p>To play again, click or tap on the <i class="fas fa-recycle"></i> logo!</p>
+						<p><em>A happy ocean is a clean ocean!</em></p>
+					</div><!--popup-content-->
+				</div><!--popup-wrap--> 
+			</div><!--otterpopup-->
+
+<!-- All Done Popup-->
+			<div id="allDoneFish" class="allDone">
+				<a href="javascript:void(0)" id="allDoneFish-closebtn" class="popupclosebutton">&times;</a>
+				<h3>Awesome!</h3>
+				<p>You scooped up all those icky microplastics and helped Sergeant Major find his way home! Good job!</p>
+				<p>Click or tap on the arrow to continue to the next scene, or use the map to choose a new location!</p>
+				<a href="seaturtle.html">
+					<i class="fas fa-arrow-right right-side"></i>
+				</a>
+			</div>				
 <!-- SCENE -->					
 			<section class="scene">	
+				<div class="recycle-icon">
+						<i id="fishRecycle" class="fas fa-recycle fa"></i>
+				</div>
+
 				<div id="micro-1" class="micro"></div>
 				<div id="micro-2" class="micro"></div>
 				<div id="micro-3" class="micro"></div>
@@ -57,14 +90,56 @@
 				</div>
 				<div class="seaweed-placement">
 					<img src="img/fish-seaweed.png" alt="seaweed">
-				</div>		
+				</div>	
+<!-- Popups -->
+				<div id="micro-1-pop" class="popup micro-popups">
+					<a href="javascript:void(0)" id="micro-1-pop-close" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/fish-microparticles-popup.png" alt="Microplastics: Fine Particles">
+					<h3>Fine Particles</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ante massa, placerat eget lobortis id, sodales id tortor. Cras rhoncus congue ligula, nec volutpat magna semper sit amet. Vestibulum a turpis odio. Morbi at gravida nisi. Sed ut consequat ante, vitae pharetra massa.</p>
+				</div>
+
+				<div id="micro-2-pop" class="popup micro-popups">
+					<a href="javascript:void(0)" id="micro-2-pop-close" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/fish-microbeads-popup.png" alt="Microplastics: Microbeads">
+					<h3>Microbeads</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ante massa, placerat eget lobortis id, sodales id tortor. Cras rhoncus congue ligula, nec volutpat magna semper sit amet. Vestibulum a turpis odio. Morbi at gravida nisi. Sed ut consequat ante, vitae pharetra massa.</p>
+				</div>
+
+				<div id="micro-3-pop" class="popup micro-popups">
+					<a href="javascript:void(0)" id="micro-3-pop-close" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/fish-microfibers-popup.png" alt="Microplastics: Fibers">
+					<h3>Fibers</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ante massa, placerat eget lobortis id, sodales id tortor. Cras rhoncus congue ligula, nec volutpat magna semper sit amet. Vestibulum a turpis odio. Morbi at gravida nisi. Sed ut consequat ante, vitae pharetra massa.</p>
+				</div>
+
+				<div id="micro-4-pop" class="popup micro-popups">
+					<a href="javascript:void(0)" id="micro-4-pop-close" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/fish-micronurdles-popup.png" alt="Microplastics: Nurdles">
+					<h3>Nurdles</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ante massa, placerat eget lobortis id, sodales id tortor. Cras rhoncus congue ligula, nec volutpat magna semper sit amet. Vestibulum a turpis odio. Morbi at gravida nisi. Sed ut consequat ante, vitae pharetra massa.</p>
+				</div>
+
+				<div id="micro-5-pop" class="popup micro-popups">
+					<a href="javascript:void(0)" id="micro-5-pop-close" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/fish-microfragments-popup.png" alt="Microplastics: Plastic Fragments">
+					<h3>Plastic Fragments</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ante massa, placerat eget lobortis id, sodales id tortor. Cras rhoncus congue ligula, nec volutpat magna semper sit amet. Vestibulum a turpis odio. Morbi at gravida nisi. Sed ut consequat ante, vitae pharetra massa.</p>
+				</div>
+
+				<div id="micro-6-pop" class="popup micro-popups">
+					<a href="javascript:void(0)" id="micro-6-pop-close" class="popupclosebutton">&times;</a>
+					<img style="width: 200px; float: right" src="img/fish-microfoam-popup.png" alt="Microplastics: Foam and Styrofoam">
+					<h3>Foam and Syrofoam</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ante massa, placerat eget lobortis id, sodales id tortor. Cras rhoncus congue ligula, nec volutpat magna semper sit amet. Vestibulum a turpis odio. Morbi at gravida nisi. Sed ut consequat ante, vitae pharetra massa.</p>
+				</div>	
 			</section>					
 		</main>	
 	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 	
+	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+	  	<script src="js/jquery.ui.touch-punch.min.js"></script>	
 	    <script src="js/jquery.waitforimages.js"></script>
 		<script src="js/img-preloading.js"></script>
-	  	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	    <script src="js/script.js"></script>		
 	</body>
 </html>

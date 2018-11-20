@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	    <title>Happy Ocean</title>
-	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">  
+	    <link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+	    <link rel="stylesheet" href="css/animate.css">  
 	</head>
 
 	<body>
@@ -38,20 +39,89 @@
 				</nav>
 			</div> <!-- modal -->
 <!-- ABOUT BROCHURE -->
-				<div id="brochure" class="brochure">
-					<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
-					<div id="aboutlist" class="map-list">
-						<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
-					</div>	
-				</div>		
+			<div id="brochure" class="brochure">
+				<a href="javascript:void(0)" id="aboutclosebtn">&times;</a>	
+				<div id="aboutlist" class="map-list">
+					<a href="javascript:void(0)" id="revealmap">BACK TO MAP</a>
+				</div>	
+			</div>		
+<!-- MODAL -->
+			<div id="sealionModalWrap" class="popup-wrap">
+				<div id="popupSealion" class="popup">
+					<a href="javascript:void(0)" id="popupSealion-closebtn" class="popupclosebutton">&times;</a>
+					<img class="popup-mascot" src="img/otter-1.png" alt="Otter Lifeguard Mascot">
+					
+					<div class="popup-content">
+						<a href="javascript:void(0)" id="sealionClose" class="popupclosebutton">&times;</a>
+						<h3>Let's Reuse!</h3>
+						<p>California Sea Lion is a professional sandcastle builder and he's come to Happy Ocean beach to build an amazing sandcastle! He also brought a picnic with him. The only thing he wants to leave behind is sand, so he's brought his lunch in reusable and compostable containers! Click or tap to open his tote bag and discover ways to use less plastic and reuse items to help keep our beaches and oceans clean!</p> 
+						<p>To play again, click or tap on the <i class="fas fa-recycle"></i> logo!</p>
+						<p><em>A happy ocean is a clean ocean!</em></p>
+					</div><!--popup-content-->
+				</div><!--popup-wrap--> 
+			</div><!--otterpopup-->
+
+<!-- All Done Popup-->
+			<div id="allDoneSealion" class="allDone">
+				<a href="javascript:void(0)" id="allDoneSealion-closebtn" class="popupclosebutton">&times;</a>
+				<h3>Awesome!</h3>
+				<p>You scooped up all those icky microplastics and helped Sergeant Major find his way home! Good job!</p>
+				<p>Click or tap on the arrow to continue to the next scene, or use the map to choose a new location!</p>
+				<a href="albatross.html">
+					<i class="fas fa-arrow-right right-side"></i>
+				</a>
+			</div>			
 <!-- SCENE -->
 			<section class="scene">
+				<div class="recycle-icon">
+						<i id="sealionRecycle" class="fas fa-recycle fa"></i>
+				</div>
+
+				<figure class="sealion-placement">
+					<img src="img/sealion.png" alt="sea lion">
+				</figure>
+
+				<figure id="sealionBucket" class="sealion-bucket">
+					<img src="img/sealion-scene-bucket.png" alt="Bucket and shovel for sand castle building">
+				</figure>
+				<figure id="sealionTote" class="sealion-tote">
+					<img src="img/sealion-tote-closed.png" alt="Happy Ocean tote bag">
+				</figure>
+
+				<figure id="sealionTote2" class="sealion-tote">
+					<img src="img/sealion-tote-open.png" alt="Happy Ocean tote bag">
+				</figure>
+
+<!-- Items -->
+				<figure id="sealion-item-tools" class="sealion-items">
+					<img src="img/sealion-item-tools.png" alt="Ruler, plastic silverware">
+				</figure>
+
+				<figure id="sealion-item-waxed" class="sealion-items">
+					<img src="img/sealion-item-waxed.png" alt="Various items inside waxed paper bags">
+				</figure>
+
+				<figure id="sealion-item-fruit" class="sealion-items">
+					<img src="img/sealion-item-fruit.png" alt="apple and banana">
+				</figure>
+
+				<figure id="sealion-item-lunchbag" class="sealion-items">
+					<img src="img/sealion-item-lunchbag.png" alt="Happy Ocean lunch bag">
+				</figure>
+
+				<figure id="sealion-item-bottle" class="sealion-items">
+					<img src="img/sealion-item-bottle.png" alt="Happy Ocean aluminum bottle">
+				</figure>
+
+				<figure id="sealion-item-towel" class="sealion-items">
+					<img src="img/sealion-item-towel.png" alt="tea towel">
+				</figure>
+
 			</section>							
 		</main>	
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  	<script src="js/jquery.ui.touch-punch.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/dragdropAlbatross.js"></script>  
+	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	  	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	    <script src="js/script.js"></script>   
 	</body>
 </html>

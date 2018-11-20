@@ -1,9 +1,25 @@
+function restartScene() {
+  location.reload(true);
+}
+
+//INFO
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+
 // MODAL
-// Get the modal
 var modal = document.getElementById("modal");
-
-
-
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -54,6 +70,16 @@ $("document").ready(function() {
 		}, 100);
   		$(".modal").fadeOut("slow");	 	
 	});	
+
+//INFO
+
+	$("#infoboard").click(function() {
+		$("#bulletin").fadeIn("fast");
+	});
+
+	$("#infoclosebtn").click(function() {
+		$("#bulletin").fadeOut("fast");
+	});
 
 /* Albatross Scene */	
 	$("#albatrossModalWrap").fadeIn("slow");
@@ -152,17 +178,49 @@ $("document").ready(function() {
   		$("#allDoneSealion").fadeOut("fast");
 	});
 
-//Sea Turtle Scene
-	$("#turtleModalWrap").fadeIn("slow");
+	$("#sealionTote").click(function() {
+		$("#sealionTote").fadeOut("fast");
+		$("#sealionTote2").fadeIn("fast");
+		$("#sealion-item-tools").delay(500).fadeIn(100);
+		$("#sealion-item-waxed").delay(600).fadeIn(100);
+		$("#sealion-item-lunchbag").delay(700).fadeIn(100);
+		$("#sealion-item-towel").delay(800).fadeIn(100);
+		$("#sealion-item-bottle").delay(900).fadeIn(100);
+		$("#sealion-item-fruit").delay(1000).fadeIn(100);
+	})
 
-	$("#turtleClose").click(function() {
-  		$("#turtleModalWrap").fadeOut("fast");
-  		$(".recycling-placement").addClass("animated bounceInRight").css("display", "flex").delay(1500).fadeIn(2000);
-	});	//at end of game use bounceOutRight to return bins	
+//Whale Scene
+	$("#whaleModalWrap").fadeIn("slow");
 
-	$("#allDoneTurtle-closebtn").click(function() {
-  		$("#allDoneTurtle").fadeOut("fast");
+	$("#whaleClose").click(function() {
+  		$("#whaleModalWrap").fadeOut("fast");
+	});		
+
+	$("#allDoneWhale-closebtn").click(function() {
+  		$("#allDoneWhale").fadeOut("fast");
 	});
+
+
+//RESTART SCENES
+  $("#albatrossRecycle").click(function() {
+    restartScene();
+  });
+
+  $("#fishRecycle").click(function() {
+    restartScene();
+  });
+
+  $("#seaturtleRecycle").click(function() {
+    restartScene();
+  });
+
+  $("#whaleRecycle").click(function() {
+    restartScene();
+  });
+
+  $("#sealionRecycle").click(function() {
+    restartScene();
+  });
 
 });
 

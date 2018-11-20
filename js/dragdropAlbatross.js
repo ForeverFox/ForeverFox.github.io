@@ -1,10 +1,6 @@
 $("document").ready(function() {
 //Functions
 
-function albatrossColoring() {
-  location.reload(true);
-}
-
 function straws() {  
     $("#albatross").hide(); 
     $("#trashStraws").fadeOut(500);
@@ -85,11 +81,6 @@ function background() {
     $("#tooltipStyrofoam").fadeOut("fast");
   });
 
-//RECYCLE 
-  $("#albatrossRecycle").click(function() {
-    albatrossColoring();
-  });
-
 // DRAG
   $(".trash").draggable( {
     drag: function(event, ui) {
@@ -163,31 +154,37 @@ function background() {
       if ($("#straws").hasClass("trashDropped")) {
         console.log("Straws dropped!");
         straws();
+        $("#tooltipStraws").fadeOut("fast");
       } 
 
       if ($("#wrappers").hasClass("trashDropped")) {
         console.log("Wrappers dropped!");
         wrappers();
+        $("#tooltipWrappers").fadeOut("fast");
       } 
 
       if ($("#net").hasClass("trashDropped")) {
         console.log("Net dropped!");
         net();
+        $("#tooltipNet").fadeOut("fast");
       } 
 
       if ($("#sixPack").hasClass("trashDropped")) {
         console.log("Six pack dropped!");
         sixPack();
+        $("#tooltipSixPack").fadeOut("fast");
       } 
 
       if ($("#plastics").hasClass("trashDropped")) {
         console.log("Plastics dropped!");
         plastics();
+        $("#tooltipPlastics").fadeOut("fast");
       }      
 
       if ($("#styrofoam").hasClass("trashDropped")) {
         console.log("Styrofoam dropped!");
         styrofoam();
+        $("#tooltipStyrofoam").fadeOut("fast");
       }          
 
       if ($("#styrofoam").hasClass("trashDropped") && $("#plastics").hasClass("trashDropped") && $("#sixPack").hasClass("trashDropped") && $("#net").hasClass("trashDropped") && $("#wrappers").hasClass("trashDropped") && $("#straws").hasClass("trashDropped")) {
