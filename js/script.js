@@ -18,14 +18,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-// MODAL
-var modal = document.getElementById("modal");
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
 $("document").ready(function() {
 	$("#open").click(function() {	
@@ -70,6 +62,12 @@ $("document").ready(function() {
 		}, 100);
   		$(".modal").fadeOut("slow");	 	
 	});	
+
+//MODAL
+	$(".popup-wrap").click(function() {
+		$(".popup").fadeOut("fast");
+		$(".popup-wrap").fadeOut("fast");
+	});		
 
 //INFO
 
@@ -194,12 +192,27 @@ $("document").ready(function() {
 
 	$("#whaleClose").click(function() {
   		$("#whaleModalWrap").fadeOut("fast");
+  		$("#submarine").css("display", "block").addClass("animated slideInLeft");
 	});		
+
+	$("#whaleModalWrap").click(function() {
+		$("#submarine").css("display", "block").addClass("animated slideInLeft");
+	});
 
 	$("#allDoneWhale-closebtn").click(function() {
   		$("#allDoneWhale").fadeOut("fast");
 	});
 
+	$("#submarine").hover(function() {
+		$("#submarineToTop").fadeIn("fast");
+	}, function(){
+		$("#submarineToTop").fadeOut("fast");
+	});
+
+//Scroll Events
+	$("window").scroll(function() {
+		$(".whale-info-pop").fadeIn("slow");
+	})
 
 //RESTART SCENES
   $("#albatrossRecycle").click(function() {

@@ -7,9 +7,10 @@
 	    <title>Happy Ocean</title>
 	    <link rel="stylesheet" href="css/style.css">
 	    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-	    <link rel="stylesheet" href="css/animate.css">   		       	
+	    <link rel="stylesheet" href="css/animate.css">  
+	    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> <!-- Animate on Scroll library --> 		       	
 	</head>
-	<body>		
+	<body id="top" class="whale-body">		
 		<main class="whale">
 <!-- NAVIGATION -->				
 			<div id="mapopen" class="nav">
@@ -72,126 +73,252 @@
 				<a href="sealion.html">
 					<i class="fas fa-arrow-right right-side"></i>
 				</a>
+			</div>
+			<div id="submarine" class="submarine">
+				<a href="#top">
+					<img src="img/submarine.png" alt="submarine">
+				</a>
+				<h5 id="submarineToTop">Click to return to the surface!</h5>
 			</div>				
 <!-- SCENE -->					
 			<section id="whaletop" class="scene">
+
 				<div class="recycle-icon">
 					<i id="whaleRecycle" class="fas fa-recycle fa"></i>
 				</div>
+
 				<figure class="whale-position">
 					<img src="img/whale.png" alt="Whale on Surfboard">
 				</figure>
 
-				<figure id="whaleTrash21">
-					<img src="img/whale-papertowels.png" alt="paper towels">
-				</figure>
+				<div id="whaleTrash21" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-papertowels.png" alt="paper towels">
+					<div class="whale-popup-content2" data-aos="fade-right"> 
+						<p>Paper towels</p>
+						<h3>2-4 weeks</h3>
+					</div>
+				</div>
 			</section>
 
 			<section class="whale-scene">
-				<figure id="whaleTrash1">
-					<img src="img/whale-plasticbag.png" alt="plastic bag">
-				</figure>
+
+				<div id="whaleTrash9" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-newspaper.png" alt="newspaper">
+					<div class="whale-popup-content" data-aos="fade-left"> 
+						<p>Newspaper</p> 
+						<h3>6 weeks</h3>
+					</div>
+				</div>
+
+				<div id="whaleTrash3" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-box.png" alt="cardboard box">
+					<div class="whale-popup-content" data-aos="fade-up-left"> 
+						<p>Cardboard boxes</p> 
+						<h3>2 months</h3>
+					</div>
+				</div>
+
 			</section>
 
 			<section class="whale-scene">
-				<figure id="whaleTrash2">
-					<img src="img/whale-plasticbottle.png" alt="plastic bottle">
-				</figure>
+				<div id="whaleTrash8" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-carton.png" alt="waxed carton">
+					<div class="whale-popup-content2" data-aos="fade-down-right">
+						<p>Waxed cartons</p>
+						<h3>3 months</h3>
+					</div>
+				</div>
+
+				
 			</section>
 
 			<section class="whale-scene">
-				<figure id="whaleTrash3">
-					<img src="img/whale-box.png" alt="cardboard box">
-				</figure>
+
+				<div id="whaleTrash19" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-plywood.png" alt="plywood boards">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Plywood boards</p>
+						<h3>1-3 years</h3>
+					</div>
+				</div>
+
+				<div id="whaleTrash6" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-cigarettes.png" alt="cigarette butts">
+					<div class="whale-popup-content2" data-aos="fade-right">
+						<p>Cigarette butts</p>
+						<h3>2-5 years</h3>
+					</div>
+				</div>
+			</section>
+
+			<section class="whale-scene"></section>
+
+			<section class="whale-scene">
+				<div id="whaleTrash1" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-plasticbag.png" alt="plastic bag">
+					<div class="whale-popup-content2" data-aos="fade-right">
+						<p>Plastic bags</p>
+						<h3>20 years</h3>
+					</div>
+				</div>
 			</section>
 
 			<section class="whale-scene">
-				<figure id="whaleTrash4">
-					<img src="img/whale-bottle.png" alt="glass bottle">
-				</figure>
+				<div id="whaleTrash12" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-coffee.png" alt="coffee cup">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Disposable coffee cups</p>
+						<h3>30 years</h3>
+					</div>
+				</div>
+			</section>
+
+			<section class="whale-scene"></section>
+
+			<section class="whale-scene">
+				<div id="whaleTrash15" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-styro.png" alt="styrofoam cup">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Styrofoam cups</p>
+						<h3>50 years</h3>
+					</div>
+				</div>
+
+				<div id="whaleTrash16" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-steel.png" alt="steel cans">
+					<div class="whale-popup-content2" data-aos="fade-right">
+						<p>Steel cans</p>
+						<h3>50 years</h3>
+					</div>
+				</div>
 			</section>
 
 			<section class="whale-scene">
-				<figure id="whaleTrash5">
-					<img src="img/whale-aluminum.png" alt="aluminum cans">
-				</figure>
+				<div id="whaleTrash13" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-floaty.png" alt="boogie board">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Foam board</p>
+						<h3>80 years</h3>
+					</div>
+				</div>
+			</section>
+			
+			<section class="whale-scene"></section>
+			<section class="whale-scene"></section>
+
+			<section class="whale-scene">
+				<div id="whaleTrash5" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-aluminum.png" alt="aluminum cans">
+					<div class="whale-popup-content2" data-aos="fade-right">
+						<p>Aluminum cans</p>
+						<h3>200 years</h3>
+					</div>
+				</div>	
+
+				<div id="whaleTrash17" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-straws.png" alt="straws">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Plastic straws</p>
+						<h3>200 years</h3>
+					</div>
+				</div>
+			</section>
+			
+			<section class="whale-scene"></section>
+			<section class="whale-scene"></section>
+			<section class="whale-scene"></section>
+
+			<section class="whale-scene">
+				<div id="whaleTrash7" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-6pack.png" alt="plastic six pack holder">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Six-pack holders</p>
+						<h3>400 years</h3>
+					</div>
+				</div>
+
+				<div id="whaleTrash10" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-diaper.png" alt="diaper">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Disposable diapers</p>
+						<h3>450 years</h3>
+					</div>
+				</div>
+
+				<div id="whaleTrash20" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-plasticcup.png" alt="plastic cup">
+					<div class="whale-popup-content2" data-aos="fade-right">
+						<p>Plastic cups</p>
+						<h3>450 years</h3>
+					</div>
+				</div>
 			</section>
 
 			<section class="whale-scene">
-				<figure id="whaleTrash6">
-					<img src="img/whale-cigarettes.png" alt="cigarette butts">
-				</figure>
+				<div id="whaleTrash2" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-plasticbottle.png" alt="plastic bottle">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Plastic bottles</p>
+						<h3>450 years</h3>
+					</div>
+				</div>
+
 			</section>	
 
 			<section class="whale-scene">
-				<figure id="whaleTrash7">
-					<img src="img/whale-6pack.png" alt="plastic six pack holder">
-				</figure>
+				<div id="whaleTrash14" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-pods.png" alt="coffee pods">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Coffee pods</p>
+						<h3>500 years</h3>
+					</div>
+				</div>
+
+				<div id="whaleTrash18" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-toothbrush.png" alt="toothbrushes">
+					<div class="whale-popup-content2" data-aos="fade-right">
+						<p>Toothbrushes</p>
+						<h3>500 years</h3>
+					</div>
+				</div>
 			</section>
 
 			<section class="whale-scene">
-				<figure id="whaleTrash8">
-					<img src="img/whale-carton.png" alt="waxed carton">
-				</figure>
-			</section>
 
-			<section class="whale-scene">
-				<figure id="whaleTrash9">
-					<img src="img/whale-newspaper.png" alt="newspaper">
-				</figure>
-			</section>
+				<div id="whaleTrash11" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-fishing.png" alt="fishing line">
+					<div class="whale-popup-content" data-aos="fade-left">
+						<p>Monofilament fishing line</p>
+						<h3>600 years</h3>
+					</div>
+				</div>
 
-				<figure id="whaleTrash10">
-					<img src="img/whale-diaper.png" alt="diaper">
-				</figure>
+			</section>		
 
-				<figure id="whaleTrash11">
-					<img src="img/whale-fishing.png" alt="fishing line">
-				</figure>
+			<section class="whale-scene"></section>
+			<section class="whale-scene"></section>
+			<section class="whale-scene"></section>
+			<section class="whale-scene"></section>
 
-				<figure id="whaleTrash12">
-					<img src="img/whale-coffee.png" alt="coffee cup">
-				</figure>
-
-				<figure id="whaleTrash13">
-					<img src="img/whale-floaty.png" alt="boogie board">
-				</figure>
-
-				<figure id="whaleTrash14">
-					<img src="img/whale-pods.png" alt="coffee pods">
-				</figure>
-
-				<figure id="whaleTrash15">
-					<img src="img/whale-styro.png" alt="styrofoam cup">
-				</figure>
-
-				<figure id="whaleTrash16">
-					<img src="img/whale-steel.png" alt="steel cans">
-				</figure>
-
-				<figure id="whaleTrash17">
-					<img src="img/whale-straws.png" alt="straws">
-				</figure>
-
-				<figure id="whaleTrash18">
-					<img src="img/whale-toothbrush.png" alt="toothbrushes">
-				</figure>
-
-				<figure id="whaleTrash19">
-					<img src="img/whale-plywood.png" alt="plywood boards">
-				</figure>
-
-				<figure id="whaleTrash20">
-					<img src="img/whale-plasticcup.png" alt="plastic cup">
-				</figure>
-
-			</section>				
+			<section class="whale-scene floor">
+				<div id="whaleTrash4" class="whale-trash-popup">
+					<img data-aos="zoom-in-up" src="img/whale-bottle.png" alt="glass bottle">
+					<div class="whale-popup-content3" data-aos="fade-up-right">
+						<p>Glass bottles</p>
+						<h3>1 million years</h3>
+					</div>
+				</div>
+			</section>	
 		</main>	
 	    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
 	  	<script src="js/jquery.ui.touch-punch.min.js"></script>  	
 	    <script src="js/jquery.waitforimages.js"></script>
 		<script src="js/img-preloading.js"></script>
-	    <script src="js/script.js"></script>  		
+	    <script src="js/script.js"></script>  
+	    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	    <script>
+	    	AOS.init();
+	    </script>		
 	</body>
 </html>
