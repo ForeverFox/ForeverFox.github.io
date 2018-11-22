@@ -9,7 +9,7 @@ function fishAnimation() {
 var turtleAnimation;
 
 function turtleChange() {
-	turtleAnimation = setTimeout(turtleGif, 4000);		
+	turtleAnimation = setTimeout(turtleGif, 1000);		
 }
 
 function turtleGif() {
@@ -43,4 +43,13 @@ $("document").ready(function() {
   		fishAnimation();
   		mascotsChange();
 	});	
+
+	$(".popup-wrap").click(function() {
+		$(".popup").fadeOut("fast");
+		$(".popup-wrap").fadeOut("fast");
+		$("#otterPopup").fadeOut("slow");
+  		turtleChange();  		
+  		fishAnimation();
+  		mascotsChange();
+	});
 });

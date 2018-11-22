@@ -7,6 +7,14 @@ $("document").ready(function() {
 		}, 9000);
 	}
 
+	$(".popup-wrap").click(function() {
+	$(".popup").fadeOut("fast");
+	$(".popup-wrap").fadeOut("fast");
+	$("#turtleModalWrap").fadeOut("fast");
+		$(".recycling-placement").addClass("animated bounceInRight").css("display", "flex").delay(1500).fadeIn(2000);
+	});
+
+
 	$("#turtleModalWrap").fadeIn("slow");
 
 	$("#turtleClose").click(function() {
@@ -102,8 +110,8 @@ $("document").ready(function() {
   			if($(".seaturtle-trash-tote").hasClass("trashDropped") && $(".seaturtle-trash-plastic").hasClass("trashDropped") && $(".seaturtle-trash-cans").hasClass("trashDropped") && $(".seaturtle-trash-glass").hasClass("trashDropped") && $(".seaturtle-trash-paper").hasClass("trashDropped") && $(".seaturtle-trash-waste").hasClass("trashDropped")) {
         			
         			console.log("All dropped!");
-        			$(".recycling-placement").addClass("animated bounceOutRight");
-        			$("#seaturtleFigure").addClass("animated bounceOutLeft");
+        			$(".recycling-placement").addClass("animated bounceOutRight").delay(1000).fadeOut("fast");
+        			$("#seaturtleFigure").addClass("animated bounceOutLeft").delay(1000).fadeOut("fast");
         			kite();
         			$("#allDoneTurtle").delay(4000).fadeIn("slow");
   			}
@@ -123,8 +131,8 @@ $("document").ready(function() {
   			if($(".seaturtle-trash-tote").hasClass("trashDropped") && $(".seaturtle-trash-plastic").hasClass("trashDropped") && $(".seaturtle-trash-cans").hasClass("trashDropped") && $(".seaturtle-trash-glass").hasClass("trashDropped") && $(".seaturtle-trash-paper").hasClass("trashDropped") && $(".seaturtle-trash-waste").hasClass("trashDropped")) {
         			
         			console.log("All dropped!");
-        			$(".recycling-placement").addClass("animated bounceOutRight");
-        			$("#seaturtleFigure").addClass("animated bounceOutLeft");
+        			$(".recycling-placement").addClass("animated bounceOutRight").delay(1000).fadeOut("fast");
+        			$("#seaturtleFigure").addClass("animated bounceOutLeft").delay(1000).fadeOut("fast");
         			kite();
         			$("#allDoneTurtle").delay(4000).fadeIn("slow");
   			}
@@ -144,8 +152,8 @@ $("document").ready(function() {
   			if($(".seaturtle-trash-tote").hasClass("trashDropped") && $(".seaturtle-trash-plastic").hasClass("trashDropped") && $(".seaturtle-trash-cans").hasClass("trashDropped") && $(".seaturtle-trash-glass").hasClass("trashDropped") && $(".seaturtle-trash-paper").hasClass("trashDropped") && $(".seaturtle-trash-waste").hasClass("trashDropped")) {
         			
         			console.log("All dropped!");
-        			$(".recycling-placement").addClass("animated bounceOutRight").delay(1500).fadeOut(2000);
-        			$("#seaturtleFigure").addClass("animated bounceOutLeft");
+        			$(".recycling-placement").addClass("animated bounceOutRight").delay(1000).fadeOut("fast");
+        			$("#seaturtleFigure").addClass("animated bounceOutLeft").delay(1000).fadeOut("fast");
         			kite();
         			$("#allDoneTurtle").delay(4000).fadeIn("slow");
   			}
@@ -165,8 +173,8 @@ $("document").ready(function() {
   			if($(".seaturtle-trash-tote").hasClass("trashDropped") && $(".seaturtle-trash-plastic").hasClass("trashDropped") && $(".seaturtle-trash-cans").hasClass("trashDropped") && $(".seaturtle-trash-glass").hasClass("trashDropped") && $(".seaturtle-trash-paper").hasClass("trashDropped") && $(".seaturtle-trash-waste").hasClass("trashDropped")) {
         			
         			console.log("All dropped!");
-        			$(".recycling-placement").addClass("animated bounceOutRight");
-        			$("#seaturtleFigure").addClass("animated bounceOutLeft");
+        			$(".recycling-placement").addClass("animated bounceOutRight").delay(1000).fadeOut("fast");
+        			$("#seaturtleFigure").addClass("animated bounceOutLeft").delay(1000).fadeOut("fast");
         			kite();
         			$("#allDoneTurtle").delay(4000).fadeIn("slow");
   			}
@@ -186,8 +194,8 @@ $("document").ready(function() {
   			if($(".seaturtle-trash-tote").hasClass("trashDropped") && $(".seaturtle-trash-plastic").hasClass("trashDropped") && $(".seaturtle-trash-cans").hasClass("trashDropped") && $(".seaturtle-trash-glass").hasClass("trashDropped") && $(".seaturtle-trash-paper").hasClass("trashDropped") && $(".seaturtle-trash-waste").hasClass("trashDropped")) {
         			
         			console.log("All dropped!");
-        			$(".recycling-placement").addClass("animated bounceOutRight");
-        			$("#seaturtleFigure").addClass("animated bounceOutLeft");
+        			$(".recycling-placement").addClass("animated bounceOutRight").delay(1000).fadeOut("fast");
+        			$("#seaturtleFigure").addClass("animated bounceOutLeft").delay(1000).fadeOut("fast");
         			kite();
         			$("#allDoneTurtle").delay(4000).fadeIn("slow");
   			}
@@ -208,8 +216,8 @@ $("document").ready(function() {
   			if($(".seaturtle-trash-tote").hasClass("trashDropped") && $(".seaturtle-trash-plastic").hasClass("trashDropped") && $(".seaturtle-trash-cans").hasClass("trashDropped") && $(".seaturtle-trash-glass").hasClass("trashDropped") && $(".seaturtle-trash-paper").hasClass("trashDropped") && $(".seaturtle-trash-waste").hasClass("trashDropped")) {
         			
         			console.log("All dropped!");
-        			$(".recycling-placement").addClass("animated bounceOutRight");
-        			$("#seaturtleFigure").addClass("animated bounceOutLeft");
+        			$(".recycling-placement").addClass("animated bounceOutRight").delay(1000).fadeOut("fast");
+        			$("#seaturtleFigure").addClass("animated bounceOutLeft").delay(1000).fadeOut("fast");
         			kite();
         			$("#allDoneTurtle").delay(4000).fadeIn("slow");
   		}

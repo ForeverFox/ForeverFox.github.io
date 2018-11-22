@@ -1,5 +1,9 @@
 function restartScene() {
-  location.reload(true);
+	location.reload(true);
+}
+
+function scrollToTop() {
+	window.scrollTo(0, 0);
 }
 
 //INFO
@@ -20,6 +24,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 $("document").ready(function() {
+
 	$("#open").click(function() {	
 		$("#mapNav").animate({
 			width: "100%",
@@ -188,6 +193,7 @@ $("document").ready(function() {
 	})
 
 //Whale Scene
+
 	$("#whaleModalWrap").fadeIn("slow");
 
 	$("#whaleClose").click(function() {
@@ -208,6 +214,12 @@ $("document").ready(function() {
 	}, function(){
 		$("#submarineToTop").fadeOut("fast");
 	});
+
+	$("#submarine").click(function() {
+		scrollToTop();
+		$("#allDoneWhale").delay(1000).fadeIn("fast");
+	});
+	
 
 //Scroll Events
 	$("window").scroll(function() {

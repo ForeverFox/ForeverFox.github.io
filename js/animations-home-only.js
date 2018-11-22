@@ -9,7 +9,7 @@ function fishAnimation() {
 var turtleAnimation;
 
 function turtleChange() {
-	turtleAnimation = setTimeout(turtleGif, 4000);		
+	turtleAnimation = setTimeout(turtleGif, 1000);		
 }
 
 function turtleGif() {

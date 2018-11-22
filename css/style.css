@@ -135,7 +135,7 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(#4fccd8, #194151);
+  background-image: linear-gradient(#4fccd8, #14333f);
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
   -webkit-animation-duration: 1s;
