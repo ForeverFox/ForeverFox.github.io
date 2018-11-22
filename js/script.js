@@ -247,6 +247,16 @@ $("document").ready(function() {
     restartScene();
   });
 
+
+
+//Extras
+	$("#shark").addClass("animated tada");
+
+	$("#shark").hover(function() {
+		$("#shark").removeClass("animated tada wobble bounce").addClass("animated bounce");
+	}, function(){
+		$("#shark").removeClass("animated tada wobble bounce").addClass("animated wobble");
+	});
 });
 
 

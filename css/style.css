@@ -532,9 +532,9 @@ main {
 
 .shark {
   position: absolute;
-  top: 40%;
-  left: 40%;
-  transform: translate(-40%, -40%); }
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%); }
   @media screen and (min-width: 1024px) {
     .shark {
       width: 293px; } }
