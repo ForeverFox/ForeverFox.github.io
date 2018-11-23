@@ -203,6 +203,17 @@ main {
 a.id-close {
   color: black; }
 
+.id-data {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400; }
+
+.flip-position {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+  width: 80px; }
+
 .infoboard {
   position: absolute;
   right: 15%;
