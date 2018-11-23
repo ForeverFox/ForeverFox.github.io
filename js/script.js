@@ -257,6 +257,47 @@ $("document").ready(function() {
 	}, function(){
 		$("#shark").removeClass("animated tada wobble bounce").addClass("animated wobble");
 	});
+
+//IDs
+	$("#mascotAlbatross").click(function() {
+		$("#idAlbatross").fadeIn("fast");
+	});
+
+	$("#mascotFish").click(function() {
+		$("#idFish").fadeIn("fast");
+	});
+
+	$("#mascotSealion").click(function() {
+		$("#idSealion").fadeIn("fast");
+	});
+
+	$("#mascotSeaturtle").click(function() {
+		$("#idSeaturtle").fadeIn("fast");
+	});
+
+	$("#mascotWhale").click(function() {
+		$("#idWhale").fadeIn("fast");
+	});
+
+	$("#idAlbatrossClose").click(function() {
+		$("#idAlbatross").fadeOut("fast");
+	});
+
+	$("#idFishClose").click(function() {
+		$("#idFish").fadeOut("fast");
+	});	
+
+	$("#idSealionClose").click(function() {
+		$("#idSealion").fadeOut("fast");
+	});
+
+	$("#idSeaturtleClose").click(function() {
+		$("#idSeaturtle").fadeOut("fast");
+	});
+
+	$("#idWhaleClose").click(function() {
+		$("#idWhale").fadeOut("fast");
+	});
 });
 
 

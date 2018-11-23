@@ -149,6 +149,60 @@ main {
 .seaturtle {
   background-image: url(../img/seaturtle-scene.png); }
 
+#mascotSealion, #mascotWhale, #mascotAlbatross, #mascotFish, #mascotSeaturtle {
+  cursor: pointer; }
+
+.id-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+  background-image: url(../img/id-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 4px solid gray;
+  border-radius: 10px;
+  display: none;
+  z-index: 999; }
+
+.id-logo {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem; }
+
+.id-logo img {
+  max-width: 100%; }
+
+.id {
+  display: flex;
+  width: 100%; }
+
+.id img {
+  max-width: 100%; }
+
+.id-content {
+  width: 80%;
+  padding: 1rem; }
+
+.id-content h2 {
+  padding-top: 0; }
+
+.id-content h3 {
+  padding: 0;
+  line-height: 1.6; }
+
+.id-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 0 0.5rem 0 0;
+  font-size: 2rem; }
+
+a.id-close {
+  color: black; }
+
 .infoboard {
   position: absolute;
   right: 15%;
