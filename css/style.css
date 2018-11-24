@@ -149,6 +149,36 @@ main {
 .seaturtle {
   background-image: url(../img/seaturtle-scene.png); }
 
+.social-media-placement {
+  position: absolute;
+  left: 63.23%;
+  top: 80%;
+  width: 16.93%;
+  height: 8.25%;
+  z-index: 2;
+  display: inline; }
+
+.social-media-icons {
+  padding: 0.5rem; }
+  @media screen and (min-width: 1024px) {
+    .social-media-icons {
+      width: calc(75px * .53333); } }
+  @media screen and (min-width: 1366px) {
+    .social-media-icons {
+      width: calc(75px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    .social-media-icons {
+      width: calc(75px * .75); } }
+  @media screen and (min-width: 1680px) {
+    .social-media-icons {
+      width: calc(75px * .875); } }
+  @media screen and (min-width: 1920px) {
+    .social-media-icons {
+      width: 75px; } }
+
+.social-media-icons img {
+  max-width: 100%; }
+
 #mascotSealion, #mascotWhale, #mascotAlbatross, #mascotFish, #mascotSeaturtle {
   cursor: pointer; }
 
@@ -156,9 +186,9 @@ main {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   width: 800px;
   height: 500px;
+  transform: translate(-50%, -50%);
   background-image: url(../img/id-bg.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -666,13 +696,14 @@ a.id-close {
   list-style-type: none; }
 
 .map-list a, .brochure a {
-  color: black; }
+  color: black;
+  font-size: 1rem; }
 
 .map-list a:hover, .brochure a:hover {
   color: #00ced1; }
 
 .map-list p {
-  font-size: 0.9rem; }
+  font-size: 1rem; }
 
 #closebtn, #aboutclosebtn {
   position: absolute;
@@ -3300,7 +3331,8 @@ a.id-close {
   background-size: cover;
   background-position: center center;
   overflow: hidden;
-  cursor: url(../img/net-cursor.png), auto; }
+  cursor: url(../img/net-cursor.png), auto;
+  cursor: url(img/net-cursor.cur); }
 
 #micro-1 {
   position: absolute;
