@@ -250,7 +250,7 @@ $("document").ready(function() {
 
 
 //Extras
-	$("#shark").addClass("animated tada");
+	$("#shark").addClass("animated tada").fadeIn("fast");
 
 	$("#shark").hover(function() {
 		$("#shark").removeClass("animated tada wobble bounce").addClass("animated bounce");
