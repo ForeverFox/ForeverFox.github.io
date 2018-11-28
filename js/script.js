@@ -6,23 +6,6 @@ function scrollToTop() {
 	window.scrollTo(0, 0);
 }
 
-//INFO
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
-
-
 $("document").ready(function() {
 
 	$("#open").click(function() {	
@@ -83,6 +66,19 @@ $("document").ready(function() {
 	$("#infoclosebtn").click(function() {
 		$("#bulletin").fadeOut("fast");
 	});
+
+	$("#brochurePlastics").click(function () {
+		$("#brochurePlasticsOpen").fadeIn("fast");
+	});
+
+	$("#brochureRecycling").click(function () {
+		$("#brochureRecyclingOpen").fadeIn("fast");
+	});
+
+	$("#brochureReps").click(function () {
+		$("#brochureRepsOpen").fadeIn("fast");
+	});
+
 
 /* Albatross Scene */	
 	$("#albatrossModalWrap").fadeIn("slow");

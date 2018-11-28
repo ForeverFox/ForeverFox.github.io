@@ -369,7 +369,7 @@ a.id-close {
   color: white;
   margin-left: 11%; }
 
-.mascot-info-wrapper {
+.brochure-info-wrapper {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -377,16 +377,49 @@ a.id-close {
   justify-content: center;
   align-content: space-between; }
 
-.mascot-info {
-  width: 250px;
-  height: 250px;
+.brochure-info {
   margin: 0.5rem;
-  background-color: white;
-  border: 2px solid #00ced1;
-  border-radius: 6px; }
+  cursor: pointer; }
+  @media screen and (min-width: 1024px) {
+    .brochure-info {
+      width: calc(300px * .53333); } }
+  @media screen and (min-width: 1366px) {
+    .brochure-info {
+      width: calc(300px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    .brochure-info {
+      width: calc(300px * .75); } }
+  @media screen and (min-width: 1680px) {
+    .brochure-info {
+      width: calc(300px * .875); } }
+  @media screen and (min-width: 1920px) {
+    .brochure-info {
+      width: 300px; } }
 
-.mascot-info img {
+.brochure-open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  z-index: 400; }
+
+.brochure-info img {
   max-width: 100%; }
+
+#brochurePlasticsOpen {
+  background-image: url(../img/brochure-plastics.png); }
+
+#brochureRecyclingOpen {
+  background-image: url(../img/brochure-recycling.png); }
+
+#brochureRepsOpen {
+  background-image: url(../img/brochure-our-reps.png); }
 
 .nav {
   position: relative;
@@ -654,6 +687,9 @@ a.id-close {
   max-width: 100%; }
 
 /* MAP NAV */
+.sidenav {
+  background-image: url(../img/map.png); }
+
 .sidenav, .brochure {
   position: fixed;
   height: 100%;
@@ -661,7 +697,6 @@ a.id-close {
   z-index: 9999;
   top: 0;
   left: 0;
-  background-image: url(../img/map.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
