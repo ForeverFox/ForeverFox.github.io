@@ -39,6 +39,7 @@ popUp1();
 $("document").ready(function() {
 	$("#popupOtter1-closebtn").click(function() {
   		$("#otterPopup").fadeOut("slow");
+  		$(".popup").fadeOut("fast");
   		turtleChange();  		
   		fishAnimation();
   		mascotsChange();
@@ -51,5 +52,28 @@ $("document").ready(function() {
   		turtleChange();  		
   		fishAnimation();
   		mascotsChange();
+	});
+
+
+// WELCOME 
+
+	$("#toPanel2").click(function() {
+		$("#panel1").slideUp("fast"); 
+		$("#panel2").slideDown("slow");
+	});
+
+	$("#toPanel3").click(function() {
+		$("#panel2").slideUp("fast"); 
+		$("#panel3").slideDown("slow");
+	});
+
+	$("#toPanel4").click(function() {
+		$("#panel3").slideUp("fast"); 
+		$("#panel4").slideDown("slow");
+	});
+
+	$("#toPanel1").click(function() {
+		$("#panel4").slideUp("fast"); 
+		$("#panel1").slideDown("slow");
 	});
 });

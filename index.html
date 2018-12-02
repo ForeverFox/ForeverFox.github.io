@@ -18,21 +18,50 @@
 		</figure>			
 		</div>		
 			<main id="home" class="home"> 
-				<div id="otterPopup" class="popup-wrap">
-					<div id="otterPopup1" class="popup">
-						<a href="javascript:void(0)" id="popupOtter1-closebtn" class="popupclosebutton">&times;</a>
-						<img class="popup-mascot" src="img/otter-1.png" alt="Otter Lifeguard Mascot">
-						<div class="popup-content">
+				<div id="otterPopup" class="popup-wrap"></div>
+					<div class="popup">
+
+						<a href="javascript:void(0)" id="popupOtter1-closebtn" class="popupclosebutton">SKIP</a>
 						
-							<h3>Welcome to Happy Ocean! </h3>
-							<p> Hi, there! I'm Otter, the Happy Ocean lifeguard! I'm here to guide you as you explore our beach.</p>
+						<img class="popup-mascot" src="img/otter-1.png" alt="Otter Lifeguard Mascot">
 
+						<div class="popup-content">
 							<img style="margin-top: 20px;" class="icon" src="img/happy_ocean_logo1.png" alt="Happy Ocean">
+							<div id="panel1">
+								<h3>Welcome to Happy Ocean!</h3>
 
-							<a href=#"><i class="fas fa-arrow-right right-side"></i></a>
-						</div><!--popup-content-->
-					</div><!--popup-wrap--> 
-				</div><!--otterpopup-->
+								<p>Hi, there! I'm Ollie the sea otter, the Happy Ocean lifeguard! I'm here to guide you as you explore our beach.</p>
+
+								<a href="javascript:void(0)" id="toPanel2"><i class="fas fa-arrow-right right-side"></i></a>
+								<p>1 / 4</p>
+							</div>
+								
+							<div id="panel2">
+								<h3>Getting Around</h3>
+								<p>It’s easy to explore Happy Ocean beach. You can get started right away with a guided tour by clicking on the “Start Tour” sign in the right corner and pay a visit to our Laysan Albatross representative, Kai Kalani! If you’re ever lost or want to explore on your own, you can always click on the map icon in the upper left corner of the screen and choose a destination from the map. Otherwise, just explore each scene and I’ll be there to guide you to the next stop on our tour when you’re ready!</p>
+								
+								<a href="javascript:void(0)" id="toPanel3"><i class="fas fa-arrow-right right-side"></i></a>
+								<p>2 / 4</p>
+							</div>
+							
+							<div id="panel3">
+								<h3>Meet Our Reps</h3>
+								<p>Happy Ocean has selected five representatives to talk about ocean conservation. Each of them stands for the five groups of marine animals that are currently most threatened by plastic pollution in the ocean: whales and dolphins, seabirds, sea turtles, sea lions and seals, and fish. As you visit our beach, you’ll get to know each of our representatives and hear their stories. You can always click on a representative to view their identity card and read their biography or learn more by visiting our <a href="info.html" target="_blank">resources</a> page.</p>
+								
+								<a href="javascript:void(0)" id="toPanel4"><i class="fas fa-arrow-right right-side"></i></a>
+								<p>3 / 4</p>
+							</div>	
+
+							<div id="panel4">
+								<h3>Beach Cleanup</h3>
+								<p>A happy ocean is a clean ocean, so we've organized a beach cleanup! We'd love it if you could lend a hand, too! As you explore our beach, please pick up any garbage you find. Along the way, you can also learn a bit about how plastic in the ocean affects marine animals like me. You can also find out about different types of plastic waste and discover ways you can help on our <a href="info.html" target="_blank">resources</a> page.</p>
+								<p>Have fun!</p>
+								<a href="javascript:void(0)" id="toPanel1"><i class="fas fa-arrow-right right-side"></i></a>
+								<p>4 / 4</p>
+							</div>
+						</div><!-- popup-content-->
+					</div><!--otterpopup-->
+
 <!-- NAVIGATION -->				
 			<div id="mapopen" class="nav">
 				<figure id="open" class="map-icon">
@@ -113,14 +142,16 @@
 				<div id="idWhale" class="id-card">
 					<figure class="id-logo">
 						<img src="img/happy_ocean_logo1.png" alt="Happy Ocean logo">
+						<figcaption class="id-number">ID #: HO5887096333</figcaption>
 					</figure>
 
 					<div class="id">
 						<a href="javascript:void(0)" id="idWhaleClose" class="id-close">&times;</a>
 						<img class="id-photo" src="img/id-whale.png" alt="Humpback Whale ID photo">
-						<div class="id-content">
+
+						<div id="whale1" class="id-content">
 							<h2>IDENTIFICATION CARD</h2>
-							<h3>HO5887096333</h3>
+							
 							<h3>Name: <span class="id-data">Lucy Rebelmore</span></h3>
 							<h3>Height: <span class="id-data">53 ft.</span></h3>
 							<h3>Weight: <span class="id-data">29 tons</span></h3>
@@ -128,22 +159,42 @@
 							<h3>Pollution Threat:<span class="id-data"> all plastic</span></h3>
 							<h3>Favorite Activity: <span class="id-data">surfing</span></h3>
 							<h3>Favorite Food:<span class="id-data"> fried plankton</span></h3>
+							<a href="javascript:void(0)"><img id="flipWhale" class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
 						</div> <!-- id-content -->
-						<img class="flip-position" src="img/arrow-flip.png" alt="turn arrow">
+
+						<div id="whale2" class="id-content">
+							<h2>Humpback Whale</h2>
+							<h3 class="idbackformat">Scientific name: <em>Megaptera novaeangliae</em></h3>
+							<h3 class="idbackformat">Habitat: North Atlantic, North Pacific, and Indian Ocean</h3>
+							<h3 class="idbackformat">Diet: Krill</h3>
+							<h3 class="idbackformat">Lifespan: up to 100 years</h3>
+							<h3 class="idbackformat">Conservation Status: <span style="color: blue">Least Concern</span></h3>
+							<h3>Threats from Ocean Plastics</h3>
+							<p>Whales and dolphins often mistake plastic for food, especially larger plastic objects like bags, bottles and cups, and can end up dying as a result. Humpback whales eat primarily krill and plankton. When they feed, they swallow large mouthfuls, filtering their food from the water. Unfortunately, with so much plastic in our ocean (<a href="https://uk.whales.org/issues/pollution" target="_blank">5-13 million tons enter the ocean each year</a>), whales often have a hard time distinguishing plastic from food. Plastic isn’t whale food, but it’s quickly becoming their main meal. Hopefully, it won't be their last.</p>
+							<h3>Fun Fact</h3>
+							<p>Humpback whales are underwater composers! <a href="https://en.wikipedia.org/wiki/File:Humpbackwhale2.ogg " target="_blank">Listen to a humpback whale song</a>.</p>
+							<a href="info.html" target="_blank"><h3>Learn more about whales</h3></a>
+
+							<a href="javascript:void(0)"><img id="flipWhale2" class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
+						</div> <!-- id-content -->
+						
 					</div><!-- id -->
 				</div><!-- id-card -->
 	<!-- ALBATROSS -->
 				<div id="idAlbatross" class="id-card">
 					<figure class="id-logo">
 						<img src="img/happy_ocean_logo1.png" alt="Happy Ocean logo">
+						<figcaption class="id-number">ID #: HO4415899327</figcaption>
 					</figure>
 
 					<div class="id">
 						<a href="javascript:void(0)" id="idAlbatrossClose" class="id-close">&times;</a>
+
 						<img class="id-photo" src="img/id-albatross.png" alt="Laysan Albatross ID photo">
-						<div class="id-content">
+
+						<div id="albatross1" class="id-content">
 							<h2>IDENTIFICATION CARD</h2>
-							<h3>HO4415899327</h3>
+							
 							<h3>Name: <span class="id-data">Kai Kalani</span></h3>
 							<h3>Height: <span class="id-data">31 in.</span></h3>
 							<h3>Weight: <span class="id-data">8.7 lbs.</span></h3>
@@ -151,22 +202,42 @@
 							<h3>Pollution Threat:<span class="id-data"> plastic straws</span></h3>
 							<h3>Favorite Activity: <span class="id-data">sunbathing</span></h3>
 							<h3>Favorite Food: <span class="id-data">fish tacos</span></h3>
+							<a href="javascript:void(0)">
+							<img id="flipAlbatross" class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
 						</div> <!-- id-content -->
-						<img class="flip-position" src="img/arrow-flip.png" alt="turn arrow">
+
+						<div id="albatross2" class="id-content">
+							<h2>Laysan Albatross</h2>
+							<h3 class="idbackformat">Scientific name: <em>Phoebastria immutabilis</em></h3>
+							<h3 class="idbackformat">Habitat: Northwestern Hawaiian Islands</h3>
+							<h3 class="idbackformat">Diet: squid, octopus, fish, crustaceans</h3>
+							<h3 class="idbackformat">Lifespan: 50+ years</h3>
+							<h3 class="idbackformat">Conservation Status: <span style="color: green">Near Threatened</span></h3>
+							<h3>Threats from Ocean Plastics</h3>
+							<p>Albatrosses and other seabirds <a href="http://theconversation.com/the-oceans-are-full-of-plastic-but-why-do-seabirds-eat-it-68110" target="_blank">often consume plastic</a>, especially small floating fragments. They spend most of their lives on the ocean, so when they get hungry, they just dip their beaks into the water, skimming the surface, scooping up squid, octopus, fish…and <a href="https://ocean.si.edu/ocean-life/seabirds/laysan-albatrosses-plastic-problem" target="_blank">plastic</a>. Plastic pieces can get stuck in their throats, slowly poison them, and damage their digestive systems. They often end up feeding plastic to their young by mistake, which ends up killing them. Plastic isn’t bird food, but it’s quickly becoming their main meal. Hopefully, it won’t be their last.</p>
+							<h3>Fun Fact</h3>
+							<p>Albatrosses can soar in the sky for six days without flapping their wings!</p>
+							<a href="info.html" target="_blank"><h3>Learn more about seabirds</h3></a>
+							<a href="javascript:void(0)"><img id="flipAlbatross2"  class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
+						</div> <!-- id-content -->
+						
 					</div><!-- id -->
 				</div><!-- id-card -->
 	<!-- SEA LION -->
 				<div id="idSealion" class="id-card">
 					<figure class="id-logo">
 						<img src="img/happy_ocean_logo1.png" alt="Happy Ocean logo">
+						<figcaption class="id-number">ID #: HO6348990177</figcaption>
 					</figure>
 
 					<div class="id">
 						<a href="javascript:void(0)" id="idSealionClose" class="id-close">&times;</a>
+
 						<img class="id-photo" src="img/id-sealion.png" alt="California Sea Lion ID photo">
-						<div class="id-content">
+
+						<div id="sealion1" class="id-content">
 							<h2>IDENTIFICATION CARD</h2>
-							<h3>HO6348990177</h3>
+							
 							<h3>Name: <span class="id-data">Pete Otary</span></h3>
 							<h3>Height: <span class="id-data">8 ft.</span></h3>
 							<h3>Weight: <span class="id-data">750 lbs.</span></h3>
@@ -174,22 +245,43 @@
 							<h3>Pollution Threat:<span class="id-data"> plastic strapping</span></h3>
 							<h3>Favorite Activity: <span class="id-data">building sandcastles</span></h3>
 							<h3>Favorite Food: <span class="id-data">fish burger</span></h3>
+							<a href="javascript:void(0)"><img id="flipSealion"  class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
 						</div> <!-- id-content -->
-						<img class="flip-position" src="img/arrow-flip.png" alt="turn arrow">
+
+						<div id="sealion2" class="id-content">
+							<h2>California Sea Lion</h2>
+							<h3 class="idbackformat">Scientific name: <em>Zalophus californianus</em></h3>
+							<h3 class="idbackformat">Habitat: Southeast Alaska to Central Mexico</h3>
+							<h3 class="idbackformat">Diet: squid and fish</h3>
+							<h3 class="idbackformat">Lifespan: up to 20 years</h3>
+							<h3 class="idbackformat">Conservation Status: <span style="color: blue">Least Concern</span></h3>
+							<h3>Threats from Ocean Plastics</h3>
+							<p>Plastic in the ocean poses multiple threats to sea lions. They can become entangled in plastic packing bands, plastic bags, and fishing nets. Additionally, more plastic in the ocean has caused an increase in the <a href="https://animals.sandiegozoo.org/animals/sea-lion" target="_blank">frequency of algal blooms</a>, which release a neurotoxin that harms and can even kill sea lions. Sea lions often inadvertently ingest plastic, especially food wrappers and six-pack rings, causing damage to their digestive systems and death. Plastic isn’t sea lion food, but it’s quickly becoming their main meal. Hopefully, it won’t be their last.</p>
+							<h3>Fun Fact</h3>
+							<p>Sea lions have whiskers that can detect prey underwater, even in total darkness!</p>
+
+							<a href="info.html" target="_blank"><h3>Learn more about sea lions</h3></a>
+							<a href="javascript:void(0)"><img id="flipSealion2"  class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
+						</div> <!-- id-content -->
+						
 					</div><!-- id -->
 				</div><!-- id-card -->
+
 	<!-- SEA TURTLE -->
 				<div id="idSeaturtle" class="id-card">
 					<figure class="id-logo">
 						<img src="img/happy_ocean_logo1.png" alt="Happy Ocean logo">
+						<figcaption class="id-number">ID #: HO4223928017</figcaption>
 					</figure>
 
 					<div class="id">
 						<a href="javascript:void(0)" id="idSeaturtleClose" class="id-close">&times;</a>
+
 						<img class="id-photo" src="img/id-seaturtle.png" alt="Green Sea Turtle ID photo">
-						<div class="id-content">
+
+						<div id="seaturtle1" class="id-content">
 							<h2>IDENTIFICATION CARD</h2>
-							<h3>HO4223928017</h3>
+							
 							<h3>Name: <span class="id-data">Terra Turtleson-Shelle</span></h3>
 							<h3>Height: <span class="id-data">5 ft.</span></h3>
 							<h3>Weight: <span class="id-data">227 lbs.</span></h3>
@@ -197,22 +289,42 @@
 							<h3>Pollution Threat:<span class="id-data"> plastic bags</span></h3>
 							<h3>Favorite Activity: <span class="id-data">kite flying</span></h3>
 							<h3>Favorite Food: <span class="id-data">seagrass sandwich</span></h3>
+
+							<a href="javascript:void(0)"><img id="flipSeaturtle" class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
 						</div> <!-- id-content -->
-						<img class="flip-position" src="img/arrow-flip.png" alt="turn arrow">
+						
+						<div id="seaturtle2" class="id-content">
+							<h2>Green Sea Turtle</h2>
+							<v class="idbackformat">Scientific name: <em>Chelonia mydas</em></h3>
+							<h3 class="idbackformat">Habitat: Atlantic, Pacific, and Indian Ocean, beaches</h3>
+							<h3 class="idbackformat">Diet: jellyfish, crab (juvenile); seagrass, algae (adult)</h3>
+							<h3 class="idbackformat">Lifespan: 80+ years</h3>
+							<h3 class="idbackformat">Conservation Status: <span style="color: orange">Endangered</span></h3>
+							<h3>Threats from Ocean Plastics</h3>
+							<p>Green sea turtles can become entangled in netting and plastic, which can warp and stunt their growth. Global warming has <a href="https://www.washingtonpost.com/news/speaking-of-science/wp/2018/01/08/climate-change-is-turning-99-percent-of-these-baby-sea-turtles-female/?noredirect=on&utm_term=.6a1d28ba8cf3" target="_blank">caused many sea turtle eggs to become female</a>, threatening the longevity of the species. They often mistake plastic bags for jellyfish, and once they’ve eaten them, the plastic can block their digestive system causing disability and death. Plastic isn’t sea turtle food, but it’s quickly becoming their main meal. Hopefully, it won’t be their last.</p>
+							<h3>Fun Fact</h3>
+							<p>Green sea turtles change their diets as they age! Young turtles will eat almost anything, whereas fully mature turtles are strictly herbivores.</p>
+							<a href="info.html" target="_blank"><h3>Learn more about sea turtles</h3></a>
+
+							<a href="javascript:void(0)"><img id="flipSeaturtle2"  class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
+						</div> <!-- id-content -->
+
 					</div><!-- id -->
 				</div><!-- id-card -->
+
 	<!-- FISH -->
 				<div id="idFish" class="id-card">
 					<figure class="id-logo">
 						<img src="img/happy_ocean_logo1.png" alt="Happy Ocean logo">
+						<figcaption class="id-number">ID #: HO9377385210</figcaption>
 					</figure>
 
 					<div class="id">
 						<a href="javascript:void(0)" id="idFishClose" class="id-close">&times;</a>	
 						<img class="id-photo" src="img/id-fish.png" alt="Sergeant Major fish ID photo">
-						<div class="id-content">
+						<div id="fish1" class="id-content">
 							<h2>IDENTIFICATION CARD</h2>
-							<h3>HO9377385210</h3>
+							
 							<h3>Name: <span class="id-data">Santiago Pescado</span></h3>
 							<h3>Height: <span class="id-data">7.6 in.</span></h3>
 							<h3>Weight: <span class="id-data">6 oz.</span></h3>
@@ -220,8 +332,27 @@
 							<h3>Pollution Threat:<span class="id-data"> microplastics</span></h3>
 							<h3>Favorite Activity: <span class="id-data">skateboarding</span></h3>
 							<h3>Favorite Food: <span class="id-data">zooplankton stew</span></h3>
+
+							<a href="javascript:void(0)"><img id="flipFish" class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
 						</div> <!-- id-content -->
-						<img class="flip-position" src="img/arrow-flip.png" alt="turn arrow">
+
+						<div id="fish2" class="id-content">
+							<h2>Panamic Sergeant Major</h2>
+							<h3 class="idbackformat">Scientific name: <em>Abudefduf troschelii</em></h3>
+							<h3 class="idbackformat">Habitat: Reefs in the Atlantic and Pacific Oceans near Mexico</h3>
+							<h3 class="idbackformat">Diet: plankton, algae, small crustaceans </h3>
+							<h3 class="idbackformat">Lifespan: unknown</h3>
+							<h3 class="idbackformat">Conservation Status: <span style="color: blue">Least Concern</span></h3>
+							<h3>Threats from Ocean Plastics</h3>
+							<p>The primary threat to fish like the Panamic Sergeant Major is microplastics. Fish ingest tiny plastic fragments and synthetic fibers thinking they are food. Not only do ocean fish consume plastic as food, but the smallest of particles enter their gills, and as a result, the plastic can take up to <a href="https://www.natureworldnews.com/articles/8134/20140718/marine-life-defenseless-against-microplastics.htm" target="_blank">six times as long to exit their bodies</a>.  
+							Plastic isn’t fish food, but it’s quickly becoming their main meal. Hopefully, it won’t be their last.</p>
+							<h3>Fun Fact</h3>
+							<p>Male Sergeant Major fish guard eggs for about a week and turn blue while they wait for them to hatch!</p>
+							<a href="info.html" target="_blank"><h3>Learn more about ocean fish</h3></a>
+
+							<a href="javascript:void(0)"><img id="flipFish2" class="flip-position" src="img/arrow-flip.png" alt="turn arrow"></a>
+						</div> <!-- id-content -->
+						
 					</div> <!-- id -->	
 				</div>	<!-- id-card -->		
 					

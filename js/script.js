@@ -79,6 +79,17 @@ $("document").ready(function() {
 		$("#brochureRepsOpen").fadeIn("fast");
 	});
 
+	$("#plasticsClsBtn").click(function () {
+		$("#brochurePlasticsOpen").fadeOut("fast");
+	});
+
+	$("#recyclingClsBtn").click(function () {
+		$("#brochureRecyclingOpen").fadeOut("fast");
+	});
+
+	$("#ourRepsClsBtn").click(function () {
+		$("#brochureRepsOpen").fadeOut("fast");
+	});
 
 /* Albatross Scene */	
 	$("#albatrossModalWrap").fadeIn("slow");
@@ -294,6 +305,77 @@ $("document").ready(function() {
 	$("#idWhaleClose").click(function() {
 		$("#idWhale").fadeOut("fast");
 	});
+
+	$("#flipWhale").click(function() {
+		$(".id-logo").fadeOut("fast");
+		$(".id-photo").fadeOut("fast")
+		$("#whale1").fadeOut("fast");
+		$("#whale2").fadeIn("fast");
+	});
+
+	$("#flipWhale2").click(function() {
+		$(".id-logo").fadeIn("fast");
+		$(".id-photo").fadeIn("fast")
+		$("#whale1").fadeIn("fast");
+		$("#whale2").fadeOut("fast");
+	});
+
+	$("#flipAlbatross").click(function() {
+		$(".id-logo").fadeOut("fast");
+		$(".id-photo").fadeOut("fast")
+		$("#albatross1").fadeOut("fast");
+		$("#albatross2").fadeIn("fast");
+	});
+
+	$("#flipAlbatross2").click(function() {
+		$(".id-logo").fadeIn("fast");
+		$(".id-photo").fadeIn("fast")
+		$("#albatross1").fadeIn("fast");
+		$("#albatross2").fadeOut("fast");
+	});
+
+	$("#flipSealion").click(function() {
+		$(".id-logo").fadeOut("fast");
+		$(".id-photo").fadeOut("fast")
+		$("#sealion1").fadeOut("fast");
+		$("#sealion2").fadeIn("fast");
+	});
+
+	$("#flipSealion2").click(function() {
+		$(".id-logo").fadeIn("fast");
+		$(".id-photo").fadeIn("fast")
+		$("#sealion1").fadeIn("fast");
+		$("#sealion2").fadeOut("fast");
+	});
+
+	$("#flipSeaturtle").click(function() {
+		$(".id-logo").fadeOut("fast");
+		$(".id-photo").fadeOut("fast")
+		$("#seaturtle1").fadeOut("fast");
+		$("#seaturtle2").fadeIn("fast");
+	});
+
+	$("#flipSeaturtle2").click(function() {
+		$(".id-logo").fadeIn("fast");
+		$(".id-photo").fadeIn("fast")
+		$("#seaturtle1").fadeIn("fast");
+		$("#seaturtle2").fadeOut("fast");
+	});
+
+	$("#flipFish").click(function() {
+		$(".id-logo").fadeOut("fast");
+		$(".id-photo").fadeOut("fast")
+		$("#fish1").fadeOut("fast");
+		$("#fish2").fadeIn("fast");
+	});
+
+	$("#flipFish2").click(function() {
+		$(".id-logo").fadeIn("fast");
+		$(".id-photo").fadeIn("fast")
+		$("#fish1").fadeIn("fast");
+		$("#fish2").fadeOut("fast");
+	});
+
 });
 
 

@@ -77,11 +77,20 @@ p {
   padding: 1rem 0;
   line-height: 1.6; }
 
-a {
+a:link {
   text-decoration: none;
-  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.125rem; }
+  letter-spacing: 0.125rem;
+  color: #00ced1; }
+
+a:visited {
+  color: #00ced1; }
+
+a:hover {
+  color: #f08080; }
+
+a:active {
+  color: #00ced1; }
 
 /* PAGE FADE-IN EFFECT */
 @-webkit-keyframes fadeIn {
@@ -217,15 +226,22 @@ main {
   height: 300px; }
 
 .id-content {
-  width: 80%;
+  width: 100%;
   padding: 1rem; }
 
 .id-content h2 {
-  padding-top: 0; }
+  padding: 0; }
 
 .id-content h3 {
   padding: 0;
   line-height: 1.6; }
+
+.idbackformat {
+  padding: 0;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 1.07rem;
+  letter-spacing: 1; }
 
 .id-close {
   position: absolute;
@@ -241,12 +257,31 @@ a.id-close {
   font-family: "Open Sans", sans-serif;
   font-weight: 400; }
 
+.id-number {
+  position: absolute;
+  bottom: 25px;
+  left: 0;
+  padding: 0 0 1rem 1rem;
+  text-align: left;
+  font-weight: 600; }
+
 .flip-position {
   position: absolute;
   bottom: 0;
   right: 0;
   padding: 1rem;
   width: 80px; }
+
+#whale2, #albatross2, #sealion2, #seaturtle2, #fish2 {
+  display: none;
+  background-color: white; }
+
+#whale2 h2, #albatross2 h2, #sealion2 h2, #seaturtle2 h2, #fish2 h2 {
+  padding: 0;
+  margin: 0; }
+
+#whale2 p, #albatross2 p, #sealion2 p, #seaturtle2 p, #fish2 p {
+  padding: 0.25rem 0; }
 
 .infoboard {
   position: absolute;
@@ -315,37 +350,6 @@ a.id-close {
 .resource-item p {
   padding: 1rem; }
 
-.accordion {
-  margin-left: 1rem;
-  width: 50%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.5s;
-  background-color: white; }
-
-.accordion h2 {
-  font-size: 1.25rem;
-  padding: 0.5rem;
-  line-height: 1; }
-
-.active, .accordion:hover {
-  background-color: #00ced1; }
-
-/*
-.accordion:after {
-    content: "\002B";
-    color: #777;
-    font-weight: bold;
-    float: right;
-    padding: 1rem;
-}
-
-.active:after {
-    content: "\2212";
-} */
 #infoclosebtn {
   font-size: 2rem;
   position: absolute;
@@ -355,12 +359,11 @@ a.id-close {
   z-index: 4; }
 
 .resources-ul {
-  width: 50%;
-  float: left;
+  width: 320px;
   list-style-type: none; }
 
 .resources-ul li {
-  padding: 1rem; }
+  padding: 0.5rem 0; }
 
 .resources-ul li:last-child {
   padding-bottom: 2rem; }
@@ -402,12 +405,27 @@ a.id-close {
   left: 0;
   display: none;
   width: 100%;
-  height: 100vh;
-  background-size: contain;
+  height: 100%;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
-  z-index: 400; }
+  z-index: 400;
+  overflow-y: auto; }
+
+.resources-ul a:link {
+  color: black;
+  font-size: 1rem;
+  font-weight: 900; }
+
+.resources-ul a:visited {
+  color: black; }
+
+.resources-ul a:hover {
+  color: white; }
+
+.resources-ul a:active {
+  color: black; }
 
 .brochure-info img {
   max-width: 100%; }
@@ -420,6 +438,27 @@ a.id-close {
 
 #brochureRepsOpen {
   background-image: url(../img/brochure-our-reps.png); }
+
+.brochureclsbtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 2rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer; }
+
+.brochureWrapper {
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+#plasticsClsBtn, #recyclingClsBtn, #ourRepsClsBtn {
+  color: black; }
 
 .nav {
   position: relative;
@@ -825,8 +864,13 @@ a.id-close {
     .tooltiptext {
       width: 500px; } }
 
+#panel2, #panel3, #panel4 {
+  display: none; }
+
+#popupOtter1-closebtn {
+  font-size: 1rem; }
+
 .popup a, .tooltiptext a {
-  font-size: 0.95rem;
   font-weight: 700;
   letter-spacing: 0.015rem; }
 
@@ -871,7 +915,7 @@ a.id-close {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
-  z-index: 9999;
+  z-index: 9997;
   padding: 2rem;
   border: 3px solid #00ced1;
   border-radius: 6px; }
@@ -914,7 +958,7 @@ a.id-close {
   width: 100%;
   height: 100vh;
   position: fixed;
-  z-index: 10;
+  z-index: 100;
   left: 0;
   top: 0;
   overflow: hidden;
@@ -967,19 +1011,26 @@ a.id-close {
   padding: 2rem 4rem; }
 
 .allDone a, .popup a {
-  color: black;
-  font-size: 1.5rem; }
+  color: black; }
 
 .popupclosebutton {
   position: absolute;
   right: 1rem;
   top: 0.5rem;
-  color: black; }
+  color: #00ced1;
+  font-size: 2rem; }
+
+.popupclosebutton:hover {
+  color: #f08080; }
 
 .right-side {
   position: absolute;
   right: 1rem;
-  bottom: 1rem; }
+  bottom: 1rem;
+  color: #00ced1;
+  font-size: 1.25rem;
+  z-index: 50;
+  cursor: pointer; }
 
 .albatross-position {
   position: absolute;
