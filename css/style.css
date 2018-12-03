@@ -291,6 +291,27 @@ a.id-close {
 #whale2 p, #albatross2 p, #sealion2 p, #seaturtle2 p, #fish2 p {
   padding: 0.25rem 0; }
 
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  padding-right: 2rem;
+  color: black;
+  font-size: 3rem;
+  cursor: pointer; }
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  padding-left: 2rem;
+  color: black;
+  font-size: 3rem;
+  cursor: pointer; }
+
+.rightArrow:hover, .leftArrow:hover {
+  color: white; }
+
 .infoboard {
   position: absolute;
   right: 15%;

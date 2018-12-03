@@ -164,29 +164,60 @@ $("document").ready(function() {
 		$("#bulletin").fadeOut("fast");
 	});
 
-	$("#brochurePlastics").click(function () {
+	$("#brochurePlastics").click(function() {
 		$("#brochurePlasticsOpen").fadeIn("fast");
 	});
 
-	$("#brochureRecycling").click(function () {
+	$("#brochureRecycling").click(function() {
 		$("#brochureRecyclingOpen").fadeIn("fast");
 	});
 
-	$("#brochureReps").click(function () {
+	$("#brochureReps").click(function() {
 		$("#brochureRepsOpen").fadeIn("fast");
 	});
 
-	$("#plasticsClsBtn").click(function () {
+	$("#plasticsClsBtn").click(function() {
 		$("#brochurePlasticsOpen").fadeOut("fast");
 	});
 
-	$("#recyclingClsBtn").click(function () {
+	$("#recyclingClsBtn").click(function() {
 		$("#brochureRecyclingOpen").fadeOut("fast");
 	});
 
-	$("#ourRepsClsBtn").click(function () {
+	$("#ourRepsClsBtn").click(function() {
 		$("#brochureRepsOpen").fadeOut("fast");
 	});
+
+// Arrows
+	$("#plasticsToReps").click(function() {
+		$("#brochurePlasticsOpen").fadeOut("fast");
+		$("#brochureRepsOpen").fadeIn("fast");
+	});
+
+	$("#plasticsToRecycle").click(function() {
+		$("#brochurePlasticsOpen").fadeOut("fast");
+		$("#brochureRecyclingOpen").fadeIn("fast");
+	});	
+
+	$("#recycleToReps").click(function() {
+		$("#brochureRecyclingOpen").fadeOut("fast");
+		$("#brochureRepsOpen").fadeIn("fast");
+	});
+
+	$("#recycleToPlastics").click(function() {
+		$("#brochureRecyclingOpen").fadeOut("fast");
+		$("#brochurePlasticsOpen").fadeIn("fast");
+	});	
+
+	$("#repsToRecycle").click(function() {
+		$("#brochureRepsOpen").fadeOut("fast");
+		$("#brochureRecyclingOpen").fadeIn("fast");
+	});
+
+	$("#repsToPlastics").click(function() {
+		$("#brochureRepsOpen").fadeOut("fast");
+		$("#brochurePlasticsOpen").fadeIn("fast");
+	});	
 
 /* Albatross Scene */	
 	$("#albatrossModalWrap").fadeIn("slow");
