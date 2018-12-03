@@ -3683,6 +3683,9 @@ a.id-close {
     .sealion-bucket {
       width: 500px; } }
 
+#sealionBucket {
+  display: none; }
+
 .sealion-placement {
   position: absolute;
   top: 80%;
@@ -3704,6 +3707,29 @@ a.id-close {
     .sealion-placement {
       width: 450px; } }
 
+.sandcastle {
+  position: absolute;
+  top: 7.2%;
+  left: 12.4%; }
+  @media screen and (min-width: 1024px) {
+    .sandcastle {
+      width: calc(615px * .533333333); } }
+  @media screen and (min-width: 1366px) {
+    .sandcastle {
+      width: calc(615px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    .sandcastle {
+      width: calc(615px * .75); } }
+  @media screen and (min-width: 1680px) {
+    .sandcastle {
+      width: calc(615px * .875); } }
+  @media screen and (min-width: 1920px) {
+    .sandcastle {
+      width: 615px; } }
+
+#sandcastle1, #sandcastleBase, #sandcastle2, #sandcastle3, #sandcastle4, #sandcastle5, #sandcastle6, #sandcastle7, #sandcastle8, #sandcastle9, #sandcastle10, #sandcastle11, #sandcastle12, #sandcastle13, #sandcastle14, #sandcastle15, #sandcastle16, #sandcastle17, #sandcastle18, #sandcastle19 {
+  display: none; }
+
 .sealion-items {
   display: none;
   cursor: pointer; }
@@ -3715,19 +3741,19 @@ a.id-close {
   transform: translate(-26%, -90%); }
   @media screen and (min-width: 1024px) {
     #sealion-item-tools {
-      width: calc(450px * .533333333); } }
+      width: calc(171px * .533333333); } }
   @media screen and (min-width: 1366px) {
     #sealion-item-tools {
-      width: calc(450px * .71145); } }
+      width: calc(171px * .71145); } }
   @media screen and (min-width: 1440px) {
     #sealion-item-tools {
-      width: calc(450px * .75); } }
+      width: calc(171px * .75); } }
   @media screen and (min-width: 1680px) {
     #sealion-item-tools {
-      width: calc(450px * .875); } }
+      width: calc(171px * .875); } }
   @media screen and (min-width: 1920px) {
     #sealion-item-tools {
-      width: 450px; } }
+      width: 171px; } }
 
 #sealion-item-waxed {
   position: absolute;
@@ -3736,82 +3762,82 @@ a.id-close {
   transform: translate(-39%, -92%); }
   @media screen and (min-width: 1024px) {
     #sealion-item-waxed {
-      width: calc(450px * .533333333); } }
+      width: calc(231px * .533333333); } }
   @media screen and (min-width: 1366px) {
     #sealion-item-waxed {
-      width: calc(450px * .71145); } }
+      width: calc(231px * .71145); } }
   @media screen and (min-width: 1440px) {
     #sealion-item-waxed {
-      width: calc(450px * .75); } }
+      width: calc(231px * .75); } }
   @media screen and (min-width: 1680px) {
     #sealion-item-waxed {
-      width: calc(450px * .875); } }
+      width: calc(231px * .875); } }
   @media screen and (min-width: 1920px) {
     #sealion-item-waxed {
-      width: 450px; } }
+      width: 231px; } }
 
 #sealion-item-fruit {
   position: absolute;
   top: 95%;
-  left: 84%;
-  transform: translate(-84%, -95%); }
+  left: 78%;
+  transform: translate(-78%, -95%); }
   @media screen and (min-width: 1024px) {
     #sealion-item-fruit {
-      width: calc(450px * .533333333); } }
+      width: calc(188px * .533333333); } }
   @media screen and (min-width: 1366px) {
     #sealion-item-fruit {
-      width: calc(450px * .71145); } }
+      width: calc(188px * .71145); } }
   @media screen and (min-width: 1440px) {
     #sealion-item-fruit {
-      width: calc(450px * .75); } }
+      width: calc(188px * .75); } }
   @media screen and (min-width: 1680px) {
     #sealion-item-fruit {
-      width: calc(450px * .875); } }
+      width: calc(188px * .875); } }
   @media screen and (min-width: 1920px) {
     #sealion-item-fruit {
-      width: 450px; } }
+      width: 188px; } }
 
 #sealion-item-lunchbag {
   position: absolute;
-  top: 87%;
-  left: 55%;
-  transform: translate(-55%, -87%); }
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -77%); }
   @media screen and (min-width: 1024px) {
     #sealion-item-lunchbag {
-      width: calc(450px * .533333333); } }
+      width: calc(146px * .533333333); } }
   @media screen and (min-width: 1366px) {
     #sealion-item-lunchbag {
-      width: calc(450px * .71145); } }
+      width: calc(146px * .71145); } }
   @media screen and (min-width: 1440px) {
     #sealion-item-lunchbag {
-      width: calc(450px * .75); } }
+      width: calc(146px * .75); } }
   @media screen and (min-width: 1680px) {
     #sealion-item-lunchbag {
-      width: calc(450px * .875); } }
+      width: calc(146px * .875); } }
   @media screen and (min-width: 1920px) {
     #sealion-item-lunchbag {
-      width: 450px; } }
+      width: 146px; } }
 
 #sealion-item-bottle {
   position: absolute;
   top: 90%;
-  left: 75%;
-  transform: translate(-75%, -90%); }
+  left: 67%;
+  transform: translate(-67%, -90%); }
   @media screen and (min-width: 1024px) {
     #sealion-item-bottle {
-      width: calc(450px * .533333333); } }
+      width: calc(65px * .533333333); } }
   @media screen and (min-width: 1366px) {
     #sealion-item-bottle {
-      width: calc(450px * .71145); } }
+      width: calc(65px * .71145); } }
   @media screen and (min-width: 1440px) {
     #sealion-item-bottle {
-      width: calc(450px * .75); } }
+      width: calc(65px * .75); } }
   @media screen and (min-width: 1680px) {
     #sealion-item-bottle {
-      width: calc(450px * .875); } }
+      width: calc(65px * .875); } }
   @media screen and (min-width: 1920px) {
     #sealion-item-bottle {
-      width: 450px; } }
+      width: 65px; } }
 
 #sealion-item-towel {
   position: absolute;
@@ -3820,18 +3846,26 @@ a.id-close {
   transform: translate(-59%, -94%); }
   @media screen and (min-width: 1024px) {
     #sealion-item-towel {
-      width: calc(450px * .533333333); } }
+      width: calc(226px * .533333333); } }
   @media screen and (min-width: 1366px) {
     #sealion-item-towel {
-      width: calc(450px * .71145); } }
+      width: calc(226px * .71145); } }
   @media screen and (min-width: 1440px) {
     #sealion-item-towel {
-      width: calc(450px * .75); } }
+      width: calc(226px * .75); } }
   @media screen and (min-width: 1680px) {
     #sealion-item-towel {
-      width: calc(450px * .875); } }
+      width: calc(226px * .875); } }
   @media screen and (min-width: 1920px) {
     #sealion-item-towel {
-      width: 450px; } }
+      width: 226px; } }
+
+#sealionPopup1, #sealionPopup2, #sealionPopup3, #sealionPopup4, #sealionPopup5, #sealionPopup6 {
+  display: none; }
+
+#sandcastleCall {
+  background-image: none;
+  background-color: white;
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

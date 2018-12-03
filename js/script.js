@@ -6,6 +6,103 @@ function scrollToTop() {
 	window.scrollTo(0, 0);
 }
 
+function sandcastle1() {
+	$("#sandcastle1").fadeIn(700);
+	$("#sandcastle1").delay(500).fadeOut(1500);
+	$("#sandcastleBase").delay(1500).fadeIn(300);
+}
+
+function sandcastleBase() {
+	$("#sandcastle2").delay(100).fadeIn(1300);
+}
+
+function sandcastle2() {
+	$("#sandcastle2").delay(1000).fadeOut(500);
+	$("#sandcastle3").delay(1500).fadeIn(1300);
+}
+
+function sandcastle3() {
+	$("#sandcastle3").delay(1500).fadeOut(500);
+	$("#sandcastle4").delay(1000).fadeIn(1300);
+}
+
+function sandcastle4() {
+	$("#sandcastle4").delay(1500).fadeOut(500);
+	$("#sandcastle5").delay(1000).fadeIn(1300);
+}
+
+function sandcastle5() {
+	$("#sandcastle5").delay(1500).fadeOut(500);
+	$("#sandcastle6").delay(1000).fadeIn(1300);
+}
+
+function sandcastle6() {
+	$("#sandcastle6").delay(1500).fadeOut(500);
+	$("#sandcastle7").delay(1000).fadeIn(1300);
+}
+
+function sandcastle7() {
+	$("#sandcastle7").delay(1500).fadeOut(500);
+	$("#sandcastle8").delay(1000).fadeIn(1300);
+}
+
+function sandcastle8() {
+	$("#sandcastle8").delay(1500).fadeOut(500);
+	$("#sandcastle9").delay(1000).fadeIn(1300);
+}
+
+function sandcastle9() {
+	$("#sandcastle9").delay(1500).fadeOut(500);
+	$("#sandcastle10").delay(1000).fadeIn(1300);
+}
+
+function sandcastle10() {
+	$("#sandcastle10").delay(1500).fadeOut(500);
+	$("#sandcastle11").delay(1000).fadeIn(1300);
+}
+
+function sandcastle11() {
+	$("#sandcastle11").delay(1500).fadeOut(500);
+	$("#sandcastle12").delay(1000).fadeIn(1300);
+}
+
+function sandcastle12() {
+	$("#sandcastle12").delay(300).fadeOut(500);
+	$("#sandcastle13").delay(1000).fadeIn(1300);
+}
+
+function sandcastle13() {
+	$("#sandcastle13").delay(1500).fadeOut(500);
+	$("#sandcastle14").delay(1000).fadeIn(1300);
+}
+
+function sandcastle14() {
+	$("#sandcastle14").delay(1500).fadeOut(500);
+	$("#sandcastle15").delay(1000).fadeIn(1300);
+}
+
+function sandcastle15() {
+	$("#sandcastle15").delay(1500).fadeOut(500);
+	$("#sandcastle16").delay(1000).fadeIn(1300);
+}
+
+function sandcastle16() {
+	$("#sandcastle16").delay(1500).fadeOut(500);
+	$("#sandcastle17").delay(1000).fadeIn(1300);
+}
+
+function sandcastle17() {
+	$("#sandcastle17").delay(1500).fadeOut(500);
+	$("#sandcastle18").delay(1000).fadeIn(1300);
+}
+
+function sandcastle18() {
+	$("#sandcastle18").delay(1500).fadeOut(500);
+	$("#sandcastle19").delay(1000).fadeIn(1300);
+	$("#allDoneSealion").delay(2000).fadeIn("slow");
+}
+
+
 $("document").ready(function() {
 
 	$("#open").click(function() {	
@@ -178,6 +275,15 @@ $("document").ready(function() {
 	});
 
 //Sea Lion Scene
+
+function sandcastleCall() {
+		if ($("#sealion-item-tools").hasClass("reuse") && $("#sealion-item-waxed").hasClass("reuse") && $("#sealion-item-lunchbag").hasClass("reuse") && $("#sealion-item-towel").hasClass("reuse") && $("#sealion-item-bottle").hasClass("reuse") && $("#sealion-item-fruit").hasClass("reuse")) {
+
+				$("#sandcastleCall").fadeIn("fast");  
+				$("#sealionBucket").fadeIn("fast");     
+      } 
+	}
+
 	$("#sealionModalWrap").fadeIn("slow");
 
 	$("#sealionClose").click(function() {
@@ -197,7 +303,146 @@ $("document").ready(function() {
 		$("#sealion-item-towel").delay(800).fadeIn(100);
 		$("#sealion-item-bottle").delay(900).fadeIn(100);
 		$("#sealion-item-fruit").delay(1000).fadeIn(100);
-	})
+	});
+
+	$("#sealion-item-tools").click(function() {
+		$("#sealion-item-tools").addClass("reuse");
+		$("#sealionPopup1").fadeIn("slow");
+	});
+
+	$("#sealion-item-waxed").click(function() {
+		$("#sealion-item-waxed").addClass("reuse");
+		$("#sealionPopup2").fadeIn("slow");
+	});
+
+	$("#sealion-item-lunchbag").click(function() {
+		$("#sealion-item-lunchbag").addClass("reuse");
+		$("#sealionPopup3").fadeIn("slow");
+	});
+
+	$("#sealion-item-towel").click(function() {
+		$("#sealion-item-towel").addClass("reuse");
+		$("#sealionPopup4").fadeIn("slow");
+	});
+
+	$("#sealion-item-bottle").click(function() {
+		$("#sealion-item-bottle").addClass("reuse");
+		$("#sealionPopup5").fadeIn("slow");
+	});
+
+	$("#sealion-item-fruit").click(function() {
+		$("#sealion-item-fruit").addClass("reuse");
+		$("#sealionPopup6").fadeIn("slow");
+	});
+
+	$("#sealionClose1").click(function() {
+		$("#sealionPopup1").fadeOut("fast");
+		sandcastleCall();
+	});
+
+	$("#sealionClose2").click(function() {
+		$("#sealionPopup2").fadeOut("fast");
+		sandcastleCall();
+	});
+
+	$("#sealionClose3").click(function() {
+		$("#sealionPopup3").fadeOut("fast");
+	});
+
+	$("#sealionClose4").click(function() {
+		$("#sealionPopup4").fadeOut("fast");
+		sandcastleCall();
+	});
+
+	$("#sealionClose5").click(function() {
+		$("#sealionPopup5").fadeOut("fast");
+		sandcastleCall();
+	});
+
+	$("#sealionClose6").click(function() {
+		$("#sealionPopup6").fadeOut("fast");
+		sandcastleCall();
+	});
+
+	$("#sealionClose7").click(function() {
+		$("#sandcastleCall").fadeOut("fast");
+	});
+
+	$("#sealionBucket").click(function() {
+		sandcastle1();
+
+		setTimeout(function() {
+			sandcastleBase();
+		}, 2000);
+
+		setTimeout(function() {
+			sandcastle2();
+		}, 2000);
+
+		setTimeout(function() {
+			sandcastle3();
+		}, 3000);
+
+		setTimeout(function() {
+			sandcastle4();
+		}, 4000);
+
+		setTimeout(function() {
+			sandcastle5();
+		}, 5000);
+
+		setTimeout(function() {
+			sandcastle6();
+		}, 6000);
+
+		setTimeout(function() {
+			sandcastle7();
+		}, 7000);
+
+		setTimeout(function() {
+			sandcastle8();
+		}, 8000);
+
+		setTimeout(function() {
+			sandcastle9();
+		}, 9000);
+
+		setTimeout(function() {
+			sandcastle10();
+		}, 10000);
+
+		setTimeout(function() {
+			sandcastle11();
+		}, 11000);
+
+		setTimeout(function() {
+			sandcastle12();
+		}, 12000);
+
+		setTimeout(function() {
+			sandcastle13();
+		}, 13000);
+
+		setTimeout(function() {
+			sandcastle14();
+		}, 14000);
+
+		setTimeout(function() {
+			sandcastle15();
+		}, 15000);
+
+		setTimeout(function() {
+			sandcastle16();
+		}, 16000);
+
+		setTimeout(function() {
+			sandcastle17();
+		}, 17000);
+
+		setTimeout(function() {
+			sandcastle18();
+		}, 18000);
+	});
 
 //Whale Scene
 
