@@ -109,6 +109,14 @@ main {
   height: 100%;
   margin: 0 auto; }
 
+.normal {
+  font-size: 1rem;
+  padding: 0;
+  color: black; }
+
+.normal:hover {
+  color: #00ced1; }
+
 .home, .resources, .shop, .albatross, .sealion, .seaturtle, .fish {
   position: relative;
   width: 100%;
@@ -920,21 +928,25 @@ a.id-close {
   border: 3px solid #00ced1;
   border-radius: 6px; }
 
-@media screen and (min-width: 1024px) {
-  .allDone {
-    width: calc(600px * .53333); } }
-@media screen and (min-width: 1366px) {
-  .allDone {
-    width: calc(600px * .71145); } }
-@media screen and (min-width: 1440px) {
-  .allDone {
-    width: calc(600px * .75); } }
-@media screen and (min-width: 1680px) {
-  .allDone {
-    width: calc(600px * .875); } }
-@media screen and (min-width: 1920px) {
-  .allDone {
-    width: 600px; } }
+.allDone {
+  background-image: url(../img/gold-star.png);
+  background-repeat: no-repeat;
+  background-position: center center; }
+  @media screen and (min-width: 1024px) {
+    .allDone {
+      width: calc(600px * .53333); } }
+  @media screen and (min-width: 1366px) {
+    .allDone {
+      width: calc(600px * .71145); } }
+  @media screen and (min-width: 1440px) {
+    .allDone {
+      width: calc(600px * .75); } }
+  @media screen and (min-width: 1680px) {
+    .allDone {
+      width: calc(600px * .875); } }
+  @media screen and (min-width: 1920px) {
+    .allDone {
+      width: 600px; } }
 
 .popup {
   height: auto; }
