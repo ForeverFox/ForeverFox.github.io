@@ -503,11 +503,10 @@ function sandcastleCall() {
 		$("#allDoneWhale").delay(1000).fadeIn("fast");
 	});
 	
-
-//Scroll Events
-	$("window").scroll(function() {
-		$(".whale-info-pop").fadeIn("slow");
-	})
+//Scroll
+window.addEventListener("scroll", function() {
+  $("#bubbles").delay(2000).fadeIn("slow");
+});
 
 //RESTART SCENES
   $("#albatrossRecycle").click(function() {

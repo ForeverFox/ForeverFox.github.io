@@ -1374,12 +1374,14 @@ a.id-close {
     opacity: 1; } }
 #bubbles {
   width: 100%;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   top: 0;
   left: 0;
   opacity: 0.5;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: none; }
 
 .bubbleAnimation {
   position: fixed; }
