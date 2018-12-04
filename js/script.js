@@ -499,6 +499,7 @@ function sandcastleCall() {
 	});
 
 	$("#submarine").click(function() {
+		$(".bubbles").css("display", "none");
 		scrollToTop();
 		$("#allDoneWhale").delay(1000).fadeIn("fast");
 	});
