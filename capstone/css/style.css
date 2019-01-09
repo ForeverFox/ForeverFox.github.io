@@ -124,6 +124,44 @@ a:hover {
   padding-top: 2rem;
 }
 
+.image {
+  width: 300px;
+}
+
+@media only screen and (min-width: 420px) {
+  .image {
+    width: 400px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .image {
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .image {
+    width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .image {
+    width: 1300px;
+  }
+}
+
+@media only screen and (min-width: 1620px) {
+  .image {
+    width: 1600px;
+  }
+}
+
+.image img {
+  max-width: 100%;
+}
+
 .name {
   position: absolute;
   top: 50%;
@@ -253,7 +291,7 @@ h4 {
 }
 
 .portfolio {
-  width: 640px;
+  width: 300px;
   padding: 2rem;
   margin: 0.5rem;
 }
