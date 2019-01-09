@@ -117,18 +117,30 @@ a:hover {
 .flex {
   position: relative;
   width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: block;
   padding-top: 2rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    width: 50%;
+  }
 }
 
 .image {
   width: 300px;
 }
 
-@media only screen and (min-width: 420px) {
+@media screen and (min-width: 420px) {
   .image {
     width: 400px;
   }
@@ -176,13 +188,12 @@ a:hover {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  border: 1px solid red;
 }
 
 .hero img {
   max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -229,7 +240,7 @@ a:hover {
 
 .article {
   position: relative;
-  width: 50%;
+  width: 100%;
 }
 
 .article img {
@@ -241,6 +252,12 @@ a:hover {
   padding: 0.25rem 0 1.5rem 0;
   line-height: 1.6;
   width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .article p, .article ol {
+    width: 100%;
+  }
 }
 
 .article2 p, .article2 ol {
@@ -269,7 +286,13 @@ h4 {
 
 .article2 {
   position: relative;
-  width: 42%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .article2 {
+    width: 42%;
+  }
 }
 
 .article2 img {
