@@ -80,12 +80,6 @@ a:hover {
   z-index: 9999;
 }
 
-@media screen and (min-width: 768px) {
-  .nav {
-    height: 100px;
-  }
-}
-
 .logo {
   height: 50px;
   position: absolute;
@@ -103,28 +97,12 @@ a:hover {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
-  #logo {
-    display: block;
-    z-index: 11111;
-  }
-}
-
 .navigation {
   width: 100%;
   margin: 0 auto;
   position: relative;
   text-align: center;
   padding: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .navigation {
-    position: absolute;
-    right: 0;
-    top: 1rem;
-    text-align: right;
-  }  
 }
 
 .navigation li {
@@ -144,19 +122,6 @@ a:hover {
   color: #4bc3ce;
 }
 
-@media screen and (min-width: 768px) {
-  .navigation li a {
-    padding: 1rem 1rem 1rem 0;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .navigation li {
-    padding: 1rem;
-  }
-}
-
 .flex {
   position: relative;
   width: 100%;
@@ -168,47 +133,8 @@ a:hover {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-  .flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;  
-  }
-}
-
 .image {
   width: 300px;
-}
-
-@media screen and (min-width: 420px) {
-  .image {
-    width: 400px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .image {
-    width: 750px;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .image {
-    width: 960px;
-  }
-}
-
-@media only screen and (min-width: 1366px) {
-  .image {
-    width: 1300px;
-  }
-}
-
-@media only screen and (min-width: 1620px) {
-  .image {
-    width: 1600px;
-  }
 }
 
 .image img {
@@ -233,13 +159,6 @@ a:hover {
 
 .hero img {
   max-width: 100%;
-  height: auto;
-}
-
-@media screen and (min-width: 1024px) {
-  .hero {
-    width: 80%;
-  }
 }
 
 .section {
@@ -300,22 +219,10 @@ a:hover {
   width: 100%;
 }
 
-@media screen and (min-width: 768px) {
-  .article p, .article ol {
-    width: 80%;
-  }
-}
-
 .article2 p, .article2 ol {
   padding: 0.25rem 0 1.5rem 0;
   line-height: 1.6;
   width: 100%;  
-}
-
-@media screen and (min-width: 768px) {
-  .article {
-    width: 50%;
-  }
 }
 
 h4 {
@@ -341,12 +248,6 @@ h4 {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
-  .article2 {
-    width: 42%;
-  }
-}
-
 .article2 img {
   max-width: 100%;
 }
@@ -366,6 +267,7 @@ h4 {
 }
 
 .portfolio {
+  width: 300px;
   padding: 2rem;
   margin: 0.5rem;
 }
@@ -389,13 +291,6 @@ h4 {
 .small-box {
   width: 100%;
   padding: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .small-box {
-    width: 33%;
-    padding: 1.5rem 0.5rem;
-  }
 }
 
 .small-box figcaption {
@@ -483,4 +378,115 @@ h4 {
   font-size: 14px;
   max-width: 400px;
   line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #logo {
+    display: block;
+    z-index: 11111;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    text-align: right;
+  }  
+}
+
+@media screen and (min-width: 768px) {
+  .navigation li a {
+    padding: 1rem 1rem 1rem 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation li {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+  }
+}
+
+@media screen and (min-width: 420px) {
+  .image {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .image {
+    width: 750px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .image {
+    width: 960px;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .image {
+    width: 1300px;
+  }
+}
+
+@media screen and (min-width: 1620px) {
+  .image {
+    width: 1600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .small-box {
+    width: 33%;
+    padding: 1.5rem 0.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .hero {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article p, .article ol {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .article2 {
+    width: 42%;
+  }
 }
