@@ -80,6 +80,12 @@ a:hover {
   z-index: 9999;
 }
 
+@media screen and (min-width: 768px) {
+  .nav {
+    height: 100px;
+  }
+}
+
 .logo {
   height: 50px;
   position: absolute;
@@ -93,25 +99,62 @@ a:hover {
   max-height: 100%;
 }
 
+#logo {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  #logo {
+    display: block;
+    z-index: 11111;
+  }
+}
+
 .navigation {
-  position: absolute;
-  right: 1rem;
-  top: 1rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+    text-align: right;
+  }  
 }
 
 .navigation li {
   display: inline;
-  padding: 1rem;
+  padding: 0;
 }
 
 .navigation li a {
   color: black;
-  padding: 1rem 1rem 1rem 0;
+  padding: 0.25rem;
   text-transform: uppercase;
+  font-size: 0.85rem;
+  text-align: center;
 }
 
 .navigation li a:hover {
   color: #4bc3ce;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation li a {
+    padding: 1rem 1rem 1rem 0;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation li {
+    padding: 1rem;
+  }
 }
 
 .flex {
@@ -121,18 +164,16 @@ a:hover {
   padding-top: 2rem;
 }
 
+.flex img {
+  max-width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;  
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .article {
-    width: 50%;
   }
 }
 
@@ -188,12 +229,17 @@ a:hover {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  border: 1px solid red;
 }
 
 .hero img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .hero {
+    width: 80%;
+  }
 }
 
 .section {
@@ -251,12 +297,12 @@ a:hover {
 .article p, .article ol {
   padding: 0.25rem 0 1.5rem 0;
   line-height: 1.6;
-  width: 80%;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
   .article p, .article ol {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -264,6 +310,12 @@ a:hover {
   padding: 0.25rem 0 1.5rem 0;
   line-height: 1.6;
   width: 100%;  
+}
+
+@media screen and (min-width: 768px) {
+  .article {
+    width: 50%;
+  }
 }
 
 h4 {
@@ -314,7 +366,6 @@ h4 {
 }
 
 .portfolio {
-  width: 300px;
   padding: 2rem;
   margin: 0.5rem;
 }
@@ -336,8 +387,15 @@ h4 {
 }
 
 .small-box {
-  width: 33%;
-  padding: 1.5rem 0.5rem;
+  width: 100%;
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .small-box {
+    width: 33%;
+    padding: 1.5rem 0.5rem;
+  }
 }
 
 .small-box figcaption {
