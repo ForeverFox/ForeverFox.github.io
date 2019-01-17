@@ -380,20 +380,28 @@ h4 {
   line-height: 1.6;
 }
 
+.steps {
+  width: 300px;
+}
+
+.steps img {
+  max-width: 100%;
+}
+
 @media screen and (min-width: 768px) {
-  .portfolio {
+  .steps {
     width: 600px;
   }
 }
 
 @media screen and (min-width: 1366px) {
-  .portfolio {
+  .steps {
     width: 800px;
   }
 }
 
 @media screen and (min-width: 1680px) {
-  .portfolio {
+  .steps {
     width: 1000px;
   }
 }
